@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:carrot_on_a_stick","nbt":"{CustomModelData:2}"},"title":{"text":"Game On!","color":"green","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Play a game of Stealthiators.","color":"dark_green","bold":false}},"parent":"custom/root","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

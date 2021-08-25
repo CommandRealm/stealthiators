@@ -1,0 +1,15 @@
+execute as @a[team=sneaker,tag=playing,scores={r_class=3,runner_id=10,warp_cooldown=..60}] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["die","warp_spot","warp_spot_10"],Duration:60,Age:0}
+execute as @a[team=sneaker,tag=playing,scores={r_class=3,runner_id=9,warp_cooldown=..60}] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["die","warp_spot","warp_spot_9"],Duration:60,Age:0}
+execute as @a[team=sneaker,tag=playing,scores={r_class=3,runner_id=8,warp_cooldown=..60}] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["die","warp_spot","warp_spot_8"],Duration:60,Age:0}
+execute as @a[team=sneaker,tag=playing,scores={r_class=3,runner_id=7,warp_cooldown=..60}] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["die","warp_spot","warp_spot_7"],Duration:60,Age:0}
+execute as @a[team=sneaker,tag=playing,scores={r_class=3,runner_id=6,warp_cooldown=..60}] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["die","warp_spot","warp_spot_6"],Duration:60,Age:0}
+execute as @a[team=sneaker,tag=playing,scores={r_class=3,runner_id=5,warp_cooldown=..60}] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["die","warp_spot","warp_spot_5"],Duration:60,Age:0}
+execute as @a[team=sneaker,tag=playing,scores={r_class=3,runner_id=4,warp_cooldown=..60}] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["die","warp_spot","warp_spot_4"],Duration:60,Age:0}
+execute as @a[team=sneaker,tag=playing,scores={r_class=3,runner_id=3,warp_cooldown=..60}] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["die","warp_spot","warp_spot_3"],Duration:60,Age:0}
+execute as @a[team=sneaker,tag=playing,scores={r_class=3,runner_id=2,warp_cooldown=..60}] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["die","warp_spot","warp_spot_2"],Duration:60,Age:0}
+execute as @a[team=sneaker,tag=playing,scores={r_class=3,runner_id=1,warp_cooldown=..60}] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["die","warp_spot","warp_spot_1"],Duration:60,Age:0}
+execute as @a[team=sneaker,tag=playing,scores={r_class=3,warp_cooldown=..60}] at @s run data modify entity @e[tag=warp_spot,type=area_effect_cloud,nbt={Age:0},sort=nearest,limit=1] Rotation[0] set from entity @s Rotation[0]
+execute as @a[team=sneaker,tag=playing,scores={r_class=3,warp_cooldown=..60}] at @s run data modify entity @e[tag=warp_spot,type=area_effect_cloud,nbt={Age:0},sort=nearest,limit=1] Rotation[1] set from entity @s Rotation[1]
+execute as @a[team=sneaker,tag=playing,scores={r_class=3,warp_cooldown=0}] at @s unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:8}}]}] run function game:class/warper/get_item
+execute as @a[team=sneaker,tag=playing,scores={r_class=3,right_click=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:8}}}] at @s run function game:class/warper/warp
+execute if entity @a[team=sneaker,tag=playing,scores={r_class=3,warp_cooldown=1..}] run function game:class/warper/cooldown

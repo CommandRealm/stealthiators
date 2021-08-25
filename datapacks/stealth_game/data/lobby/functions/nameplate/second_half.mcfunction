@@ -1,0 +1,6 @@
+execute if score $time tp_nameplate matches 7 as @e[type=area_effect_cloud,tag=teleport_nameplate] at @s run data merge entity @s {CustomName:'[{"text":"⚡ - TUTO","color":"#e3d666"},{"text":"R","color":"#d28e2c"},{"text":"IAL - ⚡","color":"#e3d666"}]'}
+execute if score $time tp_nameplate matches 8 as @e[type=area_effect_cloud,tag=teleport_nameplate] at @s run data merge entity @s {CustomName:'[{"text":"⚡ - TUTOR","color":"#e3d666"},{"text":"I","color":"#d28e2c"},{"text":"AL - ⚡","color":"#e3d666"}]'}
+execute if score $time tp_nameplate matches 9 as @e[type=area_effect_cloud,tag=teleport_nameplate] at @s run data merge entity @s {CustomName:'[{"text":"⚡ - TUTORI","color":"#e3d666"},{"text":"A","color":"#d28e2c"},{"text":"L - ⚡","color":"#e3d666"}]'}
+execute if score $time tp_nameplate matches 10 as @e[type=area_effect_cloud,tag=teleport_nameplate] at @s run data merge entity @s {CustomName:'[{"text":"⚡ - TUTORIA","color":"#e3d666"},{"text":"L","color":"#d28e2c"},{"text":" - ⚡","color":"#e3d666"}]'}
+execute if score $time tp_nameplate matches 11 as @e[type=area_effect_cloud,tag=teleport_nameplate] at @s run data merge entity @s {CustomName:'[{"text":"⚡ - TUTORIAL","color":"#e3d666"},{"text":" - ","color":"#d28e2c"},{"text":"⚡","color":"#e3d666"}]'}
+execute if score $time tp_nameplate matches 12 run function lobby:nameplate/reset

@@ -1,0 +1,24 @@
+setblock 28 68 -34 air
+playsound minecraft:ui.button.click master @s
+scoreboard players add $number gladiators 1
+execute if score $number gladiators matches ..-1 run scoreboard players set $number gladiators 10
+execute if score $number gladiators matches 11.. run scoreboard players set $number gladiators 0
+
+
+execute if score $number gladiators matches 0 run setblock 28 68 -34 oak_wall_sign[facing=east]{Text1:'{"text":"Number of","color":"#cbc69c","bold":true,"clickEvent":{"action":"run_command","value":"/execute if score $game state matches 1.. run function options:error"}}',Text2:'{"text":"gladiators:","color":"#3cbc69c","bold":true}',Text3:'{"text":"Auto","color":"yellow"}',Text4:'{"text":"<<<         >>>","color":"#91b0be","bold":true,"clickEvent":{"action":"run_command","value":"/execute as @s at @s anchored eyes if score $game state matches 0 run function options:gladiators/click_gladiators"}}'}
+execute unless score $number gladiators matches 0 run setblock 28 68 -34 oak_wall_sign[facing=east]{Text1:'{"text":"Number of","color":"#cbc69c","bold":true,"clickEvent":{"action":"run_command","value":"/execute if score $game state matches 1.. run function options:error"}}',Text2:'{"text":"gladiators:","color":"#3cbc69c","bold":true}',Text3:'{"score":{"objective":"gladiators","name":"$number"},"color":"yellow"}',Text4:'{"text":"<<<         >>>","color":"#91b0be","bold":true,"clickEvent":{"action":"run_command","value":"/execute as @s at @s anchored eyes if score $game state matches 0 run function options:gladiators/click_gladiators"}}'}
+
+particle minecraft:cloud 27 69.5 -34 0 0 0 0.05 10
+
+kill @e[tag=display_gladiators]
+execute if score $number gladiators matches 0 run summon armor_stand 27.5 68.525 -33.5 {DisabledSlots:2039583,Tags:["display_gladiators","model"],Small:1b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:4}}]}
+execute if score $number gladiators matches 1.. run summon armor_stand 27.25 68.525 -33.25 {DisabledSlots:2039583,Tags:["display_gladiators","model"],Small:1b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:18}}]}
+execute if score $number gladiators matches 2.. run summon armor_stand 27.25 68.825 -33.25 {DisabledSlots:2039583,Tags:["display_gladiators","model"],Small:1b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:18}}]}
+execute if score $number gladiators matches 3.. run summon armor_stand 27.25 68.525 -33.75 {DisabledSlots:2039583,Tags:["display_gladiators","model"],Small:1b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:18}}]}
+execute if score $number gladiators matches 4.. run summon armor_stand 27.25 68.825 -33.75 {DisabledSlots:2039583,Tags:["display_gladiators","model"],Small:1b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:18}}]}
+execute if score $number gladiators matches 5.. run summon armor_stand 27.75 68.525 -33.25 {DisabledSlots:2039583,Tags:["display_gladiators","model"],Small:1b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:18}}]}
+execute if score $number gladiators matches 6.. run summon armor_stand 27.75 68.825 -33.25 {DisabledSlots:2039583,Tags:["display_gladiators","model"],Small:1b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:18}}]}
+execute if score $number gladiators matches 7.. run summon armor_stand 27.75 68.525 -33.75 {DisabledSlots:2039583,Tags:["display_gladiators","model"],Small:1b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:18}}]}
+execute if score $number gladiators matches 8.. run summon armor_stand 27.75 68.825 -33.75 {DisabledSlots:2039583,Tags:["display_gladiators","model"],Small:1b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:18}}]}
+execute if score $number gladiators matches 9.. run summon armor_stand 27.5 68.525 -33.5 {DisabledSlots:2039583,Tags:["display_gladiators","model"],Small:1b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:18}}]}
+execute if score $number gladiators matches 10.. run summon armor_stand 27.5 68.825 -33.5 {DisabledSlots:2039583,Tags:["display_gladiators","model"],Small:1b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:18}}]}

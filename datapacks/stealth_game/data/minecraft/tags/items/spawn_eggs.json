@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:horse_spawn_egg",
+    "minecraft:donkey_spawn_egg",
+    "minecraft:cow_spawn_egg",
+    "minecraft:mooshroom_spawn_egg",
+    "minecraft:slime_spawn_egg",
+    "minecraft:chicken_spawn_egg",
+    "minecraft:spider_spawn_egg",
+    "minecraft:polar_bear_spawn_egg",
+    "minecraft:skeleton_horse_spawn_egg",
+    "minecraft:bee_spawn_egg",
+    "minecraft:parrot_spawn_egg",
+    "minecraft:vex_spawn_egg",
+    "minecraft:panda_spawn_egg",
+    "minecraft:ghast_spawn_egg",
+    "minecraft:sheep_spawn_egg",
+    "minecraft:phantom_spawn_egg",
+    "minecraft:turtle_spawn_egg",
+    "minecraft:hoglin_spawn_egg",
+    "minecraft:villager_spawn_egg"
+  ]
+}

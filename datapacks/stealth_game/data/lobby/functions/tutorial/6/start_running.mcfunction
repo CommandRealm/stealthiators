@@ -1,0 +1,1 @@
+tag @e[type=armor_stand,tag=tutorial_6_1] add running

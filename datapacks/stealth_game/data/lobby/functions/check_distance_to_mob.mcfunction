@@ -1,0 +1,11 @@
+execute as @a[tag=rider_0,tag=has_mob] at @s as @e[type=horse,tag=rider_0,distance=10..] at @s run function lobby:remove_mob
+execute as @a[tag=rider_1,tag=has_mob] at @s as @e[type=horse,tag=rider_1,distance=10..] at @s run function lobby:remove_mob
+execute as @a[tag=rider_2,tag=has_mob] at @s as @e[type=horse,tag=rider_2,distance=10..] at @s run function lobby:remove_mob
+execute as @a[tag=rider_3,tag=has_mob] at @s as @e[type=horse,tag=rider_3,distance=10..] at @s run function lobby:remove_mob
+execute as @a[tag=rider_4,tag=has_mob] at @s as @e[type=horse,tag=rider_4,distance=10..] at @s run function lobby:remove_mob
+execute as @a[tag=rider_5,tag=has_mob] at @s as @e[type=horse,tag=rider_5,distance=10..] at @s run function lobby:remove_mob
+execute as @a[tag=rider_6,tag=has_mob] at @s as @e[type=horse,tag=rider_6,distance=10..] at @s run function lobby:remove_mob
+execute as @a[tag=rider_7,tag=has_mob] at @s as @e[type=horse,tag=rider_7,distance=10..] at @s run function lobby:remove_mob
+execute as @a[tag=rider_8,tag=has_mob] at @s as @e[type=horse,tag=rider_8,distance=10..] at @s run function lobby:remove_mob
+execute as @a[tag=rider_9,tag=has_mob] at @s as @e[type=horse,tag=rider_9,distance=10..] at @s run function lobby:remove_mob
+execute as @a[tag=rider_10,tag=has_mob] at @s as @e[type=horse,tag=rider_10,distance=10..] at @s run function lobby:remove_mob

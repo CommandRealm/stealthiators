@@ -1,0 +1,20 @@
+scoreboard players add $time lobby_minigame 1
+execute if score $time lobby_minigame matches 0..200 run function lobby:minigame/music
+execute if score $wait_time lobby_minigame matches 1.. run scoreboard players remove $wait_time lobby_minigame 1
+execute if score $wait_time lobby_minigame matches -1 run scoreboard players remove $circle_time lobby_minigame 1
+execute if score $wait_time lobby_minigame matches 0 if score $circle_time lobby_minigame matches 0 run function lobby:minigame/select_target
+execute if score $wait_time lobby_minigame matches -1 if score $circle_time lobby_minigame matches 0 run function lobby:minigame/set_wait_time
+scoreboard players add $time alt_trident 1
+execute if score $time alt_trident matches 3 run scoreboard players set $time alt_trident 0
+execute if score $time alt_trident matches 1 if entity @e[tag=minigame_target,tag=active_target,type=area_effect_cloud,x=77,y=77,z=6,distance=..2] positioned 76 78.4 6.65 run function lobby:minigame/show_particles
+execute if score $time alt_trident matches 1 if entity @e[tag=minigame_target,tag=active_target,type=area_effect_cloud,x=70,y=82,z=9,distance=..2] positioned 69 83.2 9.45 run function lobby:minigame/show_particles
+execute if score $time alt_trident matches 1 if entity @e[tag=minigame_target,tag=active_target,type=area_effect_cloud,x=57,y=76,z=18,distance=..2] positioned 57.35 77.4 17 rotated ~90 ~ run function lobby:minigame/show_particles
+execute if score $time alt_trident matches 1 if entity @e[tag=minigame_target,tag=active_target,type=area_effect_cloud,x=57,y=85,z=29,distance=..2] positioned 57.35 86.2 28 rotated ~90 ~ run function lobby:minigame/show_particles
+execute if score $time alt_trident matches 1 if entity @e[tag=minigame_target,tag=active_target,type=area_effect_cloud,x=50,y=89,z=30,distance=..2] positioned 50.35 90.0 29 rotated ~90 ~ run function lobby:minigame/show_particles
+execute if score $time alt_trident matches 1 if entity @e[tag=minigame_target,tag=active_target,type=area_effect_cloud,x=71,y=82,z=22,distance=..2] positioned 70.75 83.2 21 rotated ~45 ~ run function lobby:minigame/show_particles
+execute if score $circle_time lobby_minigame matches 1.. as @e[tag=!prethrown_trident,type=trident,x=0,y=66,z=0,distance=..500,nbt={inBlockState:{Name:"minecraft:target"}},tag=!in_block] at @s as @e[tag=active_target,distance=..3,type=area_effect_cloud] at @s run function lobby:minigame/hit_target
+execute if score $circle_time lobby_minigame matches 1.. as @e[tag=!prethrown_trident,type=trident,x=0,y=66,z=0,distance=..500,nbt={inBlockState:{}},tag=!in_block] at @s unless entity @s[nbt={inBlockState:{Name:"minecraft:target"}}] run function lobby:minigame/miss_target
+execute if score $circle_time lobby_minigame matches 1.. as @e[tag=!prethrown_trident,type=trident,x=0,y=66,z=0,distance=..500,nbt={inBlockState:{Name:"minecraft:target"}},tag=!in_block] at @s unless entity @e[tag=active_target,distance=..3,type=area_effect_cloud] run function lobby:minigame/miss_target
+execute if score $bullseye lobby_minigame matches 1.. run function lobby:minigame/bullseye
+execute if score $score lobby_minigame matches ..-1 run scoreboard players set $score lobby_minigame 0
+execute as @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] at @s unless entity @s[nbt={SelectedItem:{id:"minecraft:written_book"}}] run title @s actionbar [{"text":"Current score: ","color":"gold"},{"score":{"objective":"lobby_minigame","name":"$score"},"color":"yellow","bold":true},{"text":" Current misses: ","color":"dark_red"},{"score":{"objective":"lobby_minigame","name":"$miss"},"color":"red","bold":true},{"text":"/3","color":"red","bold":true},{"text":" Current streak: ","color":"dark_green"},{"score":{"objective":"lobby_minigame","name":"$streak"},"color":"green","bold":true},{"text":" Highscore: ","color":"dark_blue"},{"score":{"objective":"highscore","name":"@s"},"color":"blue","bold":true}]

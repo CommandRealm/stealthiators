@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:emerald"},"title":{"text":"Chatterbox","color":"#34ef87","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Listen to all market stall villagers.","color":"#2b9e5f","bold":false}},"parent":"custom/check_out_socials","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

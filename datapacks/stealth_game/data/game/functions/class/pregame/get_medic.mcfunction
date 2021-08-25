@@ -1,0 +1,4 @@
+clear @s carrot_on_a_stick{CustomModelData:12}
+kill @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:12}}}]
+execute unless entity @s[scores={r_class=4}] run replaceitem entity @s hotbar.3 carrot_on_a_stick{CustomModelData:12,display:{Name:'[{"text":"Click to select ","color":"dark_gray","italic":false},{"text":"Medic","color":"gray","bold":true}]',Lore:['[{"text":"The Medic can revive caught runners by crouching where they died.","color":"gray","italic":false}]']},HideFlags:63,Unbreakable:1b}
+execute if entity @s[scores={r_class=4}] run replaceitem entity @s hotbar.3 carrot_on_a_stick{Enchantments:[{id:"x",lvl:1}],CustomModelData:12,display:{Name:'[{"text":"You have selected ","color":"dark_gray","italic":false},{"text":"Medic","color":"gray","bold":true}]',Lore:['[{"text":"The Medic can revive caught runners by crouching where they died.","color":"gray","italic":false}]']},HideFlags:63,Unbreakable:1b}

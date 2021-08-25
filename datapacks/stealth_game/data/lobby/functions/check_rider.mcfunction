@@ -1,0 +1,11 @@
+execute as @e[type=horse,tag=rider_0] at @s unless entity @a[tag=rider_0,distance=..100] run function lobby:remove_mob
+execute as @e[type=horse,tag=rider_1] at @s unless entity @a[tag=rider_1,distance=..100] run function lobby:remove_mob 
+execute as @e[type=horse,tag=rider_2] at @s unless entity @a[tag=rider_2,distance=..100] run function lobby:remove_mob 
+execute as @e[type=horse,tag=rider_3] at @s unless entity @a[tag=rider_3,distance=..100] run function lobby:remove_mob 
+execute as @e[type=horse,tag=rider_4] at @s unless entity @a[tag=rider_4,distance=..100] run function lobby:remove_mob 
+execute as @e[type=horse,tag=rider_5] at @s unless entity @a[tag=rider_5,distance=..100] run function lobby:remove_mob 
+execute as @e[type=horse,tag=rider_6] at @s unless entity @a[tag=rider_6,distance=..100] run function lobby:remove_mob 
+execute as @e[type=horse,tag=rider_7] at @s unless entity @a[tag=rider_7,distance=..100] run function lobby:remove_mob 
+execute as @e[type=horse,tag=rider_8] at @s unless entity @a[tag=rider_8,distance=..100] run function lobby:remove_mob 
+execute as @e[type=horse,tag=rider_9] at @s unless entity @a[tag=rider_9,distance=..100] run function lobby:remove_mob 
+execute as @e[type=horse,tag=rider_10] at @s unless entity @a[tag=rider_10,distance=..100] run function lobby:remove_mob 

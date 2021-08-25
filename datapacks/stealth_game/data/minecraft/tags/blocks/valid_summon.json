@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:air",
+    "minecraft:grass",
+    "minecraft:tall_grass",
+    "minecraft:stone_button",
+    "minecraft:stone_pressure_plate",
+    "minecraft:fern",
+    "minecraft:large_fern",
+    "minecraft:red_tulip",
+    "minecraft:pink_tulip",
+    "minecraft:azure_bluet",
+    "minecraft:spruce_button",
+    "minecraft:oak_sign",
+    "minecraft:dead_bush",
+    "minecraft:oak_button",
+    "minecraft:flower_pot",
+    "minecraft:stone_button",
+    "minecraft:player_head",
+    "minecraft:stone_slab",
+    "minecraft:cobblestone_slab",
+    "minecraft:andesite_slab",
+    "minecraft:stone_stairs",
+    "minecraft:cobblestone_stairs",
+    "minecraft:andesite_stairs",
+    "minecraft:spruce_slab",
+    "minecraft:spruce_stairs",
+    "minecraft:polished_blackstone_pressure_plate",
+    "minecraft:ladder",
+    "minecraft:polished_blackstone_button"
+  ]
+}

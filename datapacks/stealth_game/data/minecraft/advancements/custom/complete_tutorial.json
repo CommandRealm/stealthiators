@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:polished_basalt"},"title":{"text":"Properly Trained","color":"#c7c18b","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Complete the tutorial.","color":"#8c8339","bold":false}},"parent":"custom/root","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

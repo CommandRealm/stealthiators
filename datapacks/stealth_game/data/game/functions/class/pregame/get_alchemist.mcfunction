@@ -1,0 +1,4 @@
+clear @s carrot_on_a_stick{CustomModelData:11}
+kill @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:11}}}]
+execute unless entity @s[scores={r_class=2}] run replaceitem entity @s hotbar.1 carrot_on_a_stick{CustomModelData:11,display:{Name:'[{"text":"Click to select ","color":"dark_gray","italic":false},{"text":"Alchemist","color":"gray","bold":true}]',Lore:['[{"text":"The Alchemist can throw smoke grenades to blind gladiators.","color":"gray","italic":false}]']},HideFlags:63,Unbreakable:1b}
+execute if entity @s[scores={r_class=2}] run replaceitem entity @s hotbar.1 carrot_on_a_stick{Enchantments:[{id:"x",lvl:1}],CustomModelData:11,display:{Name:'[{"text":"You have selected ","color":"dark_gray","italic":false},{"text":"Alchemist","color":"gray","bold":true}]',Lore:['[{"text":"The Alchemist can throw smoke grenades to blind gladiators.","color":"gray","italic":false}]']},HideFlags:63,Unbreakable:1b}

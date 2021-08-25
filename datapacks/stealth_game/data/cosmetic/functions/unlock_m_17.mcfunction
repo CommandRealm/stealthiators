@@ -1,0 +1,2 @@
+tag @s add unlock_m_17
+tellraw @s [{"text":"- - - - - - - - - - - - - - - - - - - - - - - - - - -","color":"gray","bold":true},{"text":"\nYou have unlocked a LEGENDARY cosmetic!","color":"gold","bold":false},{"text":"\nLobby Mount ","color":"green","bold":true},{"text":"- ","color":"gray","bold":true},{"text":"Cloud","color":"yellow","bold":true},{"text":"\nYou can select it inside the ender chest!","color":"gray","bold":false}]
