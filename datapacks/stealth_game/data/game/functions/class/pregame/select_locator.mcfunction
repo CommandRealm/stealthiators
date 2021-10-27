@@ -4,6 +4,6 @@ execute unless entity @s[scores={g_class=2}] run tellraw @s [{"text":"You are ",
 execute unless entity @s[scores={g_class=2}] run tellraw @s [{"text":"Info: ","color":"gold"},{"text":"The Locator gets a compass that points to the nearest runner at the time of use.","italic":true,"color":"#ba666a"}]
 scoreboard players set @s sel_g_class 2
 scoreboard players set @s g_class 2
-replaceitem entity @s weapon.mainhand air
+item replace entity @s weapon.mainhand with air
 clear @s carrot_on_a_stick{Enchantments:[{id:"x",lvl:1}]}
 playsound minecraft:entity.cow.step master @s ~ ~ ~ 1000 2

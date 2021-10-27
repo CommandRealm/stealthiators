@@ -1,27 +1,127 @@
 
-execute if score $number infection matches 0 if entity @s[scores={runner_id=1}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","revive_1"]}
-execute if score $number infection matches 0 if entity @s[scores={runner_id=2}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","revive_2"]}
-execute if score $number infection matches 0 if entity @s[scores={runner_id=3}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","revive_3"]}
-execute if score $number infection matches 0 if entity @s[scores={runner_id=4}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","revive_4"]}
-execute if score $number infection matches 0 if entity @s[scores={runner_id=5}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","revive_5"]}
-execute if score $number infection matches 0 if entity @s[scores={runner_id=6}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","revive_6"]}
-execute if score $number infection matches 0 if entity @s[scores={runner_id=7}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","revive_7"]}
-execute if score $number infection matches 0 if entity @s[scores={runner_id=8}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","revive_8"]}
-execute if score $number infection matches 0 if entity @s[scores={runner_id=9}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","revive_9"]}
-execute if score $number infection matches 0 if entity @s[scores={runner_id=10}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","revive_10"]}
-execute if score $number infection matches 0 if entity @s[scores={runner_id=11}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","revive_11"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=1}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_1"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=2}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_2"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=3}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_3"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=4}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_4"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=5}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_5"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=6}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_6"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=7}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_7"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=8}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_8"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=9}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_9"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=10}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_10"]}
 
-execute if score $number infection matches 1 if entity @s[scores={runner_id=1}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","revive_1"]}
-execute if score $number infection matches 1 if entity @s[scores={runner_id=2}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","revive_2"]}
-execute if score $number infection matches 1 if entity @s[scores={runner_id=3}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","revive_3"]}
-execute if score $number infection matches 1 if entity @s[scores={runner_id=4}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","revive_4"]}
-execute if score $number infection matches 1 if entity @s[scores={runner_id=5}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","revive_5"]}
-execute if score $number infection matches 1 if entity @s[scores={runner_id=6}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","revive_6"]}
-execute if score $number infection matches 1 if entity @s[scores={runner_id=7}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","revive_7"]}
-execute if score $number infection matches 1 if entity @s[scores={runner_id=8}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","revive_8"]}
-execute if score $number infection matches 1 if entity @s[scores={runner_id=9}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","revive_9"]}
-execute if score $number infection matches 1 if entity @s[scores={runner_id=10}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","revive_10"]}
-execute if score $number infection matches 1 if entity @s[scores={runner_id=11}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","revive_11"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=11}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_11"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=12}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_12"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=13}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_13"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=14}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_14"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=15}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_15"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=16}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_16"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=17}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_17"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=18}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_18"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=19}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_19"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=20}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_20"]}
+
+execute if score $number infection matches 0 if entity @s[scores={runner_id=21}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_21"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=22}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_22"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=23}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_23"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=24}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_24"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=25}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_25"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=26}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_26"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=27}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_27"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=28}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_28"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=29}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_29"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=30}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_30"]}
+
+execute if score $number infection matches 0 if entity @s[scores={runner_id=31}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_31"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=32}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_32"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=33}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_33"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=34}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_34"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=35}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_35"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=36}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_36"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=37}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_37"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=38}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_38"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=39}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_39"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=40}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_40"]}
+
+execute if score $number infection matches 0 if entity @s[scores={runner_id=41}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_41"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=42}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_42"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=43}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_43"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=44}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_44"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=45}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_45"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=46}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_46"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=47}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_47"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=48}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_48"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=49}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_49"]}
+execute if score $number infection matches 0 if entity @s[scores={runner_id=50}] run summon area_effect_cloud ~ ~ ~ {Duration:600,Tags:["die","revive_spot","set_revive_timer","revive_50"]}
+
+
+
+execute if score $number infection matches 1 if entity @s[scores={runner_id=1}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_1"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=2}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_2"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=3}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_3"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=4}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_4"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=5}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_5"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=6}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_6"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=7}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_7"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=8}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_8"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=9}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_9"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=10}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_10"]}
+
+execute if score $number infection matches 1 if entity @s[scores={runner_id=11}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_11"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=12}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_12"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=13}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_13"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=14}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_14"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=15}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_15"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=16}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_16"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=17}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_17"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=18}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_18"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=19}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_19"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=20}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_20"]}
+
+
+execute if score $number infection matches 1 if entity @s[scores={runner_id=21}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_21"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=22}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_22"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=23}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_23"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=24}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_24"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=25}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_25"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=26}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_26"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=27}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_27"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=28}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_28"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=29}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_29"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=30}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_30"]}
+
+
+execute if score $number infection matches 1 if entity @s[scores={runner_id=31}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_31"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=32}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_32"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=33}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_33"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=34}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_34"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=35}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_35"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=36}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_36"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=37}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_37"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=38}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_38"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=39}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_39"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=40}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_40"]}
+
+execute if score $number infection matches 1 if entity @s[scores={runner_id=41}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_41"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=42}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_42"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=43}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_43"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=44}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_44"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=45}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_45"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=46}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_46"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=47}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_47"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=48}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_48"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=49}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_49"]}
+execute if score $number infection matches 1 if entity @s[scores={runner_id=50}] run summon area_effect_cloud ~ ~ ~ {Duration:300,Tags:["die","revive_spot","set_revive_timer","revive_50"]}
+
+# setting revive timer
+execute if score $players game matches 1.. run scoreboard players set @e[type=area_effect_cloud,tag=set_revive_timer] revive_timer 60
+execute if score $players game matches 3.. run scoreboard players set @e[type=area_effect_cloud,tag=set_revive_timer] revive_timer 50
+execute if score $players game matches 4.. run scoreboard players set @e[type=area_effect_cloud,tag=set_revive_timer] revive_timer 40
+execute if score $players game matches 5.. run scoreboard players set @e[type=area_effect_cloud,tag=set_revive_timer] revive_timer 30
+execute if score $players game matches 6.. run scoreboard players set @e[type=area_effect_cloud,tag=set_revive_timer] revive_timer 20
+execute if score $players game matches 7.. run scoreboard players set @e[type=area_effect_cloud,tag=set_revive_timer] revive_timer 10
+execute if score $players game matches 8.. run scoreboard players set @e[type=area_effect_cloud,tag=set_revive_timer] revive_timer 0
+
 
 team join dark_gray
 execute if entity @s[scores={death_msg=0}] run tellraw @a[tag=playing] [{"selector":"@s"},{"text":" is out.","color":"gold"}]

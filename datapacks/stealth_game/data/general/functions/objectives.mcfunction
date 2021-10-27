@@ -12,6 +12,8 @@ team add prg
 team add srbld
 team add srprg
 team add lead
+team add manager
+team add art
 team modify lobby color gray
 team modify test color gray
 team modify help color gray
@@ -21,6 +23,8 @@ team modify srbld color gray
 team modify srprg color gray
 team modify lead color gray
 team modify lobby color gray
+team modify manager color gray
+team modify art color gray
 team modify test prefix {"text":"(Tester) ","color":"gray"}
 team modify help prefix {"text":"[Helper] ","color":"dark_gray"}
 team modify bld prefix {"text":"{Builder} ","color":"blue"}
@@ -28,6 +32,8 @@ team modify prg prefix {"text":"{Programmer} ","color":"red"}
 team modify srbld prefix {"text":"{Sr. Builder} ","color":"dark_blue"}
 team modify srprg prefix {"text":"{Sr. Programmer} ","color":"dark_red"}
 team modify lead prefix [{"text":"{","color":"dark_purple","bold":true},{"text":"Project Lead","bold":false},{"text":"} ","bold":true}]
+team modify manager prefix {"text":"{Manager} ","color":"yellow"}
+team modify art prefix {"text":"{Artist} ","color":"green"}
 
 
 
@@ -42,6 +48,10 @@ team modify pc_role prefix [{"text":"(","color":"dark_gray","bold":false},{"text
 team add prefix
 team modify prefix color gray
 team modify prefix prefix [{"text":"[","color":"dark_gray","bold":true},{"text":"Sneaky Sneaker","color":"gray","bold":false},{"text":"] ","color":"dark_gray","bold":true}]
+
+team add tournament
+team modify tournament color gray
+team modify tournament prefix [{"text":"(","color":"dark_gray","bold":true},{"text":"Tournament","color":"gray","bold":false},{"text":") ","color":"dark_gray","bold":true}]
 
 scoreboard objectives add new_player dummy
 scoreboard objectives add leave_game minecraft.custom:minecraft.leave_game
@@ -72,6 +82,10 @@ team modify gladiator prefix [{"text":"[","color":"dark_gray","bold":true},{"tex
 team modify sneaker prefix [{"text":"[","color":"dark_gray","bold":true},{"text":"Runner","bold":false,"color":"#8a8a8a"},{"text":"] ","color":"dark_gray","bold":true}]
 team modify sneaker collisionRule never
 team modify gladiator collisionRule never
+team add cr
+team modify cr color gray
+team modify cr prefix [{"text":"{","color":"white","bold":true},{"text":"C","color":"aqua","bold":true},{"text":"R","color":"dark_aqua","bold":true},{"text":"} ","color":"white","bold":true}]
+
 team add dead
 team modify dead color red
 team modify dead prefix [{"text":"(","color":"dark_red","bold":true},{"text":"Out","bold":false,"color":"red"},{"text":") ","color":"dark_red","bold":true}]
@@ -293,3 +307,30 @@ gamerule reducedDebugInfo true
 
 team add yellow
 team modify yellow color yellow
+
+scoreboard objectives add pregame dummy
+
+kill @e[type=area_effect_cloud,tag=start_button_text]
+summon area_effect_cloud 34 71 -40 {Duration:1000000,Tags:["start_button_text"],CustomNameVisible:1,CustomName:'[{"text":"- ","color":"gray"},{"text":"🗡","color":"#9c9558","bold":true},{"text":" Start ","color":"gold"},{"text":"🗡","color":"#9c9558","bold":true},{"text":" -","color":"gray"}]'}
+
+scoreboard objectives add drop_ready_book minecraft.dropped:minecraft.carrot_on_a_stick
+
+scoreboard objectives add prefix dummy
+
+scoreboard objectives add alchemist_limit dummy
+
+scoreboard objectives add specter_cooldown dummy
+
+scoreboard objectives add foreseer_cool dummy
+
+scoreboard objectives add shoot_bow minecraft.used:minecraft.bow
+
+scoreboard objectives add puppeteer_cool dummy
+
+scoreboard objectives add save_rot dummy
+
+scoreboard objectives add jump_charge dummy
+
+scoreboard objectives add jump_level dummy
+
+scoreboard objectives add jumper_jump minecraft.custom:minecraft.jump

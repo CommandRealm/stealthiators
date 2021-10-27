@@ -317,6 +317,72 @@ execute if score $rand random matches 99 run clone 2197 198 16 2265 211 40 ~ 151
 execute if score $rand random matches 100 run clone 2197 2 100 2265 17 124 ~ ~ ~
 execute if score $rand random matches 100 run clone 2197 18 100 2265 31 124 ~ 151 ~
 
+# 1.17 update
+execute if score $rand random matches 101 run clone 2127 218 16 2195 233 40 ~ ~ ~
+execute if score $rand random matches 101 run clone 2127 234 16 2195 247 40 ~ 151 ~
+
+execute if score $rand random matches 102 run clone 2127 218 42 2195 233 66 ~ ~ ~
+execute if score $rand random matches 102 run clone 2127 234 42 2195 247 66 ~ 151 ~
+
+execute if score $rand random matches 103 run clone 2127 218 68 2195 233 92 ~ ~ ~
+execute if score $rand random matches 103 run clone 2127 234 68 2195 247 92 ~ 151 ~
+
+execute if score $rand random matches 104 run clone 2127 218 94 2195 233 118 ~ ~ ~
+execute if score $rand random matches 104 run clone 2127 234 94 2195 247 118 ~ 151 ~
+
+execute if score $rand random matches 105 run clone 2127 218 146 2195 233 170 ~ ~ ~
+execute if score $rand random matches 105 run clone 2127 234 146 2195 247 170 ~ 151 ~
+
+execute if score $rand random matches 106 run clone 2197 218 16 2265 233 40 ~ ~ ~
+execute if score $rand random matches 106 run clone 2197 234 16 2265 247 40 ~ 151 ~
+
+execute if score $rand random matches 107 run clone 2197 218 42 2265 233 66 ~ ~ ~
+execute if score $rand random matches 107 run clone 2197 234 42 2265 247 66 ~ 151 ~
+
+execute if score $rand random matches 108 run clone 2197 218 68 2265 233 92 ~ ~ ~
+execute if score $rand random matches 108 run clone 2197 234 68 2265 247 92 ~ 151 ~
+
+execute if score $rand random matches 109 run clone 2197 218 94 2265 233 118 ~ ~ ~
+execute if score $rand random matches 109 run clone 2197 234 94 2265 247 118 ~ 151 ~
+
+execute if score $rand random matches 110 run clone 2197 218 146 2265 233 170 ~ ~ ~
+execute if score $rand random matches 110 run clone 2197 234 146 2265 247 170 ~ 151 ~
+
+
+execute if score $rand random matches 111 run clone 2267 218 16 2335 233 40 ~ ~ ~
+execute if score $rand random matches 111 run clone 2267 234 16 2335 247 40 ~ 151 ~
+
+execute if score $rand random matches 112 run clone 2267 218 42 2335 233 66 ~ ~ ~
+execute if score $rand random matches 112 run clone 2267 234 42 2335 247 66 ~ 151 ~
+
+execute if score $rand random matches 113 run clone 2267 218 68 2335 233 92 ~ ~ ~
+execute if score $rand random matches 113 run clone 2267 234 68 2335 247 92 ~ 151 ~
+
+execute if score $rand random matches 114 run clone 2267 218 94 2335 233 118 ~ ~ ~
+execute if score $rand random matches 114 run clone 2267 234 94 2335 247 118 ~ 151 ~
+
+execute if score $rand random matches 115 run clone 2267 218 120 2335 233 144 ~ ~ ~
+execute if score $rand random matches 115 run clone 2267 234 120 2335 247 144 ~ 151 ~
+
+execute if score $rand random matches 116 run clone 2267 218 146 2335 233 170 ~ ~ ~
+execute if score $rand random matches 116 run clone 2267 234 146 2335 247 170 ~ 151 ~
+
+
+execute if score $rand random matches 117 run clone 2337 218 16 2405 233 40 ~ ~ ~
+execute if score $rand random matches 117 run clone 2337 234 16 2405 247 40 ~ 151 ~
+
+execute if score $rand random matches 118 run clone 2337 218 42 2405 233 66 ~ ~ ~
+execute if score $rand random matches 118 run clone 2337 234 42 2405 247 66 ~ 151 ~
+
+execute if score $rand random matches 119 run clone 2337 218 68 2405 233 92 ~ ~ ~
+execute if score $rand random matches 119 run clone 2337 234 68 2405 247 92 ~ 151 ~
+
+execute if score $rand random matches 120 run clone 2337 218 94 2405 233 118 ~ ~ ~
+execute if score $rand random matches 120 run clone 2337 234 94 2405 247 118 ~ 151 ~
+
+execute if score $rand random matches 121 run clone 2337 218 146 2405 233 170 ~ ~ ~
+execute if score $rand random matches 121 run clone 2337 234 146 2405 247 170 ~ 151 ~
+
 
 #
 
@@ -351,6 +417,15 @@ execute if score $long_left generation matches 0 run fill ~68 171 ~26 ~61 171 ~2
 
 fill ~ 171 ~ ~ 171 ~30 cut_red_sandstone_slab[type=top] replace air
 fill ~68 171 ~ ~68 171 ~30 cut_red_sandstone_slab[type=top] replace air
+
+# barrier
+execute if score $long_left generation matches 0 run fill ~58 172 ~24 ~58 200 ~29 barrier replace air
+execute if score $long_left generation matches 0 run fill ~59 172 ~24 ~68 200 ~24 barrier replace air
+execute if score $long_left generation matches 0 run fill ~1 172 ~24 ~9 200 ~24 barrier replace air
+execute if score $long_left generation matches 0 run fill ~10 172 ~24 ~10 200 ~29 barrier replace air
+
+fill ~ 172 ~ ~ 200 ~30 barrier replace air
+fill ~68 172 ~ ~68 200 ~30 barrier replace air
 
 schedule function game:generation/check_long_segment 2t
 schedule function game:generation/check_long_segment 5t

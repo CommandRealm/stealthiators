@@ -1,2 +1,2 @@
-scoreboard players set $mod random 101
+scoreboard players set $mod random 122
 function random:random

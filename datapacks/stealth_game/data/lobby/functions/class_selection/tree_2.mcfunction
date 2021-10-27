@@ -10,3 +10,8 @@ execute if entity @s[scores={select_class=8}] run function lobby:class_selection
 
 execute if entity @s[scores={select_class=9}] run function lobby:class_selection/r_r
 execute if entity @s[scores={select_class=10}] run function lobby:class_selection/g_r
+
+execute if entity @s[scores={select_class=11}] run function lobby:class_selection/r_5
+execute if entity @s[scores={select_class=12}] run function lobby:class_selection/r_6
+execute if entity @s[scores={select_class=13}] run function lobby:class_selection/g_5
+execute if entity @s[scores={select_class=14}] run function lobby:class_selection/g_6

@@ -1,3 +1,27 @@
 {
-  "DataVersion": 2580
+  "armor_statues:enable": {
+    "criteria": {
+      "tick": "2021-07-19 17:34:38 -0400"
+    },
+    "done": true
+  },
+  "vanillatweaks:armor_statues": {
+    "criteria": {
+      "tick": "2021-07-19 17:34:38 -0400"
+    },
+    "done": true
+  },
+  "vanillatweaks:root": {
+    "criteria": {
+      "tick": "2021-07-19 17:34:38 -0400"
+    },
+    "done": true
+  },
+  "minecraft:custom/root": {
+    "criteria": {
+      "tick": "2021-07-19 17:34:38 -0400"
+    },
+    "done": true
+  },
+  "DataVersion": 2730
 }

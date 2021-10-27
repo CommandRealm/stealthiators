@@ -13,6 +13,8 @@ bossbar set minecraft:time_till_end players @a[tag=playing]
 execute store result bossbar minecraft:time_till_end max run scoreboard players get $set_time time_till_end
 execute store result bossbar minecraft:time_till_end value run scoreboard players get $set_time time_till_end
 scoreboard players add @s points 5
+execute if score $player_finish game matches 0 run scoreboard players add @s points 1
+scoreboard players set $player_finish game 1
 advancement grant @s only minecraft:custom/step_on_finish_line
 scoreboard players operation @s adv_run += @s adv_blocks_run
 advancement grant @s[scores={adv_run=30000..}] only minecraft:custom/run_300_blocks

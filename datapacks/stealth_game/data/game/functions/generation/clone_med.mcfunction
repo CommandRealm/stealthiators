@@ -306,6 +306,72 @@ execute if score $rand random matches 99 run clone 2207 198 16 2255 211 40 ~10 1
 execute if score $rand random matches 100 run clone 2207 2 100 2255 17 124 ~10 ~ ~
 execute if score $rand random matches 100 run clone 2207 18 100 2255 31 124 ~10 151 ~
 
+# 1.17 update
+execute if score $rand random matches 101 run clone 2137 218 16 2185 233 40 ~10 ~ ~
+execute if score $rand random matches 101 run clone 2137 234 16 2185 247 40 ~10 151 ~
+
+execute if score $rand random matches 102 run clone 2137 218 42 2185 233 66 ~10 ~ ~
+execute if score $rand random matches 102 run clone 2137 234 42 2185 247 66 ~10 151 ~
+
+execute if score $rand random matches 103 run clone 2137 218 68 2185 233 92 ~10 ~ ~
+execute if score $rand random matches 103 run clone 2137 234 68 2185 247 92 ~10 151 ~
+
+execute if score $rand random matches 104 run clone 2137 218 94 2185 233 118 ~10 ~ ~
+execute if score $rand random matches 104 run clone 2137 234 94 2185 247 118 ~10 151 ~
+
+execute if score $rand random matches 105 run clone 2137 218 146 2185 233 170 ~10 ~ ~
+execute if score $rand random matches 105 run clone 2137 234 146 2185 247 170 ~10 151 ~
+
+execute if score $rand random matches 106 run clone 2207 218 16 2255 233 40 ~10 ~ ~
+execute if score $rand random matches 106 run clone 2207 234 16 2255 247 40 ~10 151 ~
+
+execute if score $rand random matches 107 run clone 2207 218 42 2255 233 66 ~10 ~ ~
+execute if score $rand random matches 107 run clone 2207 234 42 2255 247 66 ~10 151 ~
+
+execute if score $rand random matches 108 run clone 2207 218 68 2255 233 92 ~10 ~ ~
+execute if score $rand random matches 108 run clone 2207 234 68 2255 247 92 ~10 151 ~
+
+execute if score $rand random matches 109 run clone 2207 218 94 2255 233 118 ~10 ~ ~
+execute if score $rand random matches 109 run clone 2207 234 94 2255 247 118 ~10 151 ~
+
+execute if score $rand random matches 110 run clone 2207 218 146 2255 233 170 ~10 ~ ~
+execute if score $rand random matches 110 run clone 2207 234 146 2255 247 170 ~10 151 ~
+
+
+execute if score $rand random matches 111 run clone 2277 218 16 2325 233 40 ~10 ~ ~
+execute if score $rand random matches 111 run clone 2277 234 16 2325 247 40 ~10 151 ~
+
+execute if score $rand random matches 112 run clone 2277 218 42 2325 233 66 ~10 ~ ~
+execute if score $rand random matches 112 run clone 2277 234 42 2325 247 66 ~10 151 ~
+
+execute if score $rand random matches 113 run clone 2277 218 68 2325 233 92 ~10 ~ ~
+execute if score $rand random matches 113 run clone 2277 234 68 2325 247 92 ~10 151 ~
+
+execute if score $rand random matches 114 run clone 2277 218 94 2325 233 118 ~10 ~ ~
+execute if score $rand random matches 114 run clone 2277 234 94 2325 247 118 ~10 151 ~
+
+execute if score $rand random matches 115 run clone 2277 218 120 2325 233 144 ~10 ~ ~
+execute if score $rand random matches 115 run clone 2277 234 120 2325 247 144 ~10 151 ~
+
+execute if score $rand random matches 116 run clone 2277 218 146 2325 233 170 ~10 ~ ~
+execute if score $rand random matches 116 run clone 2277 234 146 2325 247 170 ~10 151 ~
+
+
+execute if score $rand random matches 117 run clone 2347 218 16 2395 233 40 ~10 ~ ~
+execute if score $rand random matches 117 run clone 2347 234 16 2395 247 40 ~10 151 ~
+
+execute if score $rand random matches 118 run clone 2347 218 42 2395 233 66 ~10 ~ ~
+execute if score $rand random matches 118 run clone 2347 234 42 2395 247 66 ~10 151 ~
+
+execute if score $rand random matches 119 run clone 2347 218 68 2395 233 92 ~10 ~ ~
+execute if score $rand random matches 119 run clone 2347 234 68 2395 247 92 ~10 151 ~
+
+execute if score $rand random matches 120 run clone 2347 218 94 2395 233 118 ~10 ~ ~
+execute if score $rand random matches 120 run clone 2347 234 94 2395 247 118 ~10 151 ~
+
+execute if score $rand random matches 121 run clone 2347 218 146 2395 233 170 ~10 ~ ~
+execute if score $rand random matches 121 run clone 2347 234 146 2395 247 170 ~10 151 ~
+
 scoreboard players remove $med_left generation 1
 scoreboard players remove $segments_left generation 1
 ##next functions place random walls
@@ -339,6 +405,13 @@ execute if score $med_left generation matches 0 run fill ~68 171 ~26 ~51 171 ~29
 fill ~10 171 ~ ~10 171 ~30 cut_red_sandstone_slab[type=top] replace air
 fill ~58 171 ~ ~58 171 ~30 cut_red_sandstone_slab[type=top] replace air
 
+
+execute if score $med_left generation matches 0 run fill ~48 172 ~24 ~48 200 ~29 barrier replace air
+execute if score $med_left generation matches 0 run fill ~49 172 ~24 ~58 200 ~24 barrier replace air
+execute if score $med_left generation matches 0 run fill ~11 172 ~24 ~19 200 ~24 barrier replace air
+execute if score $med_left generation matches 0 run fill ~20 172 ~24 ~20 200 ~29 barrier replace air
+fill ~10 172 ~ ~10 200 ~30 barrier replace air
+fill ~58 172 ~ ~58 200 ~30 barrier replace air
 
 execute unless entity @s[x=987,y=135,z=-12,distance=..2] at @s positioned ~10 150 ~-5 run function game:generation/random_med_basalt_area
 

@@ -10,5 +10,5 @@ execute at @e[type=armor_stand,tag=tutorial_5_2] run particle falling_obsidian_t
 execute at @e[type=armor_stand,tag=tutorial_5_2] run particle falling_obsidian_tear ~ ~3.95 ~ 0.0 0.0 0.0 0 10
 execute at @e[type=armor_stand,tag=tutorial_5_2] run particle falling_obsidian_tear ~ ~3.975 ~ 0.0 0.0 0.0 0 10
 execute at @e[type=armor_stand,tag=tutorial_5_2] run particle falling_obsidian_tear ~ ~4.0 ~ 0.0 0.0 0.0 0 10
-replaceitem entity @e[type=armor_stand,tag=tutorial_5_2] weapon.mainhand carrot_on_a_stick{CustomModelData:5}
+item replace entity @e[type=armor_stand,tag=tutorial_5_2] weapon.mainhand with carrot_on_a_stick{CustomModelData:5}
 scoreboard players set @e[type=armor_stand,tag=tutorial_5_2] tutorial -100

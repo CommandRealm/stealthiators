@@ -1,0 +1,4 @@
+clear @s carrot_on_a_stick{CustomModelData:22}
+kill @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:22}}}]
+execute unless entity @s[scores={r_class=6}] run item replace entity @s hotbar.5 with carrot_on_a_stick{CustomModelData:22,display:{Name:'[{"text":"Click to select ","color":"dark_gray","italic":false},{"text":"Jumper","color":"gray","bold":true}]',Lore:['[{"text":"The Jumper can charge up their next jump by crouching.","color":"gray","italic":false}]']},HideFlags:63,Unbreakable:1b}
+execute if entity @s[scores={r_class=6}] run item replace entity @s hotbar.5 with carrot_on_a_stick{Enchantments:[{id:"x",lvl:1}],CustomModelData:22,display:{Name:'[{"text":"You have selected ","color":"dark_gray","italic":false},{"text":"Jumper","color":"gray","bold":true}]',Lore:['[{"text":"The Jumper can charge up their next jump by crouching.","color":"gray","italic":false}]']},HideFlags:63,Unbreakable:1b}

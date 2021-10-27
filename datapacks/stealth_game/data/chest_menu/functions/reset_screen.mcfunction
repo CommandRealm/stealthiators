@@ -7,4 +7,6 @@ execute if entity @s[scores={screen=4}] run function chest_menu:start_death_mess
 execute if entity @s[scores={screen=5}] run function chest_menu:start_credits
 execute if entity @s[scores={screen=6}] run function chest_menu:start_stats
 execute if entity @s[scores={screen=7}] run function chest_menu:start_advancement_unlocks
+execute if entity @s[scores={screen=8}] run function chest_menu:start_tournaments
+execute if entity @s[scores={screen=99}] run function chest_menu:start_titles
 clear @s #minecraft:chest_menu

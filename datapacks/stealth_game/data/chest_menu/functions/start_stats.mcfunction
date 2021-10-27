@@ -8,4 +8,4 @@ loot replace entity @s enderchest.14 loot minecraft:stats/bands
 loot replace entity @s enderchest.15 loot minecraft:stats/punches
 loot replace entity @s enderchest.16 loot minecraft:stats/highscore
 
-replaceitem entity @s enderchest.18 barrier{HideFlags:63,display:{Name:'[{"text":"Back","color":"red","italic":false,"bold":true}]'},clickable:1}
+item replace entity @s enderchest.18 with barrier{HideFlags:63,display:{Name:'[{"text":"Back","color":"red","italic":false,"bold":true}]'},clickable:1}

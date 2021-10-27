@@ -3,7 +3,7 @@ execute as @a[tag=!playing,gamemode=adventure] at @s unless entity @s[nbt={Inven
 execute as @a[tag=!playing,scores={right_click=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{preference_item:1}}},gamemode=adventure] at @s run function lobby:toggle_preference
 execute as @a[tag=!playing,gamemode=adventure,tag=!prefer_gladiator] at @s unless entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:iron_boots"}]}] run function lobby:get_boots
 execute as @a[tag=!playing,gamemode=adventure,tag=prefer_gladiator] at @s unless entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:4}}]}] run function lobby:get_helmet
-execute as @e[tag=boom_doom_chicken,type=chicken] at @s run tp @s ~ ~ ~ ~45 ~
+execute as @e[type=chicken,tag=boom_doom_chicken] at @s run tp @s ~ ~ ~ ~45 ~
 execute as @e[tag=market_villager] at @s run tp @s ~ ~ ~ facing entity @p
 function lobby:villagers/main
 execute as @a[x=0,y=66,z=0,distance=..300,gamemode=adventure] at @s unless entity @s[nbt={Inventory:[{Slot:6b,tag:{ClassBook:1}}]}] run function lobby:get_class_book
@@ -28,7 +28,7 @@ kill @e[type=item,nbt={Item:{id:"minecraft:saddle"}}]
 execute if entity @a[tag=has_mob] run function lobby:check_distance_to_mob
 execute as @e[type=horse,tag=!not_mount] at @s unless entity @s[nbt={SaddleItem:{id:"minecraft:saddle"}}] run function lobby:no_saddle
 execute as @e[tag=no_fire] at @s run data merge entity @s {Fire:0s}
-kill @e[tag=die_at_00,x=0,y=0,z=0,distance=..5]
+kill @e[tag=die_at_0,x=0,y=0,z=0,distance=..5]
 execute if entity @e[tag=flying_mount] run function lobby:flying_mount
 execute if entity @e[tag=cloud_mount,type=horse] run function lobby:cloud_mount
 execute if entity @e[tag=dirt_block,type=horse] run function lobby:dirt_block
@@ -43,7 +43,7 @@ execute unless entity @a[x=57,y=73,z=7,distance=..17,gamemode=adventure] run sco
 effect give @a[x=0,y=66,z=0,distance=..300,gamemode=adventure] weakness 2 255 true
 effect give @a[x=0,y=66,z=0,distance=..300,gamemode=adventure] resistance 2 255 true
 execute as @a[x=0,y=73,z=0,distance=..300] at @s if block ~ 0 ~ emerald_block run function lobby:leave_area
-execute as @a[x=0,y=73,z=0,distance=..300] at @s if block ~ ~ ~ grass_path if block ~ ~2 ~ barrier run function lobby:leave_area
+execute as @a[x=0,y=73,z=0,distance=..300] at @s if block ~ ~ ~ dirt_path if block ~ ~2 ~ barrier run function lobby:leave_area
 execute as @e[type=armor_stand,tag=model] at @s run tp @s ~ ~ ~ ~3 ~
 execute if entity @a[x=61,y=69,z=-25,distance=..20] run function credits:main
 execute as @a[scores={open_echest=1..}] at @s run function chest_menu:open_echest
@@ -58,6 +58,6 @@ advancement grant @a[x=74,y=73,z=-40,dy=20,dz=10,dx=10,gamemode=adventure,advanc
 advancement grant @a[x=0,y=66,z=0,distance=..500,advancements={custom/complete_tutorial=true,custom/hundred_points=true,custom/melon_market=true,custom/hit_bullseye=true,custom/find_cr=true,custom/check_out_socials=true,custom/talk_to_villagers=true,custom/unlock_prefix=false}] only minecraft:custom/unlock_prefix
 execute if entity @a[advancements={completionist/completionist=true},tag=!playing] run function completionist:completionist_helix
 
-
+scoreboard players reset @s drop_ready_book
 particle firework 32 74 -31 0 0 0 0.05 1
 particle firework 35 70.0 -34 0 0 0 0.05 1

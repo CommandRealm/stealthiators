@@ -4,6 +4,6 @@ execute unless entity @s[scores={r_class=4}] run tellraw @s [{"text":"You are ",
 execute unless entity @s[scores={r_class=4}] run tellraw @s [{"text":"Info: ","color":"gold"},{"text":"The Medic can revive caught runners by crouching where they died.","italic":true,"color":"gray"}]
 scoreboard players set @s sel_r_class 4
 scoreboard players set @s r_class 4
-replaceitem entity @s weapon.mainhand air
+item replace entity @s weapon.mainhand with air
 clear @s carrot_on_a_stick{Enchantments:[{id:"x",lvl:1}]}
 playsound minecraft:entity.cow.step master @s ~ ~ ~ 1000 2

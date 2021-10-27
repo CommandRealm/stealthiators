@@ -1,9 +1,15 @@
 {
-  "minecraft:custom/root": {
+  "minecraft:custom/play_game": {
     "criteria": {
-      "tick": "2020-12-09 20:49:49 -0800"
+      "impossible": "2021-10-18 21:51:18 -0700"
     },
     "done": true
   },
-  "DataVersion": 2584
+  "minecraft:custom/root": {
+    "criteria": {
+      "tick": "2021-08-12 14:47:22 -0700"
+    },
+    "done": true
+  },
+  "DataVersion": 2730
 }

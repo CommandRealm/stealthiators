@@ -36,7 +36,10 @@
     "minecraft:iron_ingot",
     "minecraft:polished_basalt",
     "minecraft:target",
-    "name_tag"
+    "name_tag",
+    "minecraft:written_book",
+    "minecraft:book",
+    "minecraft:chiseled_deepslate"
     
   ]
 }

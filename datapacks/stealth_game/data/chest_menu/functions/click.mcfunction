@@ -3,6 +3,8 @@ playsound minecraft:ui.button.click master @s ~ ~ ~ 100000 1
 execute if entity @s[scores={screen=0}] unless entity @s[nbt={EnderItems:[{id:"minecraft:book",tag:{clickable:1}}]}] run tp @s 32 68 -31
 execute if entity @s[scores={screen=0}] unless entity @s[nbt={EnderItems:[{id:"minecraft:golden_helmet",tag:{clickable:1}}]}] run function chest_menu:start_cosmetics
 execute if entity @s[scores={screen=0}] unless entity @s[nbt={EnderItems:[{id:"minecraft:command_block",tag:{clickable:1}}]}] run function chest_menu:start_credits
+execute if entity @s[scores={screen=0}] unless entity @s[nbt={EnderItems:[{id:"minecraft:chiseled_deepslate",tag:{clickable:1}}]}] run function chest_menu:start_tournaments
+execute if entity @s[scores={screen=0}] unless entity @s[tag=!has_test,tag=!has_help,tag=!has_bld,tag=!has_srbld,tag=!has_prg,tag=!has_srprg,tag=!has_manager,tag=!has_lead,tag=!has_pc,tag=!has_cr,tag=!has_art] unless entity @s[nbt={EnderItems:[{id:"minecraft:written_book",tag:{clickable:1}}]}] run function chest_menu:start_titles
 
 execute if entity @s[scores={screen=1}] unless entity @s[nbt={EnderItems:[{id:"minecraft:barrier",tag:{clickable:1}}]}] run function chest_menu:start
 execute if entity @s[scores={screen=1}] unless entity @s[nbt={EnderItems:[{id:"minecraft:saddle",tag:{clickable:1}}]}] run function chest_menu:start_mounts
@@ -124,3 +126,8 @@ execute if entity @s[scores={screen=7},advancements={custom/unlock_prefix=true}]
 execute if entity @s[scores={screen=7},advancements={custom/unlock_lobby_mount=true}] unless entity @s[nbt={EnderItems:[{id:"minecraft:saddle",tag:{clickable:1}}]}] run function chest_menu:exclusive_lobby_mount
 execute if entity @s[scores={screen=7},advancements={custom/unlock_trident_effect=true}] unless entity @s[nbt={EnderItems:[{id:"minecraft:trident",tag:{clickable:1}}]}] run function chest_menu:exclusive_trident_effect
 execute if entity @s[scores={screen=7},advancements={custom/unlock_death_message=true}] unless entity @s[nbt={EnderItems:[{id:"minecraft:bone",tag:{clickable:1}}]}] run function chest_menu:exclusive_death_message
+
+execute if entity @s[scores={screen=8}] unless entity @s[nbt={EnderItems:[{id:"minecraft:barrier",tag:{clickable:1}}]}] run function chest_menu:start
+execute if entity @s[scores={screen=8}] if entity @s[nbt={EnderItems:[{id:"minecraft:barrier",tag:{clickable:1}}]}] run function chest_menu:start_tournaments
+
+execute if entity @s[scores={screen=99}] run function chest_menu:click_titles

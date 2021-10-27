@@ -7,6 +7,7 @@ scoreboard players operation $long_left generation = $long generation
 scoreboard players operation $med_left generation = $med generation
 scoreboard players operation $small_left generation = $small generation
 forceload add 2340 127 1980 -21
+forceload add 2340 127 2405 -21
 forceload add 1070 341 920 100
 forceload add 1070 99 920 -91
 fill 1026 172 286 1016 182 44 air

@@ -12,6 +12,6 @@ summon minecraft:villager -18 73 -20 {Invulnerable:1b,Rotation:[-45.0f,0.0f],Tag
 summon minecraft:villager -22 74.5 -7 {Invulnerable:1b,Rotation:[-90.0f,0.0f],Tags:["market_villager","fabric_market"],Offers:{},VillagerData:{type:"minecraft:snow",level:100,profession:"cleric"},NoAI:1b,Silent:1b}
 summon minecraft:witch -21 75 6 {Invulnerable:1b,Rotation:[-90.0f,0.0f],Tags:["market_villager","potion_market"],NoAI:1b,Silent:1b,PersistenceRequired:1b}
 
-
+summon minecraft:villager 56 68 -54.0 {Invulnerable:1b,Rotation:[-90.0f,0.0f],Tags:["market_villager","mining_market"],Offers:{},VillagerData:{type:"minecraft:snow",level:100,profession:"armorer"},NoAI:1b,Silent:1b}
 
 

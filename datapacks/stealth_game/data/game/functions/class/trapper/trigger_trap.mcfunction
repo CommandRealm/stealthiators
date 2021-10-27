@@ -1,5 +1,5 @@
-effect give @s slowness 5 4 true
-effect give @s glowing 5 4
+effect give @s slowness 2 4 true
+effect give @s glowing 2 4
 scoreboard players set @s adv_kill_trap 200
 playsound minecraft:ui.stonecutter.take_result master @s ~ ~ ~ 1 0
 playsound minecraft:block.note_block.bell master @a[tag=playing,team=gladiator] ~ ~ ~ 10000 0.55

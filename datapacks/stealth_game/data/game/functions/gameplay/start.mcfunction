@@ -31,6 +31,7 @@ scoreboard players reset @a right_click
 scoreboard objectives remove band_number
 scoreboard objectives add band_number dummy
 scoreboard players reset @a dash_cooldown
+scoreboard players set @a[team=gladiator] dash_cooldown 200
 scoreboard players reset @a door_cooldown
 scoreboard players reset @a blind_cooldown
 scoreboard players reset @a locator
@@ -52,27 +53,9 @@ scoreboard objectives remove runner_id
 scoreboard objectives add runner_id dummy
 tag @a remove used_revive
 tag @a remove using_revive
-tag @a remove get_id
-tag @r[tag=playing,tag=!get_id,team=sneaker] add get_id
-scoreboard players add @a[tag=get_id,team=sneaker] runner_id 1
-tag @r[tag=playing,tag=!get_id,team=sneaker] add get_id
-scoreboard players add @a[tag=get_id,team=sneaker] runner_id 1
-tag @r[tag=playing,tag=!get_id,team=sneaker] add get_id
-scoreboard players add @a[tag=get_id,team=sneaker] runner_id 1
-tag @r[tag=playing,tag=!get_id,team=sneaker] add get_id
-scoreboard players add @a[tag=get_id,team=sneaker] runner_id 1
-tag @r[tag=playing,tag=!get_id,team=sneaker] add get_id
-scoreboard players add @a[tag=get_id,team=sneaker] runner_id 1
-tag @r[tag=playing,tag=!get_id,team=sneaker] add get_id
-scoreboard players add @a[tag=get_id,team=sneaker] runner_id 1
-tag @r[tag=playing,tag=!get_id,team=sneaker] add get_id
-scoreboard players add @a[tag=get_id,team=sneaker] runner_id 1
-tag @r[tag=playing,tag=!get_id,team=sneaker] add get_id
-scoreboard players add @a[tag=get_id,team=sneaker] runner_id 1
-tag @r[tag=playing,tag=!get_id,team=sneaker] add get_id
-scoreboard players add @a[tag=get_id,team=sneaker] runner_id 1
-tag @r[tag=playing,tag=!get_id,team=sneaker] add get_id
-scoreboard players add @a[tag=get_id,team=sneaker] runner_id 1
+scoreboard players set $id runner_id 0
+execute as @a[tag=playing,team=sneaker,sort=random] at @s run function game:gameplay/generate_id
+
 effect give @a[team=gladiator] invisibility 100 255 true
 function game:gameplay/start_round
 
@@ -87,7 +70,7 @@ tellraw @a[tag=playing,team=gladiator,scores={g_class=3}] [{"text":"You are ","c
 tellraw @a[tag=playing,team=gladiator,scores={g_class=4}] [{"text":"You are ","color":"#ba666a"},{"text":"ARBALIST","bold":true,"color":"red"}]
 
 tellraw @a[tag=playing,team=sneaker,scores={r_class=1}] [{"text":"Info: ","color":"gold"},{"text":"The Brawler can stun gladiators by punching.","italic":true,"color":"gray"}]
-tellraw @a[tag=playing,team=sneaker,scores={r_class=2}] [{"text":"Info: ","color":"gold"},{"text":"The Alchemist can throw smoke grenades to blind gladiators.","italic":true,"color":"gray"}]
+tellraw @a[tag=playing,team=sneaker,scores={r_class=2}] [{"text":"Info: ","color":"gold"},{"text":"The Alchemist can throw smoke bombs to blind gladiators. You are limited to two smoke bombs.","italic":true,"color":"gray"}]
 tellraw @a[tag=playing,team=sneaker,scores={r_class=3}] [{"text":"Info: ","color":"gold"},{"text":"The Warper can teleport back to their position three seconds ago.","italic":true,"color":"gray"}]
 tellraw @a[tag=playing,team=sneaker,scores={r_class=4}] [{"text":"Info: ","color":"gold"},{"text":"The Medic can revive caught runners by crouching where they died.","italic":true,"color":"gray"}]
 
