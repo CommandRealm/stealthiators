@@ -26,3 +26,6 @@ scoreboard players reset @a jumper_jump
 
 advancement revoke @a only game:hit_fake_boots
 kill @e[type=stray,tag=fake_boots]
+
+
+scoreboard players set $player_finish game 0
