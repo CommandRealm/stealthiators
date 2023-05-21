@@ -39,6 +39,7 @@ tag @s remove talked_to_12
 tag @s remove talked_to_13
 
 function general:update_roles
+execute if entity @s[tag=has_submitter] run scoreboard players set @s prefix 50
 
 scoreboard players set @s prefix -1
 execute if entity @s[tag=has_cr] run scoreboard players set @s prefix 99

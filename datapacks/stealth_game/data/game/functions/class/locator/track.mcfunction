@@ -8,6 +8,6 @@ execute store result block 0 0 0 Items[0].tag.LodestonePos.Y int 1 run data get 
 execute store result block 0 0 0 Items[0].tag.LodestonePos.Z int 1 run data get entity @p[tag=playing,team=sneaker,gamemode=adventure] Pos[2]
 loot replace entity @s hotbar.3 1 mine 0 0 0 stone{drop_contents:true}
 scoreboard players set @s locator 700
-tellraw @p[tag=playing,team=sneaker,gamemode=adventure] {"text":"The gladiator has tracked your location! Reposition yourself!","color":"dark_red"}
-execute as @p[tag=playing,team=sneaker,gamemode=adventure] at @s run playsound minecraft:entity.zombie.death master @s ~ ~ ~ 1 0
-playsound minecraft:block.iron_trapdoor.close master @s ~ ~ ~ 100 2
+# tellraw @p[tag=playing,team=sneaker,gamemode=adventure] {"text":"The gladiator has tracked your location! Reposition yourself!","color":"dark_red"}
+# execute as @p[tag=playing,team=sneaker,gamemode=adventure] at @s run playsound minecraft:entity.zombie.death master @s ~ ~ ~ 1 0
+# playsound minecraft:block.iron_trapdoor.close master @s ~ ~ ~ 100 2

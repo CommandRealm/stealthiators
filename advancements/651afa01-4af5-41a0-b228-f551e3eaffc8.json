@@ -1,3 +1,15 @@
 {
-  "DataVersion": 2580
+  "minecraft:custom/complete_tutorial": {
+    "criteria": {
+      "impossible": "2022-12-04 03:18:19 +0000"
+    },
+    "done": true
+  },
+  "minecraft:custom/root": {
+    "criteria": {
+      "tick": "2022-12-04 03:18:01 +0000"
+    },
+    "done": true
+  },
+  "DataVersion": 3120
 }

@@ -1,9 +1,27 @@
 {
-  "minecraft:custom/root": {
+  "minecraft:custom/hit_bullseye": {
     "criteria": {
-      "tick": "2021-10-27 13:13:37 -0700"
+      "impossible": "2022-12-09 20:24:59 -0800"
     },
     "done": true
   },
-  "DataVersion": 2730
+  "minecraft:custom/complete_tutorial": {
+    "criteria": {
+      "impossible": "2022-12-09 20:11:51 -0800"
+    },
+    "done": true
+  },
+  "minecraft:custom/root": {
+    "criteria": {
+      "tick": "2022-12-07 22:07:25 -0800"
+    },
+    "done": true
+  },
+  "minecraft:custom/hundred_points": {
+    "criteria": {
+      "impossible": "2022-12-09 20:25:23 -0800"
+    },
+    "done": true
+  },
+  "DataVersion": 3218
 }

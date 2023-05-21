@@ -4,7 +4,7 @@ execute if entity @s[scores={screen=0}] unless entity @s[nbt={EnderItems:[{id:"m
 execute if entity @s[scores={screen=0}] unless entity @s[nbt={EnderItems:[{id:"minecraft:golden_helmet",tag:{clickable:1}}]}] run function chest_menu:start_cosmetics
 execute if entity @s[scores={screen=0}] unless entity @s[nbt={EnderItems:[{id:"minecraft:command_block",tag:{clickable:1}}]}] run function chest_menu:start_credits
 execute if entity @s[scores={screen=0}] unless entity @s[nbt={EnderItems:[{id:"minecraft:chiseled_deepslate",tag:{clickable:1}}]}] run function chest_menu:start_tournaments
-execute if entity @s[scores={screen=0}] unless entity @s[tag=!has_test,tag=!has_help,tag=!has_bld,tag=!has_srbld,tag=!has_prg,tag=!has_srprg,tag=!has_manager,tag=!has_lead,tag=!has_pc,tag=!has_cr,tag=!has_art] unless entity @s[nbt={EnderItems:[{id:"minecraft:written_book",tag:{clickable:1}}]}] run function chest_menu:start_titles
+execute if entity @s[scores={screen=0}] unless entity @s[tag=!has_test,tag=!has_help,tag=!has_bld,tag=!has_srbld,tag=!has_prg,tag=!has_srprg,tag=!has_manager,tag=!has_lead,tag=!has_pc,tag=!has_submitter,tag=!has_cr,tag=!has_art] unless entity @s[nbt={EnderItems:[{id:"minecraft:written_book",tag:{clickable:1}}]}] run function chest_menu:start_titles
 
 execute if entity @s[scores={screen=1}] unless entity @s[nbt={EnderItems:[{id:"minecraft:barrier",tag:{clickable:1}}]}] run function chest_menu:start
 execute if entity @s[scores={screen=1}] unless entity @s[nbt={EnderItems:[{id:"minecraft:saddle",tag:{clickable:1}}]}] run function chest_menu:start_mounts

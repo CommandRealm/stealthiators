@@ -1,5 +1,5 @@
 scoreboard players set $winners calculate 0
-team join won @a[team=dead]
+# team join won @a[team=dead]
 execute as @a[team=won] at @s run scoreboard players add $winners calculate 1
 team join gold @a[team=won]
 execute if score $winners calculate matches 2.. run tellraw @a [{"text":"Runners win!\n","color":"dark_gray"},{"text":"The winners were: ","color":"gray"},{"selector":"@a[team=gold]"}]

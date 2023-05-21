@@ -22,6 +22,12 @@ tag Bodi25 add has_pc
 tag pcgus add has_pc
 tag MelonKattt add has_melon
 
+tag Catamity add has_submitter
+tag JaxF2008 add has_submitter
+tag Quackleb add has_submitter
+tag Captonium add has_submitter
+tag MelonKattt add has_submitter
+tag TheTurtleDan add has_submitter
 
 ##Those who have tester
 tag FalconReign add has_test
@@ -60,6 +66,12 @@ tag Pulluxx add has_test
 tag Moesh add has_test
 tag MelonKattt add has_test
 tag EdLePug add has_test
+tag 3letters_ add has_test
+tag 4953makcim add has_test
+tag Ardak78 add has_test
+tag MousePlayerTwo add has_test
+tag Silent04_ add has_test
+tag TheTurtleDan add has_test
 
 # help
 tag FalconReign add has_help
@@ -81,11 +93,12 @@ tag Captonium add has_help
 tag CheeseUnused add has_help
 tag Bagee add has_help
 tag EdlePug add has_help
-tag knad add has_help
+tag admius add has_help
 tag BobaFate add has_help
 tag Beybwug add has_help
 tag pcgus add has_help
-
+tag joelzoboyo add has_help
+tag TheTurtleDan add has_help
 
 
 # bld
@@ -107,10 +120,10 @@ tag Captonium add has_bld
 tag CheeseUnused add has_bld
 tag Bagee add has_bld
 tag EdlePug add has_bld
-tag knad add has_bld
+tag admius add has_bld
 tag BobaFate add has_bld
 tag Beybwug add has_bld
-
+tag TheTurtleDan add has_bld
 
 
 # sr bld
@@ -136,7 +149,7 @@ tag FalconReign add has_lead
 # tournament
 tag FalconReign add has_tournament
 tag TheViralMelon add has_tournament
-tag NoahOfOoo add has_tournament
+tag Silent04_ add has_tournament
 
 # cr
 tag FalconReign add has_cr
@@ -148,19 +161,28 @@ tag TheTypicalMex add has_cr
 tag Calverin add has_cr
 tag ChipChase add has_cr
 tag CheckMC add has_cr
-tag sac11221 add has_cr
 tag SmallDeemo add has_cr
 tag Focii_ add has_cr
 tag pcgus add has_cr
 tag Bodi25 add has_cr
 tag EdLePug add has_cr
 tag Bagee add has_cr
-tag That_Man add has_cr
 tag BobaFate add has_cr
-tag knad add has_cr
-tag OwenEquinox add has_cr
-tag taalaingg add has_cr
+tag admius add has_cr
 tag Urgle add has_cr
+tag joelzoboyo add has_cr
+tag Quackleb add has_cr
+tag TheTurtleDan add has_cr
+tag Beybwug add has_cr
+tag vixy_11 add has_cr
+tag Shullker add has_cr
+tag bluepower add has_cr
+tag Coraze add has_cr
+tag Mezimo add has_cr
+tag oPando add has_cr
+tag pogglin add has_cr
+tag Pinkessi add has_cr
+tag Icy_Craby add has_cr
 
 # art
 tag EdLePug add has_art

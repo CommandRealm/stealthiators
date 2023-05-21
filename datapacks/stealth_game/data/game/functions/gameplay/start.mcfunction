@@ -59,25 +59,6 @@ execute as @a[tag=playing,team=sneaker,sort=random] at @s run function game:game
 effect give @a[team=gladiator] invisibility 100 255 true
 function game:gameplay/start_round
 
-tellraw @a[tag=playing,team=sneaker,scores={r_class=1}] [{"text":"You are ","color":"gray"},{"text":"BRAWLER","bold":true,"color":"dark_gray"}]
-tellraw @a[tag=playing,team=sneaker,scores={r_class=2}] [{"text":"You are ","color":"gray"},{"text":"ALCHEMIST","bold":true,"color":"dark_gray"}]
-tellraw @a[tag=playing,team=sneaker,scores={r_class=3}] [{"text":"You are ","color":"gray"},{"text":"WARPER","bold":true,"color":"dark_gray"}]
-tellraw @a[tag=playing,team=sneaker,scores={r_class=4}] [{"text":"You are ","color":"gray"},{"text":"MEDIC","bold":true,"color":"dark_gray"}]
-
-tellraw @a[tag=playing,team=gladiator,scores={g_class=1}] [{"text":"You are ","color":"#ba666a"},{"text":"ATHLETE","bold":true,"color":"red"}]
-tellraw @a[tag=playing,team=gladiator,scores={g_class=2}] [{"text":"You are ","color":"#ba666a"},{"text":"LOCATOR","bold":true,"color":"red"}]
-tellraw @a[tag=playing,team=gladiator,scores={g_class=3}] [{"text":"You are ","color":"#ba666a"},{"text":"TRAPPER","bold":true,"color":"red"}]
-tellraw @a[tag=playing,team=gladiator,scores={g_class=4}] [{"text":"You are ","color":"#ba666a"},{"text":"ARBALIST","bold":true,"color":"red"}]
-
-tellraw @a[tag=playing,team=sneaker,scores={r_class=1}] [{"text":"Info: ","color":"gold"},{"text":"The Brawler can stun gladiators by punching.","italic":true,"color":"gray"}]
-tellraw @a[tag=playing,team=sneaker,scores={r_class=2}] [{"text":"Info: ","color":"gold"},{"text":"The Alchemist can throw smoke bombs to blind gladiators. You are limited to two smoke bombs.","italic":true,"color":"gray"}]
-tellraw @a[tag=playing,team=sneaker,scores={r_class=3}] [{"text":"Info: ","color":"gold"},{"text":"The Warper can teleport back to their position three seconds ago.","italic":true,"color":"gray"}]
-tellraw @a[tag=playing,team=sneaker,scores={r_class=4}] [{"text":"Info: ","color":"gold"},{"text":"The Medic can revive caught runners by crouching where they died.","italic":true,"color":"gray"}]
-
-tellraw @a[tag=playing,team=gladiator,scores={g_class=1}] [{"text":"Info: ","color":"gold"},{"text":"The Athlete has a shorter dash cooldown.","italic":true,"color":"#ba666a"}]
-tellraw @a[tag=playing,team=gladiator,scores={g_class=2}] [{"text":"Info: ","color":"gold"},{"text":"The Locator gets a compass that points to the nearest runner at the time of use.","italic":true,"color":"#ba666a"}]
-tellraw @a[tag=playing,team=gladiator,scores={g_class=3}] [{"text":"Info: ","color":"gold"},{"text":"The Trapper starts with two runner traps. Trapper will receive an additional one for each band that is stepped on, up to two traps in total. The runners will receive slowness and glowing when activating a trap. The Trapper class can warp to triggered traps.","italic":true,"color":"#ba666a"}]
-tellraw @a[tag=playing,team=gladiator,scores={g_class=4}] [{"text":"Info: ","color":"gold"},{"text":"The Arbalist starts with a preloaded crossbow that can be shot up to five times.","italic":true,"color":"#ba666a"}]
 scoreboard players set @a warp_cooldown 0
 scoreboard players set @a stun_timer 0
 scoreboard players operation $time timer = $time set_timer
@@ -99,3 +80,60 @@ scoreboard players set @a[tag=playing] adv_near_glad 0
 
 scoreboard objectives remove adv_blocks_run
 scoreboard objectives add adv_blocks_run minecraft.custom:minecraft.sprint_one_cm
+
+
+# removing revive tags
+tag @a remove revived_by_1
+tag @a remove revived_by_2
+tag @a remove revived_by_3
+tag @a remove revived_by_4
+tag @a remove revived_by_5
+tag @a remove revived_by_6
+tag @a remove revived_by_7
+tag @a remove revived_by_8
+tag @a remove revived_by_9
+
+tag @a remove revived_by_10
+tag @a remove revived_by_11
+tag @a remove revived_by_12
+tag @a remove revived_by_13
+tag @a remove revived_by_14
+tag @a remove revived_by_15
+tag @a remove revived_by_16
+tag @a remove revived_by_17
+tag @a remove revived_by_18
+tag @a remove revived_by_19
+
+tag @a remove revived_by_20
+tag @a remove revived_by_21
+tag @a remove revived_by_22
+tag @a remove revived_by_23
+tag @a remove revived_by_24
+tag @a remove revived_by_25
+tag @a remove revived_by_26
+tag @a remove revived_by_27
+tag @a remove revived_by_28
+tag @a remove revived_by_29
+
+tag @a remove revived_by_30
+tag @a remove revived_by_31
+tag @a remove revived_by_32
+tag @a remove revived_by_33
+tag @a remove revived_by_34
+tag @a remove revived_by_35
+tag @a remove revived_by_36
+tag @a remove revived_by_37
+tag @a remove revived_by_38
+tag @a remove revived_by_39
+
+tag @a remove revived_by_40
+tag @a remove revived_by_41
+tag @a remove revived_by_42
+tag @a remove revived_by_43
+tag @a remove revived_by_44
+tag @a remove revived_by_45
+tag @a remove revived_by_46
+tag @a remove revived_by_47
+tag @a remove revived_by_48
+tag @a remove revived_by_49
+tag @a remove revived_by_50

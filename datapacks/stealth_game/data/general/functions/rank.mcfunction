@@ -15,6 +15,8 @@ team join manager @s[scores={prefix=6}]
 
 team join lead @s[scores={prefix=7}]
 
+team join submitter @s[scores={prefix=50}]
+
 team join art @s[scores={prefix=8}]
 
 

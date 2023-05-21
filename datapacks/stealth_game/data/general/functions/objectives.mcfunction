@@ -35,7 +35,9 @@ team modify lead prefix [{"text":"{","color":"dark_purple","bold":true},{"text":
 team modify manager prefix {"text":"{Manager} ","color":"yellow"}
 team modify art prefix {"text":"{Artist} ","color":"green"}
 
-
+team add submitter
+team modify submitter color gray
+team modify submitter prefix [{"text":"(","color":"gold","bold":true},{"text":"Submitter","bold":false,"color":"gray"},{"text":") ","bold":true}]
 
 team add melon
 team modify melon color gray
@@ -134,6 +136,7 @@ scoreboard objectives add stun_timer dummy
 gamerule sendCommandFeedback false
 gamerule commandBlockOutput false
 scoreboard objectives add arbalist_arrow dummy
+scoreboard objectives add revives dummy
 bossbar remove lobby
 bossbar add lobby [{"text":" | ","color":"red","obfuscated":true,"bold":false},{"text":"Stealthiators","color":"dark_gray","bold":true,"obfuscated":false},{"text":" - ","color":"gray","bold":false,"obfuscated":false},{"text":"By the ","color":"white","obfuscated":false,"underlined":false,"extra":[{"text":"Command","color":"aqua","bold":true,"obfuscated":false,"extra":[{"text":" Realm","color":"dark_aqua","extra":[{"text":" Team","bold":false,"color":"white"}]}]}]},{"text":" | ","color":"red","obfuscated":true,"bold":false}]
 bossbar set lobby color yellow

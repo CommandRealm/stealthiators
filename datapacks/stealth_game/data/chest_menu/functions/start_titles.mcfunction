@@ -22,6 +22,7 @@ item replace entity @s[tag=has_pc] enderchest.26 with book{clickable:1,HideFlags
 item replace entity @s[tag=has_melon] enderchest.25 with book{clickable:1,HideFlags:63,display:{Name:'[{"text":"(","color":"red","italic":false},{"text":"Melon","color":"green","bold":true},{"text":")","color":"red"}]'}}
 item replace entity @s[tag=has_tournament] enderchest.24 with book{clickable:1,HideFlags:63,display:{Name:'[{"text":"(","color":"dark_gray","italic":false,"bold":true},{"text":"Tournament","color":"gray","bold":false},{"text":")","color":"dark_gray","bold":true}]'}}
 
+item replace entity @s[tag=has_submitter] enderchest.23 with book{clickable:1,HideFlags:63,display:{Name:'[{"text":"(","color":"gold","italic":false,"bold":true},{"text":"Submitter","color":"gray","bold":false},{"text":")","color":"gold","bold":true}]'}}
 
 item replace entity @s[scores={prefix=0}] enderchest.0 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"text":"(Tester)","bold":false,"italic":false,"color":"gray"}]'}}
 item replace entity @s[scores={prefix=1}] enderchest.1 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"text":"[Helper]","bold":false,"italic":false,"color":"dark_gray"}]'}}
@@ -37,6 +38,7 @@ item replace entity @s[scores={prefix=-2}] enderchest.26 with written_book{inval
 item replace entity @s[scores={prefix=-3}] enderchest.25 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"text":"(","color":"red","italic":false},{"text":"Melon","color":"green","bold":true},{"text":")","color":"red"}]'}}
 item replace entity @s[scores={prefix=98}] enderchest.24 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"text":"(","color":"dark_gray","italic":false,"bold":true},{"text":"Tournament","color":"gray","bold":false},{"text":")","color":"dark_gray","bold":true}]'}}
 
+item replace entity @s[scores={prefix=50}] enderchest.23 with written_book{invalid_click:1,clickable:1,HideFlags:63,display:{Name:'[{"text":"(","color":"gold","italic":false,"bold":true},{"text":"Submitter","color":"gray","bold":false},{"text":")","color":"gold","bold":true}]'}}
 
 # 
 item replace entity @s enderchest.18 with barrier{clickable:1,HideFlags:63,display:{Name:'[{"text":"Back","bold":true,"italic":false,"color":"#ff0000"}]'}}

@@ -25,7 +25,7 @@ execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity 
 
 execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=credits_bagee,distance=..0.5] run title @s title {"text":"Bagee","color":"#9c9558"}
 execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=credits_pug,distance=..0.5] run title @s title {"text":"EdLePug","color":"#9c9558"}
-execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=credits_knad,distance=..0.5] run title @s title {"text":"knad","color":"#9c9558"}
+execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=credits_knad,distance=..0.5] run title @s title {"text":"admius","color":"#9c9558"}
 execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=credits_boba,distance=..0.5] run title @s title {"text":"BobaFate","color":"#9c9558"}
 execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=credits_beybwug,distance=..0.5] run title @s title {"text":"Beybwug","color":"#9c9558"}
 execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=credits_gus,distance=..0.5] run title @s title {"text":"pcgus","color":"#9c9558"}
@@ -49,3 +49,8 @@ execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity 
 execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=credits_boba,distance=..0.5] run title @s subtitle {"text":"Builder","color":"white"}
 execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=credits_beybwug,distance=..0.5] run title @s subtitle {"text":"Builder","color":"white"}
 execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=credits_gus,distance=..0.5] run title @s subtitle {"text":"Voice Actor","color":"white"}
+
+execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=credits_dan,distance=..0.5] run title @s subtitle {"text":"Builder","color":"white"}
+execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=credits_joel,distance=..0.5] run title @s subtitle {"text":"Helper","color":"white"}
+execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=credits_dan,distance=..0.5] run title @s title {"text":"TheTurtleDan","color":"white"}
+execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=credits_joel,distance=..0.5] run title @s title {"text":"Joelzoboyo","color":"white"}

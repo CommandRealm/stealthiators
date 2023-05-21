@@ -8,7 +8,7 @@ tp @s @p[tag=playing,team=sneaker]
 tp @s @p[tag=playing,team=gladiator]
 scoreboard players set @s back_to_lobby 0
 execute at @s run playsound minecraft:block.anvil.place master @s ~ ~ ~ 0.25 0.65
-tag @s remove been_gladiator
+# tag @s remove been_gladiator
 scoreboard players add @s points 0
 tag @s add playing
 advancement grant @a[tag=playing] only minecraft:custom/play_game

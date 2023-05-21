@@ -330,8 +330,8 @@ execute if score $rand random matches 103 run clone 2127 234 68 2195 247 92 ~ 15
 execute if score $rand random matches 104 run clone 2127 218 94 2195 233 118 ~ ~ ~
 execute if score $rand random matches 104 run clone 2127 234 94 2195 247 118 ~ 151 ~
 
-execute if score $rand random matches 105 run clone 2127 218 146 2195 233 170 ~ ~ ~
-execute if score $rand random matches 105 run clone 2127 234 146 2195 247 170 ~ 151 ~
+execute if score $rand random matches 105 run clone 2127 254 16 2195 269 40 ~ ~ ~
+execute if score $rand random matches 105 run clone 2127 270 146 2195 283 170 ~ 151 ~
 
 execute if score $rand random matches 106 run clone 2197 218 16 2265 233 40 ~ ~ ~
 execute if score $rand random matches 106 run clone 2197 234 16 2265 247 40 ~ 151 ~
@@ -345,8 +345,8 @@ execute if score $rand random matches 108 run clone 2197 234 68 2265 247 92 ~ 15
 execute if score $rand random matches 109 run clone 2197 218 94 2265 233 118 ~ ~ ~
 execute if score $rand random matches 109 run clone 2197 234 94 2265 247 118 ~ 151 ~
 
-execute if score $rand random matches 110 run clone 2197 218 146 2265 233 170 ~ ~ ~
-execute if score $rand random matches 110 run clone 2197 234 146 2265 247 170 ~ 151 ~
+execute if score $rand random matches 110 run clone 2197 254 16 2265 269 40 ~ ~ ~
+execute if score $rand random matches 110 run clone 2197 270 16 2265 283 40 ~ 151 ~
 
 
 execute if score $rand random matches 111 run clone 2267 218 16 2335 233 40 ~ ~ ~
@@ -364,8 +364,8 @@ execute if score $rand random matches 114 run clone 2267 234 94 2335 247 118 ~ 1
 execute if score $rand random matches 115 run clone 2267 218 120 2335 233 144 ~ ~ ~
 execute if score $rand random matches 115 run clone 2267 234 120 2335 247 144 ~ 151 ~
 
-execute if score $rand random matches 116 run clone 2267 218 146 2335 233 170 ~ ~ ~
-execute if score $rand random matches 116 run clone 2267 234 146 2335 247 170 ~ 151 ~
+execute if score $rand random matches 116 run clone 2267 254 16 2335 269 40 ~ ~ ~
+execute if score $rand random matches 116 run clone 2267 270 16 2335 283 40 ~ 151 ~
 
 
 execute if score $rand random matches 117 run clone 2337 218 16 2405 233 40 ~ ~ ~
@@ -380,11 +380,48 @@ execute if score $rand random matches 119 run clone 2337 234 68 2405 247 92 ~ 15
 execute if score $rand random matches 120 run clone 2337 218 94 2405 233 118 ~ ~ ~
 execute if score $rand random matches 120 run clone 2337 234 94 2405 247 118 ~ 151 ~
 
-execute if score $rand random matches 121 run clone 2337 218 146 2405 233 170 ~ ~ ~
-execute if score $rand random matches 121 run clone 2337 234 146 2405 247 170 ~ 151 ~
+execute if score $rand random matches 121 run clone 2337 254 16 2405 269 40 ~ ~ ~
+execute if score $rand random matches 121 run clone 2337 270 16 2405 283 40 ~ 151 ~
 
 
-#
+# 1.19 segments
+execute if score $rand random matches 122 run clone 1987 110 -12 2055 125 12 ~ ~ ~
+execute if score $rand random matches 122 run clone 1987 126 -12 2055 139 12 ~ 151 ~
+
+execute if score $rand random matches 123 run clone 1987 110 16 2055 125 40 ~ ~ ~
+execute if score $rand random matches 123 run clone 1987 126 16 2055 139 40 ~ 151 ~
+
+execute if score $rand random matches 124 run clone 1987 110 44 2055 125 68 ~ ~ ~
+execute if score $rand random matches 124 run clone 1987 126 44 2055 139 68 ~ 151 ~
+
+execute if score $rand random matches 125 run clone 1987 110 72 2055 125 96 ~ ~ ~
+execute if score $rand random matches 125 run clone 1987 126 72 2055 139 96 ~ 151 ~
+
+execute if score $rand random matches 126 run clone 1987 110 100 2055 125 126 ~ ~ ~
+execute if score $rand random matches 126 run clone 1987 126 100 2055 139 126 ~ 151 ~
+
+execute if score $rand random matches 127 run clone 2057 110 -12 2125 125 12 ~ ~ ~
+execute if score $rand random matches 127 run clone 2057 126 -12 2125 139 12 ~ 151 ~
+
+execute if score $rand random matches 128 run clone 2057 110 16 2125 125 40 ~ ~ ~
+execute if score $rand random matches 128 run clone 2057 126 16 2125 139 40 ~ 151 ~
+
+execute if score $rand random matches 129 run clone 2057 110 44 2125 125 68 ~ ~ ~
+execute if score $rand random matches 129 run clone 2057 126 44 2125 139 68 ~ 151 ~
+
+execute if score $rand random matches 130 run clone 2057 110 72 2125 125 96 ~ ~ ~
+execute if score $rand random matches 130 run clone 2057 126 72 2125 139 96 ~ 151 ~
+
+execute if score $rand random matches 131 run clone 2057 110 100 2125 125 126 ~ ~ ~
+execute if score $rand random matches 131 run clone 2057 126 100 2125 139 126 ~ 151 ~
+
+execute if score $rand random matches 132 run clone 2127 110 -12 2195 125 12 ~ ~ ~
+execute if score $rand random matches 132 run clone 2127 126 -12 2195 139 12 ~ 151 ~
+
+execute if score $rand random matches 133 run clone 2267 74 44 2335 89 68 ~ ~ ~
+execute if score $rand random matches 133 run clone 2267 90 44 2335 103 68 ~ 151 ~
+
+
 
 scoreboard players remove $long_left generation 1
 scoreboard players remove $segments_left generation 1

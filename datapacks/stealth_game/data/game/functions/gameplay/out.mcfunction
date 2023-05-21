@@ -122,6 +122,8 @@ execute if score $players game matches 6.. run scoreboard players set @e[type=ar
 execute if score $players game matches 7.. run scoreboard players set @e[type=area_effect_cloud,tag=set_revive_timer] revive_timer 10
 execute if score $players game matches 8.. run scoreboard players set @e[type=area_effect_cloud,tag=set_revive_timer] revive_timer 0
 
+tag @e[type=area_effect_cloud,tag=set_revive_timer] remove set_revive_timer
+
 
 team join dark_gray
 execute if entity @s[scores={death_msg=0}] run tellraw @a[tag=playing] [{"selector":"@s"},{"text":" is out.","color":"gold"}]
@@ -156,7 +158,7 @@ advancement grant @a[tag=playing,team=gladiator,scores={damage_dealt=1..}] only 
 advancement grant @a[tag=playing,team=gladiator,scores={damage_dealt=1..,adv_backdoor=1..}] only minecraft:custom/kill_after_backdoor
 execute if entity @s[tag=playing,scores={adv_kill_trap=1..}] run advancement grant @p[tag=playing,team=gladiator,scores={damage_dealt=1..}] only minecraft:custom/trap_kill
 execute at @e[type=minecraft:area_effect_cloud,tag=final_hallway] positioned ~-14 ~-50 ~-27 at @s[dx=27,dz=9,dy=150] run advancement grant @p[tag=playing,team=gladiator,scores={damage_dealt=1..}] only minecraft:custom/kill_on_finish_line
-advancement grant @a[tag=playing,team=gladiator,scores={damage_dealt=1..},nbt={ActiveEffects:[{Id:1b}]}] only minecraft:custom/dash_kill
+advancement grant @a[tag=playing,team=gladiator,scores={damage_dealt=1..},nbt={ActiveEffects:[{Id:1}]}] only minecraft:custom/dash_kill
 scoreboard players reset @p[tag=playing,team=gladiator,scores={damage_dealt=1..}] damage_dealt
 advancement grant @a[tag=playing,team=gladiator,advancements={custom/punch_runner=true,custom/dash_kill=true,custom/use_backdoor=true,custom/kill_after_backdoor=true,custom/trap_kill=true,custom/kill_on_finish_line=true,custom/unlock_trident_effect=false}] only minecraft:custom/unlock_trident_effect
 gamemode spectator @s

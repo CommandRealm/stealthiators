@@ -1,4 +1,3 @@
-execute as @a[scores={r_class=4,revive_crouch=1..},tag=playing,gamemode=adventure,team=sneaker,distance=..2,tag=using_revive] at @s run function game:class/medic/tags
 execute if entity @s[tag=revive_1] as @a[tag=playing,team=dead,scores={runner_id=1}] run function game:class/medic/revived
 execute if entity @s[tag=revive_2] as @a[tag=playing,team=dead,scores={runner_id=2}] run function game:class/medic/revived
 execute if entity @s[tag=revive_3] as @a[tag=playing,team=dead,scores={runner_id=3}] run function game:class/medic/revived
@@ -54,6 +53,7 @@ execute if entity @s[tag=revive_48] as @a[tag=playing,team=dead,scores={runner_i
 execute if entity @s[tag=revive_49] as @a[tag=playing,team=dead,scores={runner_id=49}] run function game:class/medic/revived
 execute if entity @s[tag=revive_50] as @a[tag=playing,team=dead,scores={runner_id=50}] run function game:class/medic/revived
 
+execute as @a[scores={r_class=4,revive_crouch=1..},tag=playing,gamemode=adventure,team=sneaker,distance=..2,tag=using_revive] at @s run function game:class/medic/tags
 
 
 execute as @a[tag=playing] at @s run playsound minecraft:entity.arrow.hit_player master @s ~ ~ ~ 1000 1.5
