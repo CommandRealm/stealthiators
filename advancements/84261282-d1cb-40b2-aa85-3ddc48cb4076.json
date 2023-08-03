@@ -1,7 +1,7 @@
 {
-  "minecraft:custom/hit_bullseye": {
+  "minecraft:custom/root": {
     "criteria": {
-      "impossible": "2022-12-09 20:24:59 -0800"
+      "tick": "2022-12-07 22:07:25 -0800"
     },
     "done": true
   },
@@ -11,9 +11,9 @@
     },
     "done": true
   },
-  "minecraft:custom/root": {
+  "minecraft:custom/hit_bullseye": {
     "criteria": {
-      "tick": "2022-12-07 22:07:25 -0800"
+      "impossible": "2022-12-09 20:24:59 -0800"
     },
     "done": true
   },
@@ -23,5 +23,11 @@
     },
     "done": true
   },
-  "DataVersion": 3218
+  "minecraft:custom/play_game": {
+    "criteria": {
+      "impossible": "2023-06-14 18:45:59 -0700"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
 }
