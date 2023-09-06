@@ -10,7 +10,7 @@ effect give @s blindness 5 0 false
 effect give @s weakness 2 255 false
 
 # announcement
-tellraw @a[tag=playing] {"text":"A gladiator has attacked fake boots. They've been stunned!","color":"#caa541"}
+tellraw @a[tag=playing] {"translate":"A gladiator has attacked fake boots. They've been stunned!","color":"#caa541"}
 playsound minecraft:block.netherite_block.break master @a[tag=playing] ~ ~ ~ 1000 0.5
 playsound minecraft:block.netherite_block.break master @a[tag=playing] ~ ~ ~ 1000 0.67
 playsound minecraft:block.netherite_block.break master @a[tag=playing] ~ ~ ~ 1000 0.75

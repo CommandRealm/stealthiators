@@ -5,10 +5,10 @@ scoreboard players reset $gladiator cooldown
 gamemode spectator @a[tag=playing]
 scoreboard players add @a[team=won] points 1
 scoreboard players add @a[team=dead] points 1
-title @a[tag=playing] title [{"text":"Runners Win!","color":"gray"}]
+title @a[tag=playing] title [{"translate":"Runners Win!","color":"gray"}]
 execute as @a[tag=playing] at @s run playsound minecraft:custom.runners_win voice @s ~ ~ ~ 1000000 1
 bossbar set minecraft:game_timer players
-title @a[tag=playing] subtitle [{"text":" "}]
+title @a[tag=playing] subtitle [{"translate":" "}]
 scoreboard players add @a[team=won,tag=playing] stat_r_win 1
 scoreboard players add @a[team=dead,tag=playing] stat_r_win 1
 advancement grant @a[tag=playing,scores={stat_r_win=1..}] only minecraft:custom/win_as_runner

@@ -7,7 +7,7 @@ execute as @a[scores={intro=100}] at @s run playsound minecraft:custom.intro mas
 execute as @a[scores={intro=135}] at @s run playsound minecraft:custom.intro master @s ~ ~ ~ 100000 1
 execute as @a[scores={intro=100}] at @s run playsound minecraft:custom.breath master @s ~ ~ ~ 1000000 0
 execute as @a[scores={intro=130}] at @s run playsound minecraft:custom.breath master @s ~ ~ ~ 1000000 0.75
-title @a[scores={intro=80}] title {"text":"Stealthiators","color":"dark_gray","bold":true}
-title @a[scores={intro=80}] subtitle [{"text":"By the ","color":"white","bold":false},{"text":"Command","color":"aqua","bold":true},{"text":" Realm","color":"dark_aqua","bold":true},{"text":" Team","color":"white","bold":false}]
+title @a[scores={intro=80}] title {"translate":"Stealthiators","color":"dark_gray","bold":true}
+title @a[scores={intro=80}] subtitle [{"translate":"By the ","color":"white","bold":false},{"translate":"Command","color":"aqua","bold":true},{"translate":" Realm","color":"dark_aqua","bold":true},{"translate":" Team","color":"white","bold":false}]
 scoreboard players set @a[scores={intro=80}] ready 1
 execute as @a[scores={intro=135}] at @s run function lobby:intro/end

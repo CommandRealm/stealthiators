@@ -1,6 +1,6 @@
 playsound minecraft:block.bell.use master @s ~ ~ ~ 1 0
 scoreboard players operation @s highscore = $score lobby_minigame
-tellraw @s {"text":"You have a new highscore!","color":"blue"}
+tellraw @s {"translate":"You have a new highscore!","color":"blue"}
 scoreboard players add $highscore lobby_minigame 0
 scoreboard players operation $check highscore = $score lobby_minigame
 scoreboard players operation $score highscore = $score lobby_minigame

@@ -30,5 +30,5 @@ scoreboard objectives setdisplay sidebar
 scoreboard players set $button pregame 5
 
 
-data modify entity @e[type=area_effect_cloud,tag=start_button_text,limit=1] CustomName set value '[{"text":"- ","color":"gray"},{"text":"🗡","color":"#9c9558","bold":true},{"text":" Start ","color":"gold"},{"text":"🗡","color":"#9c9558","bold":true},{"text":" -","color":"gray"}]'
+data modify entity @e[type=area_effect_cloud,tag=start_button_text,limit=1] CustomName set value '[{"translate":"- ","color":"gray"},{"translate":"🗡","color":"#9c9558","bold":true},{"translate":" Start ","color":"gold"},{"translate":"🗡","color":"#9c9558","bold":true},{"translate":" -","color":"gray"}]'
 data modify entity @e[type=area_effect_cloud,tag=start_button_text,limit=1] CustomNameVisible set value 1b

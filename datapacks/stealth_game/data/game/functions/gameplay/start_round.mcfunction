@@ -9,7 +9,7 @@ scoreboard players set @a[scores={sel_g_class=7}] g_class 7
 scoreboard objectives remove select_class
 scoreboard objectives add select_class trigger
 scoreboard players enable @a[tag=!playing] select_class
-title @a[tag=playing] actionbar {"text":" "}
+title @a[tag=playing] actionbar {"translate":" "}
 bossbar set lobby players @a[tag=!playing]
 tag @a remove infected_gladiator
 fill 987 125 13 1055 125 107 diamond_block replace minecraft:stone

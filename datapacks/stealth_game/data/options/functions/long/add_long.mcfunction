@@ -5,7 +5,7 @@ playsound minecraft:ui.button.click master @s
 
 
 
-setblock 28 67 -53 oak_wall_sign[facing=south]{front_text:{messages:['{"text":"Long width","color":"yellow","bold":true,"clickEvent":{"action":"run_command","value":"/execute if score $game state matches 1.. run function options:error"}}', '{"text":"segments:","color":"yellow","bold":true,"clickEvent":{"action":"run_command","value":"/execute if score $auto generation matches 1 run function options:invalid_generation"}}', '{"score":{"objective":"custom_gen","name":"$long"},"color":"gray"}', '{"text":"<<<         >>>","color":"#91b0be","bold":true,"clickEvent":{"action":"run_command","value":"/execute if score $auto generation matches 0 as @s at @s anchored eyes if score $game state matches 0 run function options:long/click_long"}}'], has_glowing_text: false, color: "black"}}
+setblock 28 67 -53 oak_wall_sign[facing=south]{front_text:{messages:['{"translate":"Long width","color":"yellow","bold":true,"clickEvent":{"action":"run_command","value":"/execute if score $game state matches 1.. run function options:error"}}', '{"translate":"segments:","color":"yellow","bold":true,"clickEvent":{"action":"run_command","value":"/execute if score $auto generation matches 1 run function options:invalid_generation"}}', '{"score":{"objective":"custom_gen","name":"$long"},"color":"gray"}', '{"translate":"<<<         >>>","color":"#91b0be","bold":true,"clickEvent":{"action":"run_command","value":"/execute if score $auto generation matches 0 as @s at @s anchored eyes if score $game state matches 0 run function options:long/click_long"}}'], has_glowing_text: false, color: "black"}}
 
 
 particle minecraft:cloud 28 68.5 -54 0 0 0 0.05 10

@@ -24,17 +24,17 @@ execute if score $streak lobby_minigame matches 20.. run scoreboard players add 
 execute if score $streak lobby_minigame matches 25.. run scoreboard players add $score lobby_minigame 1
 scoreboard players add $streak lobby_minigame 1
 
-execute if score $streak lobby_minigame matches 5 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] title {"text":" "}
-execute if score $streak lobby_minigame matches 10 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] title {"text":" "}
-execute if score $streak lobby_minigame matches 15 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] title {"text":" "}
-execute if score $streak lobby_minigame matches 20 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] title {"text":" "}
-execute if score $streak lobby_minigame matches 25 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] title {"text":" "}
+execute if score $streak lobby_minigame matches 5 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] title {"translate":" "}
+execute if score $streak lobby_minigame matches 10 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] title {"translate":" "}
+execute if score $streak lobby_minigame matches 15 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] title {"translate":" "}
+execute if score $streak lobby_minigame matches 20 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] title {"translate":" "}
+execute if score $streak lobby_minigame matches 25 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] title {"translate":" "}
 
-execute if score $streak lobby_minigame matches 5 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] subtitle [{"text":"+5 streak","color":"gold"}]
-execute if score $streak lobby_minigame matches 10 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] subtitle [{"text":"+10 streak","color":"gold"}]
-execute if score $streak lobby_minigame matches 15 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] subtitle [{"text":"+15 streak","color":"gold"}]
-execute if score $streak lobby_minigame matches 20 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] subtitle [{"text":"+20 streak","color":"gold"}]
-execute if score $streak lobby_minigame matches 25 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] subtitle [{"text":"+25 streak","color":"gold"}]
+execute if score $streak lobby_minigame matches 5 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] subtitle [{"translate":"+5 streak","color":"gold"}]
+execute if score $streak lobby_minigame matches 10 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] subtitle [{"translate":"+10 streak","color":"gold"}]
+execute if score $streak lobby_minigame matches 15 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] subtitle [{"translate":"+15 streak","color":"gold"}]
+execute if score $streak lobby_minigame matches 20 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] subtitle [{"translate":"+20 streak","color":"gold"}]
+execute if score $streak lobby_minigame matches 25 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] subtitle [{"translate":"+25 streak","color":"gold"}]
 
 
 
@@ -65,8 +65,8 @@ execute unless score $target_power lobby_minigame matches 15 if score $set_circl
 execute unless score $target_power lobby_minigame matches 15 if score $set_circle_time lobby_minigame matches 46 run playsound minecraft:block.note_block.bit record @a 57 73 7 1 1.943
 execute unless score $target_power lobby_minigame matches 15 if score $set_circle_time lobby_minigame matches 39 run playsound minecraft:block.note_block.bit record @a 57 73 7 1 1.984
 
-execute if score $target_power lobby_minigame matches 15 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] title {"text":" "}
-execute if score $target_power lobby_minigame matches 15 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] subtitle {"text":"↔ BULLSEYE ↔","color":"red"}
+execute if score $target_power lobby_minigame matches 15 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] title {"translate":" "}
+execute if score $target_power lobby_minigame matches 15 run title @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={ready=0},tag=!playing] subtitle {"translate":"↔ BULLSEYE ↔","color":"red"}
 execute if score $target_power lobby_minigame matches 15 run advancement grant @a[x=57,y=73,z=7,distance=..17,gamemode=adventure,scores={time_near_target=1..,lobby_trident=1..},tag=!playing] only minecraft:custom/hit_bullseye
 execute if score $target_power lobby_minigame matches 15 run scoreboard players set $bullseye lobby_minigame 1
 execute if score $target_power lobby_minigame matches 15 run scoreboard players add $score lobby_minigame 10

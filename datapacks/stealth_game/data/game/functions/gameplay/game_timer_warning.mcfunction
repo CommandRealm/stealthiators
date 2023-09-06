@@ -1,5 +1,5 @@
-execute if score $minute bossbar_time matches 0 if score $second bossbar_time matches 10 run tellraw @a[tag=playing,team=sneaker] {"text":"Time is running out! Get to the finish line quickly!","color":"gray"}
-execute if score $minute bossbar_time matches 0 if score $second bossbar_time matches 10 run tellraw @a[tag=playing,team=gladiator] {"text":"Time is running out! Just hold the runners from touching the finish line!","color":"red"}
+execute if score $minute bossbar_time matches 0 if score $second bossbar_time matches 10 run tellraw @a[tag=playing,team=sneaker] {"translate":"Time is running out! Get to the finish line quickly!","color":"gray"}
+execute if score $minute bossbar_time matches 0 if score $second bossbar_time matches 10 run tellraw @a[tag=playing,team=gladiator] {"translate":"Time is running out! Just hold the runners from touching the finish line!","color":"red"}
 execute if score $minute bossbar_time matches 0 if score $second bossbar_time matches 5 as @a[tag=playing] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100000 2
 execute if score $minute bossbar_time matches 0 if score $second bossbar_time matches 4 as @a[tag=playing] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100000 1.9
 execute if score $minute bossbar_time matches 0 if score $second bossbar_time matches 3 as @a[tag=playing] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100000 1.8

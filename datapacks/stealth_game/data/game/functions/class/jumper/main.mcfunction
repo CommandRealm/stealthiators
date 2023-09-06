@@ -10,4 +10,4 @@ execute as @a[team=sneaker,tag=playing,scores={r_class=6,jump_charge=7..}] at @s
 execute as @a[team=sneaker,tag=playing,scores={r_class=6,jumper_jump=1..}] at @s run function game:class/jumper/jump
 
 # displaying jumper level
-execute as @a[team=sneaker,tag=playing,scores={r_class=6}] at @s run title @s actionbar [{"text":"[","color":"gold","bold":true},{"score":{"objective":"jump_level","name":"@s"},"bold":false,"color":"green"},{"text":"]","color":"gold","bold":true}]
+execute as @a[team=sneaker,tag=playing,scores={r_class=6}] at @s run title @s actionbar [{"translate":"[","color":"gold","bold":true},{"score":{"objective":"jump_level","name":"@s"},"bold":false,"color":"green"},{"translate":"]","color":"gold","bold":true}]

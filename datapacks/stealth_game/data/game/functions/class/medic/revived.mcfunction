@@ -1,14 +1,14 @@
 clear @s
 effect clear @s
 team join red
-tellraw @a[tag=playing] [{"selector":"@s"},{"text":" has been revived! ","color":"gold"},{"text":"They are now ","color":"gray"},{"text":"soul","color":"red"},{"text":"-","color":"gray"},{"text":"linked","color":"red"},{"text":" to ","color":"gray"},{"selector":"@a[scores={r_class=4,revive_crouch=1..},tag=playing,gamemode=adventure,team=sneaker,distance=..2,tag=using_revive]"}]
+tellraw @a[tag=playing] [{"selector":"@s"},{"translate":" has been revived! ","color":"gold"},{"translate":"They are now ","color":"gray"},{"translate":"soul","color":"red"},{"translate":"-","color":"gray"},{"translate":"linked","color":"red"},{"translate":" to ","color":"gray"},{"selector":"@a[scores={r_class=4,revive_crouch=1..},tag=playing,gamemode=adventure,team=sneaker,distance=..2,tag=using_revive]"}]
 gamemode adventure @s
 team join sneaker
 effect give @s invisibility 1000000 255 true
 effect give @s regeneration 100000 255 true
 scoreboard players set @s r_class 0
 tp @s ~ ~0.5 ~
-tellraw @s {"text":"You have been revived! From this moment on, you have no class. Good luck!","color":"red"}
+tellraw @s {"translate":"You have been revived! From this moment on, you have no class. Good luck!","color":"red"}
 execute at @s run playsound minecraft:entity.zombie.infect master @s ~ ~ ~ 1000 0
 effect give @s invisibility 100000 255 true
 

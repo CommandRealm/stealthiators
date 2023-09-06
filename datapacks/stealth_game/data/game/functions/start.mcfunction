@@ -1,7 +1,7 @@
 scoreboard players set $time startup_timer -1
 tag @a[scores={ready=1..}] add playing
-title @a[tag=!playing] title {"text":" "}
-title @a[tag=!playing] subtitle {"text":" "}
+title @a[tag=!playing] title {"translate":" "}
+title @a[tag=!playing] subtitle {"translate":" "}
 execute if entity @a[tag=playing,tag=rider_0] as @e[type=horse,tag=rider_0] at @s run function lobby:remove_mob
 execute if entity @a[tag=playing,tag=rider_1] as @e[type=horse,tag=rider_1] at @s run function lobby:remove_mob
 execute if entity @a[tag=playing,tag=rider_2] as @e[type=horse,tag=rider_2] at @s run function lobby:remove_mob
@@ -127,19 +127,19 @@ clear @a carrot_on_a_stick{CustomModelData:2}
 effect clear @a[tag=playing]
 scoreboard players set $game state 1
 scoreboard players set $time game -20
-title @a[tag=playing] title [{"text":" "}]
-title @a[tag=playing] subtitle {"text":"Generation in progress . . .","color":"red","italic":true}
+title @a[tag=playing] title [{"translate":" "}]
+title @a[tag=playing] subtitle {"translate":"Generation in progress . . .","color":"red","italic":true}
 title @a times 0 500 5
 effect give @a[tag=playing] blindness 100 255 true
 effect give @a[tag=playing] levitation 100 255 true
-item replace entity @a[tag=playing] armor.head with carved_pumpkin{HideFlags:63,Enchantments:[{id:"binding_curse",lvl:1}],display:{Name:'[{"text":"CR Logo","color":"dark_aqua","bold":false,"italic":false}]'},CustomModelData:1}
+item replace entity @a[tag=playing] armor.head with carved_pumpkin{HideFlags:63,Enchantments:[{id:"binding_curse",lvl:1}],display:{Name:'[{"translate":"CR Logo","color":"dark_aqua","bold":false,"italic":false}]'},CustomModelData:1}
 scoreboard objectives remove playing
 function game:gameplay/start_game
 execute if score $number mode matches 1 run function game:gameplay/rotation/start_game
 scoreboard players set $round game 1
 bossbar set lobby players @a[tag=!playing]
-execute if score $number mode matches 1 if score $number infection matches 0 run tellraw @a[tag=playing] [{"text":""},{"text":"Stealthiators","color":"dark_gray","bold":true},{"text":" Rotation Mode","color":"gold","bold":true},{"text":"\nIn this mode, everyone gets a chance to be a gladiator. Your goal is to be the player with the most points. You can earn points by doing the following actions:","color":"#9c9558"},{"text":"\nCrossing a band as a runner | 1 point","color":"gray"},{"text":"\nStepping on the finish line as a runner | 5 points","color":"gray"},{"text":"\nStepping on the finish line first | 1 point","color":"yellow"},{"text":"\nRunners winning the round | 1 point","color":"gray"},{"text":"\nA player you revived stepping on finish line | 2 points","color":"gray"},{"text":"\nKilling someone as a gladiator | 2 points","color":"red"},{"text":"\nGladiators winning the round | 4 points","color":"red"}]
-execute if score $number mode matches 1 if score $number infection matches 1 run tellraw @a[tag=playing] [{"text":""},{"text":"Stealthiators","color":"dark_gray","bold":true},{"text":" Rotation Mode","color":"gold","bold":true},{"text":"\nIn this mode, everyone gets a chance to be a gladiator. Your goal is to be the player with the most points. You can earn points by doing the following actions:","color":"#9c9558"},{"text":"\nCrossing a band as a runner | 1 point","color":"gray"},{"text":"\nStepping on the finish line as a runner | 5 points","color":"gray"},{"text":"\nStepping on the finish line first | 1 point","color":"yellow"},{"text":"\nRunners winning the round | 1 point","color":"gray"},{"text":"\nA player you revived stepping on finish line | 2 points","color":"gray"},{"text":"\nKilling someone as a gladiator | 2 points","color":"red"},{"text":"\nGladiators winning the round | 4 points","color":"red"},{"text":"\nWinning the round as an infected gladiator | 1 point","color":"red"}]
+execute if score $number mode matches 1 if score $number infection matches 0 run tellraw @a[tag=playing] [{"translate":""},{"translate":"Stealthiators","color":"dark_gray","bold":true},{"translate":" Rotation Mode","color":"gold","bold":true},{"translate":"\nIn this mode, everyone gets a chance to be a gladiator. Your goal is to be the player with the most points. You can earn points by doing the following actions:","color":"#9c9558"},{"translate":"\nCrossing a band as a runner | 1 point","color":"gray"},{"translate":"\nStepping on the finish line as a runner | 5 points","color":"gray"},{"translate":"\nStepping on the finish line first | 1 point","color":"yellow"},{"translate":"\nRunners winning the round | 1 point","color":"gray"},{"translate":"\nA player you revived stepping on finish line | 2 points","color":"gray"},{"translate":"\nKilling someone as a gladiator | 2 points","color":"red"},{"translate":"\nGladiators winning the round | 4 points","color":"red"}]
+execute if score $number mode matches 1 if score $number infection matches 1 run tellraw @a[tag=playing] [{"translate":""},{"translate":"Stealthiators","color":"dark_gray","bold":true},{"translate":" Rotation Mode","color":"gold","bold":true},{"translate":"\nIn this mode, everyone gets a chance to be a gladiator. Your goal is to be the player with the most points. You can earn points by doing the following actions:","color":"#9c9558"},{"translate":"\nCrossing a band as a runner | 1 point","color":"gray"},{"translate":"\nStepping on the finish line as a runner | 5 points","color":"gray"},{"translate":"\nStepping on the finish line first | 1 point","color":"yellow"},{"translate":"\nRunners winning the round | 1 point","color":"gray"},{"translate":"\nA player you revived stepping on finish line | 2 points","color":"gray"},{"translate":"\nKilling someone as a gladiator | 2 points","color":"red"},{"translate":"\nGladiators winning the round | 4 points","color":"red"},{"translate":"\nWinning the round as an infected gladiator | 1 point","color":"red"}]
 scoreboard players set $player_finish game 0
 scoreboard players set $players number 0
 execute as @a[tag=playing] at @s run scoreboard players add $players number 1

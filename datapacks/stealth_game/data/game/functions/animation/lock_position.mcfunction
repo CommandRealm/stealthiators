@@ -1,9 +1,9 @@
 execute positioned 1021 153 -35 run tp @a[team=sneaker,distance=0.05..] 1021 152 -35
 execute positioned 1021 162 75 run tp @a[team=gladiator,distance=0.05..] 1021 162 75
 scoreboard players remove $time side_animation 1
-execute if score $time side_animation matches 2 run scoreboard objectives modify points displayname [{"text":"|","color":"red"},{"text":" • ","color":"yellow","bold":false},{"text":"POINTS","color":"gold","bold":true},{"text":" • ","color":"yellow","bold":false},{"text":"|","color":"red"}]
-execute if score $time side_animation matches 4 run scoreboard objectives modify points displayname [{"text":"/","color":"red"},{"text":" • ","color":"yellow","bold":false},{"text":"POINTS","color":"gold","bold":true},{"text":" • ","color":"yellow","bold":false},{"text":"\\","color":"red"}]
-execute if score $time side_animation matches 6 run scoreboard objectives modify points displayname [{"text":"-","color":"red","bold":true},{"text":" • ","color":"yellow","bold":false},{"text":"POINTS","color":"gold","bold":true},{"text":" • ","color":"yellow","bold":false},{"text":"-","color":"red","bold":true}]
+execute if score $time side_animation matches 2 run scoreboard objectives modify points displayname [{"translate":"|","color":"red"},{"translate":" • ","color":"yellow","bold":false},{"translate":"POINTS","color":"gold","bold":true},{"translate":" • ","color":"yellow","bold":false},{"translate":"|","color":"red"}]
+execute if score $time side_animation matches 4 run scoreboard objectives modify points displayname [{"translate":"/","color":"red"},{"translate":" • ","color":"yellow","bold":false},{"translate":"POINTS","color":"gold","bold":true},{"translate":" • ","color":"yellow","bold":false},{"translate":"\\","color":"red"}]
+execute if score $time side_animation matches 6 run scoreboard objectives modify points displayname [{"translate":"-","color":"red","bold":true},{"translate":" • ","color":"yellow","bold":false},{"translate":"POINTS","color":"gold","bold":true},{"translate":" • ","color":"yellow","bold":false},{"translate":"-","color":"red","bold":true}]
 execute if score $time side_animation matches 0 run function game:gameplay/rotation/update_points_sidebar
 
 execute as @a[team=sneaker] at @s unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:10}}]}] run function game:class/pregame/get_brawler
