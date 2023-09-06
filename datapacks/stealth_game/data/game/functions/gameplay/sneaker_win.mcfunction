@@ -6,7 +6,7 @@ clear @s
 gamemode spectator @s
 execute as @a[tag=playing] at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 0.7
 bossbar remove game_timer
-bossbar add time_till_end [{"text":"The Game will be ending soon","color":"red"}]
+bossbar add time_till_end [{"translate":"The Game will be ending soon","color":"red"}]
 
 execute if score $time time_till_end matches -1 run bossbar set minecraft:time_till_end players @a[tag=playing]
 execute if score $time time_till_end matches -1 run scoreboard players operation $time time_till_end = $set_time time_till_end
@@ -77,10 +77,10 @@ execute if entity @s[tag=revived_by_49] run tag @a[tag=playing,scores={runner_id
 execute if entity @s[tag=revived_by_50] run tag @a[tag=playing,scores={runner_id=50}] add temp_tag
 
 # tellraws
-execute if score $number mode matches 0 if entity @a[tag=playing,team=gladiator] run tellraw @a[tag=playing] [{"selector":"@s"},{"text":" has reached the end!","color":"gray"}]
+execute if score $number mode matches 0 if entity @a[tag=playing,team=gladiator] run tellraw @a[tag=playing] [{"selector":"@s"},{"translate":" has reached the end!","color":"gray"}]
 
-execute if score $number mode matches 1 if entity @a[tag=playing,team=gladiator] unless entity @a[tag=temp_tag] run tellraw @a[tag=playing] [{"selector":"@s"},{"text":" has reached the end!","color":"gray"}]
-execute if score $number mode matches 1 if entity @a[tag=playing,team=gladiator] if entity @a[tag=temp_tag] run tellraw @a[tag=playing] [{"selector":"@s"},{"text":" has reached the end and has awarded points to their medic ","color":"white"},{"selector":"@a[tag=temp_tag]"},{"text":".","color":"gray"}]
+execute if score $number mode matches 1 if entity @a[tag=playing,team=gladiator] unless entity @a[tag=temp_tag] run tellraw @a[tag=playing] [{"selector":"@s"},{"translate":" has reached the end!","color":"gray"}]
+execute if score $number mode matches 1 if entity @a[tag=playing,team=gladiator] if entity @a[tag=temp_tag] run tellraw @a[tag=playing] [{"selector":"@s"},{"translate":" has reached the end and has awarded points to their medic ","color":"white"},{"selector":"@a[tag=temp_tag]"},{"translate":".","color":"gray"}]
 
 scoreboard players add @a[tag=temp_tag] points 2
 tag @a[tag=temp_tag] remove temp_tag

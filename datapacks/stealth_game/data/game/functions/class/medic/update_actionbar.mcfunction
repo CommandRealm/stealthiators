@@ -1,15 +1,15 @@
-execute if entity @s[scores={revive_timer=1}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"text":"⬛⬛⬛⬛⬛⬛⬛⬛","color":"dark_gray"}]
-execute if entity @s[scores={revive_timer=20}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"text":"⬛","color":"red"},{"text":"⬛⬛⬛⬛⬛⬛⬛","color":"dark_gray"}]
-execute if entity @s[scores={revive_timer=40}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"text":"⬛⬛","color":"red"},{"text":"⬛⬛⬛⬛⬛⬛","color":"dark_gray"}]
-execute if entity @s[scores={revive_timer=60}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"text":"⬛⬛⬛","color":"red"},{"text":"⬛⬛⬛⬛⬛","color":"dark_gray"}]
-execute if entity @s[scores={revive_timer=80}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"text":"⬛⬛⬛⬛","color":"red"},{"text":"⬛⬛⬛⬛","color":"dark_gray"}]
-execute if entity @s[scores={revive_timer=100}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"text":"⬛⬛⬛⬛⬛","color":"red"},{"text":"⬛⬛⬛","color":"dark_gray"}]
-execute if entity @s[scores={revive_timer=120}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"text":"⬛⬛⬛⬛⬛⬛","color":"red"},{"text":"⬛⬛","color":"dark_gray"}]
-execute if entity @s[scores={revive_timer=140}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"text":"⬛⬛⬛⬛⬛⬛⬛","color":"red"},{"text":"⬛","color":"dark_gray"}]
-execute if entity @s[scores={revive_timer=160}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"text":"⬛⬛⬛⬛⬛⬛⬛⬛","color":"red"},{"text":"","color":"dark_gray"}]
+execute if entity @s[scores={revive_timer=1}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"translate":"⬛⬛⬛⬛⬛⬛⬛⬛","color":"dark_gray"}]
+execute if entity @s[scores={revive_timer=20}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"translate":"⬛","color":"red"},{"translate":"⬛⬛⬛⬛⬛⬛⬛","color":"dark_gray"}]
+execute if entity @s[scores={revive_timer=40}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"translate":"⬛⬛","color":"red"},{"translate":"⬛⬛⬛⬛⬛⬛","color":"dark_gray"}]
+execute if entity @s[scores={revive_timer=60}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"translate":"⬛⬛⬛","color":"red"},{"translate":"⬛⬛⬛⬛⬛","color":"dark_gray"}]
+execute if entity @s[scores={revive_timer=80}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"translate":"⬛⬛⬛⬛","color":"red"},{"translate":"⬛⬛⬛⬛","color":"dark_gray"}]
+execute if entity @s[scores={revive_timer=100}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"translate":"⬛⬛⬛⬛⬛","color":"red"},{"translate":"⬛⬛⬛","color":"dark_gray"}]
+execute if entity @s[scores={revive_timer=120}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"translate":"⬛⬛⬛⬛⬛⬛","color":"red"},{"translate":"⬛⬛","color":"dark_gray"}]
+execute if entity @s[scores={revive_timer=140}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"translate":"⬛⬛⬛⬛⬛⬛⬛","color":"red"},{"translate":"⬛","color":"dark_gray"}]
+execute if entity @s[scores={revive_timer=160}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"translate":"⬛⬛⬛⬛⬛⬛⬛⬛","color":"red"},{"translate":"","color":"dark_gray"}]
 ##to add two seconds add two squares to each above title
-##execute if entity @s[scores={revive_timer=180}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"text":"⬛⬛⬛⬛⬛⬛⬛⬛⬛","color":"red"},{"text":"⬛","color":"dark_gray"}]
-##execute if entity @s[scores={revive_timer=200}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"text":"⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛","color":"red"}]
+##execute if entity @s[scores={revive_timer=180}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"translate":"⬛⬛⬛⬛⬛⬛⬛⬛⬛","color":"red"},{"translate":"⬛","color":"dark_gray"}]
+##execute if entity @s[scores={revive_timer=200}] run title @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] actionbar [{"translate":"⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛","color":"red"}]
 
 
 execute if entity @s[scores={revive_timer=1}] as @a[team=sneaker,gamemode=adventure,distance=..1,scores={r_class=4,revive_crouch=1..}] at @s run playsound minecraft:item.flintandsteel.use master @s ~ ~ ~ 1 0.5

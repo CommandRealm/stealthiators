@@ -5,5 +5,5 @@ execute as @e[tag=trap_tp,type=area_effect_cloud] at @s run scoreboard players o
 tp @s @e[type=area_effect_cloud,tag=trap_tp,scores={compare_traps=0},sort=nearest,limit=1]
 scoreboard players reset @s right_click
 effect give @s weakness 1 255
-tellraw @s {"text":"Warped to trap.","color":"aqua"}
+tellraw @s {"translate":"Warped to trap.","color":"aqua"}
 execute at @s run playsound minecraft:entity.evoker_fangs.attack master @s ~ ~ ~ 1000000 2

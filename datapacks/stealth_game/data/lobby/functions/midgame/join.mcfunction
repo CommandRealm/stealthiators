@@ -2,7 +2,7 @@ clear @s
 scoreboard players reset @s right_click
 gamemode spectator @s
 team join waiting @s
-tellraw @s [{"text":"You are now spectating. You will join after the current round.","color":"#ffced0"}]
+tellraw @s [{"translate":"You are now spectating. You will join after the current round.","color":"#ffced0"}]
 tp @s 1021 156 -17 0 10
 tp @s @p[tag=playing,team=sneaker]
 tp @s @p[tag=playing,team=gladiator]

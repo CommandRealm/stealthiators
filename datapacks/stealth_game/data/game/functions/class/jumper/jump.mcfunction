@@ -14,4 +14,4 @@ effect clear @s jump_boost
 
 
 # clearing action bar
-title @s actionbar [{"text":""}]
+title @s actionbar [{"translate":""}]

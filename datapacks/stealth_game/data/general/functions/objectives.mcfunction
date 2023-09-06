@@ -25,35 +25,35 @@ team modify lead color gray
 team modify lobby color gray
 team modify manager color gray
 team modify art color gray
-team modify test prefix {"text":"(Tester) ","color":"gray"}
-team modify help prefix {"text":"[Helper] ","color":"dark_gray"}
-team modify bld prefix {"text":"{Builder} ","color":"blue"}
-team modify prg prefix {"text":"{Programmer} ","color":"red"}
-team modify srbld prefix {"text":"{Sr. Builder} ","color":"dark_blue"}
-team modify srprg prefix {"text":"{Sr. Programmer} ","color":"dark_red"}
-team modify lead prefix [{"text":"{","color":"dark_purple","bold":true},{"text":"Project Lead","bold":false},{"text":"} ","bold":true}]
-team modify manager prefix {"text":"{Manager} ","color":"yellow"}
-team modify art prefix {"text":"{Artist} ","color":"green"}
+team modify test prefix {"translate":"(Tester) ","color":"gray"}
+team modify help prefix {"translate":"[Helper] ","color":"dark_gray"}
+team modify bld prefix {"translate":"{Builder} ","color":"blue"}
+team modify prg prefix {"translate":"{Programmer} ","color":"red"}
+team modify srbld prefix {"translate":"{Sr. Builder} ","color":"dark_blue"}
+team modify srprg prefix {"translate":"{Sr. Programmer} ","color":"dark_red"}
+team modify lead prefix [{"translate":"{","color":"dark_purple","bold":true},{"translate":"Project Lead","bold":false},{"translate":"} ","bold":true}]
+team modify manager prefix {"translate":"{Manager} ","color":"yellow"}
+team modify art prefix {"translate":"{Artist} ","color":"green"}
 
 team add submitter
 team modify submitter color gray
-team modify submitter prefix [{"text":"(","color":"gold","bold":true},{"text":"Submitter","bold":false,"color":"gray"},{"text":") ","bold":true}]
+team modify submitter prefix [{"translate":"(","color":"gold","bold":true},{"translate":"Submitter","bold":false,"color":"gray"},{"translate":") ","bold":true}]
 
 team add melon
 team modify melon color gray
-team modify melon prefix [{"text":"(","color":"red","bold":false},{"text":"Melon","bold":true,"color":"green"},{"text":") ","bold":false,"color":"red"}]
+team modify melon prefix [{"translate":"(","color":"red","bold":false},{"translate":"Melon","bold":true,"color":"green"},{"translate":") ","bold":false,"color":"red"}]
 
 team add pc_role
 team modify pc_role color gray
-team modify pc_role prefix [{"text":"(","color":"dark_gray","bold":false},{"text":"pc","bold":true,"color":"green"},{"text":") ","bold":false,"color":"dark_gray"}]
+team modify pc_role prefix [{"translate":"(","color":"dark_gray","bold":false},{"translate":"pc","bold":true,"color":"green"},{"translate":") ","bold":false,"color":"dark_gray"}]
 
 team add prefix
 team modify prefix color gray
-team modify prefix prefix [{"text":"[","color":"dark_gray","bold":true},{"text":"Sneaky Sneaker","color":"gray","bold":false},{"text":"] ","color":"dark_gray","bold":true}]
+team modify prefix prefix [{"translate":"[","color":"dark_gray","bold":true},{"translate":"Sneaky Sneaker","color":"gray","bold":false},{"translate":"] ","color":"dark_gray","bold":true}]
 
 team add tournament
 team modify tournament color gray
-team modify tournament prefix [{"text":"(","color":"dark_gray","bold":true},{"text":"Tournament","color":"gray","bold":false},{"text":") ","color":"dark_gray","bold":true}]
+team modify tournament prefix [{"translate":"(","color":"dark_gray","bold":true},{"translate":"Tournament","color":"gray","bold":false},{"translate":") ","color":"dark_gray","bold":true}]
 
 scoreboard objectives add new_player dummy
 scoreboard objectives add leave_game minecraft.custom:minecraft.leave_game
@@ -80,24 +80,24 @@ team add gladiator
 team add sneaker
 team modify gladiator color gold
 team modify sneaker color dark_gray
-team modify gladiator prefix [{"text":"[","color":"dark_gray","bold":true},{"text":"Gladiator","bold":false,"color":"red"},{"text":"] ","color":"dark_gray","bold":true}]
-team modify sneaker prefix [{"text":"[","color":"dark_gray","bold":true},{"text":"Runner","bold":false,"color":"#8a8a8a"},{"text":"] ","color":"dark_gray","bold":true}]
+team modify gladiator prefix [{"translate":"[","color":"dark_gray","bold":true},{"translate":"Gladiator","bold":false,"color":"red"},{"translate":"] ","color":"dark_gray","bold":true}]
+team modify sneaker prefix [{"translate":"[","color":"dark_gray","bold":true},{"translate":"Runner","bold":false,"color":"#8a8a8a"},{"translate":"] ","color":"dark_gray","bold":true}]
 team modify sneaker collisionRule never
 team modify gladiator collisionRule never
 team add cr
 team modify cr color gray
-team modify cr prefix [{"text":"{","color":"white","bold":true},{"text":"C","color":"aqua","bold":true},{"text":"R","color":"dark_aqua","bold":true},{"text":"} ","color":"white","bold":true}]
+team modify cr prefix [{"translate":"{","color":"white","bold":true},{"translate":"C","color":"aqua","bold":true},{"translate":"R","color":"dark_aqua","bold":true},{"translate":"} ","color":"white","bold":true}]
 
 team add dead
 team modify dead color red
-team modify dead prefix [{"text":"(","color":"dark_red","bold":true},{"text":"Out","bold":false,"color":"red"},{"text":") ","color":"dark_red","bold":true}]
+team modify dead prefix [{"translate":"(","color":"dark_red","bold":true},{"translate":"Out","bold":false,"color":"red"},{"translate":") ","color":"dark_red","bold":true}]
 scoreboard objectives add dash_cooldown dummy
 scoreboard objectives add door_cooldown dummy
 scoreboard objectives add time_till_end dummy
 scoreboard players add $set_time time_till_end 0
 execute if score $set_time time_till_end matches 0 run scoreboard players set $set_time time_till_end 600
 team add won
-team modify won prefix [{"text":"(","bold":true,"color":"#9c9558"},{"text":"Winner","color":"gold","bold":false},{"text":") ","bold":true,"color":"#9c9558"}]
+team modify won prefix [{"translate":"(","bold":true,"color":"#9c9558"},{"translate":"Winner","color":"gold","bold":false},{"translate":") ","bold":true,"color":"#9c9558"}]
 team modify won color gold
 team add lobby
 team modify lobby color gray
@@ -138,7 +138,7 @@ gamerule commandBlockOutput false
 scoreboard objectives add arbalist_arrow dummy
 scoreboard objectives add revives dummy
 bossbar remove lobby
-bossbar add lobby [{"text":" | ","color":"red","obfuscated":true,"bold":false},{"text":"Stealthiators","color":"dark_gray","bold":true,"obfuscated":false},{"text":" - ","color":"gray","bold":false,"obfuscated":false},{"text":"By the ","color":"white","obfuscated":false,"underlined":false,"extra":[{"text":"Command","color":"aqua","bold":true,"obfuscated":false,"extra":[{"text":" Realm","color":"dark_aqua","extra":[{"text":" Team","bold":false,"color":"white"}]}]}]},{"text":" | ","color":"red","obfuscated":true,"bold":false}]
+bossbar add lobby [{"translate":" | ","color":"red","obfuscated":true,"bold":false},{"translate":"Stealthiators","color":"dark_gray","bold":true,"obfuscated":false},{"translate":" - ","color":"gray","bold":false,"obfuscated":false},{"translate":"By the ","color":"white","obfuscated":false,"underlined":false,"extra":[{"translate":"Command","color":"aqua","bold":true,"obfuscated":false,"extra":[{"translate":" Realm","color":"dark_aqua","extra":[{"translate":" Team","bold":false,"color":"white"}]}]}]},{"translate":" | ","color":"red","obfuscated":true,"bold":false}]
 bossbar set lobby color yellow
 bossbar set lobby players @a[tag=!playing]
 bossbar set lobby max 1
@@ -167,53 +167,53 @@ scoreboard objectives add mode dummy
 scoreboard players add $number mode 0
 scoreboard objectives add side_animation dummy
 
-team modify sneaker displayName {"text":"Runners","color":"gray"}
-team modify gladiator displayName {"text":"Gladiators","color":"red"}
-team modify dead displayName {"text":"Out","color":"red"}
+team modify sneaker displayName {"translate":"Runners","color":"gray"}
+team modify gladiator displayName {"translate":"Gladiators","color":"red"}
+team modify dead displayName {"translate":"Out","color":"red"}
 scoreboard objectives add death_msg dummy
 kill @e[type=area_effect_cloud,tag=tutorial_text]
-summon area_effect_cloud 157 81 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"Every "},{"text":"runner\'s","color":"gray"},{"text":" goal is to reach the","color":"white"}]'}
-summon area_effect_cloud 157 80.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"end of the map without getting caught."}]'}
+summon area_effect_cloud 157 81 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"Every "},{"translate":"runner\'s","color":"gray"},{"translate":" goal is to reach the","color":"white"}]'}
+summon area_effect_cloud 157 80.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"end of the map without getting caught."}]'}
 
-summon area_effect_cloud 157 80.25 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"Only the "},{"text":"runner\'s","color":"gray"},{"text":" feet are visible,","color":"white"}]'}
-summon area_effect_cloud 157 80.0 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"meaning you can hide behind single blocks."}]'}
+summon area_effect_cloud 157 80.25 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"Only the "},{"translate":"runner\'s","color":"gray"},{"translate":" feet are visible,","color":"white"}]'}
+summon area_effect_cloud 157 80.0 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"meaning you can hide behind single blocks."}]'}
 
-summon area_effect_cloud 163.75 81 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"The map randomly generates at the start of each game."}]'}
-summon area_effect_cloud 163.75 80.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"The width of each area becomes"}]'}
-summon area_effect_cloud 163.75 80.5 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"progressively smaller near the finish line."}]'}
+summon area_effect_cloud 163.75 81 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"The map randomly generates at the start of each game."}]'}
+summon area_effect_cloud 163.75 80.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"The width of each area becomes"}]'}
+summon area_effect_cloud 163.75 80.5 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"progressively smaller near the finish line."}]'}
 
-summon area_effect_cloud 171.0 81.0 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"There are basalt bands between each segment."}]'}
-summon area_effect_cloud 171.0 80.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"Crossing a new band will notify the "},{"text":"gladiators.","color":"red"}]'}
+summon area_effect_cloud 171.0 81.0 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"There are basalt bands between each segment."}]'}
+summon area_effect_cloud 171.0 80.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"Crossing a new band will notify the "},{"translate":"gladiators.","color":"red"}]'}
 
-summon area_effect_cloud 178.0 81.0 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"The "},{"text":"gladiator\'s","color":"red"},{"text":" goal is to stop the runners","color":"white"}]'}
-summon area_effect_cloud 178.0 80.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"from reaching the finish line."}]'}
-summon area_effect_cloud 183.5 81.0 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"Gladiators","color":"red"},{"text":" can eliminate ","color":"white"},{"text":"runners","color":"gray"}]'}
-summon area_effect_cloud 183.5 80.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"in a single hit by throwing their trident","color":"white"}]'}
-summon area_effect_cloud 183.5 80.5 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"or punching them.","color":"white"}]'}
+summon area_effect_cloud 178.0 81.0 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"The "},{"translate":"gladiator\'s","color":"red"},{"translate":" goal is to stop the runners","color":"white"}]'}
+summon area_effect_cloud 178.0 80.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"from reaching the finish line."}]'}
+summon area_effect_cloud 183.5 81.0 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"Gladiators","color":"red"},{"translate":" can eliminate ","color":"white"},{"translate":"runners","color":"gray"}]'}
+summon area_effect_cloud 183.5 80.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"in a single hit by throwing their trident","color":"white"}]'}
+summon area_effect_cloud 183.5 80.5 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"or punching them.","color":"white"}]'}
 
-summon area_effect_cloud 188.75 81.0 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"Gladiators","color":"red"},{"text":" have a dash item","color":"white"}]'}
-summon area_effect_cloud 188.75 80.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"as well as a \\"backdoor\\" item","color":"white"}]'}
-summon area_effect_cloud 188.75 80.5 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"that will warp them","color":"white"}]'}
-summon area_effect_cloud 188.75 80.25 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"two bands back from"}]'}
-summon area_effect_cloud 188.75 80.0 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"the farthest ahead ","color":"white"},{"text":"runner.","color":"gray"}]'}
-summon area_effect_cloud 188.75 79.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"You want to use this if a"}]'}
-summon area_effect_cloud 188.75 79.5 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"runner","color":"gray"},{"text":" gets beyond you.","color":"white"}]'}
+summon area_effect_cloud 188.75 81.0 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"Gladiators","color":"red"},{"translate":" have a dash item","color":"white"}]'}
+summon area_effect_cloud 188.75 80.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"as well as a \\"backdoor\\" item","color":"white"}]'}
+summon area_effect_cloud 188.75 80.5 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"that will warp them","color":"white"}]'}
+summon area_effect_cloud 188.75 80.25 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"two bands back from"}]'}
+summon area_effect_cloud 188.75 80.0 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"the farthest ahead ","color":"white"},{"translate":"runner.","color":"gray"}]'}
+summon area_effect_cloud 188.75 79.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"You want to use this if a"}]'}
+summon area_effect_cloud 188.75 79.5 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"runner","color":"gray"},{"translate":" gets beyond you.","color":"white"}]'}
 
-summon area_effect_cloud 192.65 81.0 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"The "},{"text":"gladiators","color":"red"},{"text":" win the match","color":"white"}]'}
-summon area_effect_cloud 192.65 80.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"as long as they stop at least"}]'}
-summon area_effect_cloud 192.65 80.5 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"half of the "},{"text":"runners","color":"gray"}]'}
-summon area_effect_cloud 192.65 80.25 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"from reaching the end.","color":"white"}]'}
+summon area_effect_cloud 192.65 81.0 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"The "},{"translate":"gladiators","color":"red"},{"translate":" win the match","color":"white"}]'}
+summon area_effect_cloud 192.65 80.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"as long as they stop at least"}]'}
+summon area_effect_cloud 192.65 80.5 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"half of the "},{"translate":"runners","color":"gray"}]'}
+summon area_effect_cloud 192.65 80.25 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"from reaching the end.","color":"white"}]'}
 
-summon area_effect_cloud 196.65 81.0 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"Eliminated "},{"text":"runners","color":"gray"},{"text":" can still win ","color":"white"}]'}
-summon area_effect_cloud 196.65 80.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"the match as long as half of"}]'}
-summon area_effect_cloud 196.65 80.5 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"the original "},{"text":"runners","color":"gray"}]'}
-summon area_effect_cloud 196.65 80.25 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"touch the finish line.","color":"white"}]'}
+summon area_effect_cloud 196.65 81.0 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"Eliminated "},{"translate":"runners","color":"gray"},{"translate":" can still win ","color":"white"}]'}
+summon area_effect_cloud 196.65 80.75 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"the match as long as half of"}]'}
+summon area_effect_cloud 196.65 80.5 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"the original "},{"translate":"runners","color":"gray"}]'}
+summon area_effect_cloud 196.65 80.25 -108 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"touch the finish line.","color":"white"}]'}
 
-summon area_effect_cloud 200 81.25 -106.25 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"Each team has four","color":"white"}]'}
-summon area_effect_cloud 200 81.0 -106.25 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"custom classes.","color":"white"}]'}
-summon area_effect_cloud 200 80.75 -106.25 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"You can select them in","color":"white"}]'}
-summon area_effect_cloud 200 80.5 -106.25 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"your book or during the","color":"white"}]'}
-summon area_effect_cloud 200 80.25 -106.25 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"text":"warmup phase of the game.","color":"white"}]'}
+summon area_effect_cloud 200 81.25 -106.25 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"Each team has four","color":"white"}]'}
+summon area_effect_cloud 200 81.0 -106.25 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"custom classes.","color":"white"}]'}
+summon area_effect_cloud 200 80.75 -106.25 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"You can select them in","color":"white"}]'}
+summon area_effect_cloud 200 80.5 -106.25 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"your book or during the","color":"white"}]'}
+summon area_effect_cloud 200 80.25 -106.25 {Duration:100000000,Tags:["tutorial_text"],CustomNameVisible:1,CustomName:'[{"translate":"warmup phase of the game.","color":"white"}]'}
 
 
 
@@ -273,9 +273,9 @@ team add green
 team modify green color green
 kill @e[type=area_effect_cloud,tag=target_text]
 scoreboard players set $highscore lobby_minigame 0
-summon area_effect_cloud 45 74.0 3 {Duration:1000000,Tags:["target_text"],CustomNameVisible:1,CustomName:'[{"text":"Gladiator Practice","color":"#9c9558","bold":true}]'}
-summon area_effect_cloud 45 73.75 3 {Duration:1000000,Tags:["target_text","highscore_nameplate"],CustomNameVisible:1,CustomName:'[{"text":"Highscore: ","color":"gold"},{"text":"None","color":"yellow"}]'}
-summon area_effect_cloud 45 73.5 3 {Duration:1000000,Tags:["target_text","highscore_nameplate","get_highscore_name"],CustomNameVisible:1,CustomName:'[{"text":"Held by: ","color":"dark_green"},{"text":"No one","color":"green"}]'}
+summon area_effect_cloud 45 74.0 3 {Duration:1000000,Tags:["target_text"],CustomNameVisible:1,CustomName:'[{"translate":"Gladiator Practice","color":"#9c9558","bold":true}]'}
+summon area_effect_cloud 45 73.75 3 {Duration:1000000,Tags:["target_text","highscore_nameplate"],CustomNameVisible:1,CustomName:'[{"translate":"Highscore: ","color":"gold"},{"translate":"None","color":"yellow"}]'}
+summon area_effect_cloud 45 73.5 3 {Duration:1000000,Tags:["target_text","highscore_nameplate","get_highscore_name"],CustomNameVisible:1,CustomName:'[{"translate":"Held by: ","color":"dark_green"},{"translate":"No one","color":"green"}]'}
 scoreboard objectives add alt_trident dummy
 scoreboard objectives add auto_ready dummy
 scoreboard players add $number auto_ready 0
@@ -296,12 +296,12 @@ scoreboard objectives add stat_g_win dummy
 scoreboard objectives add stat_bands dummy
 scoreboard objectives add stat_punches dummy
 team add spectator
-team modify spectator displayName {"text":"Spectator"}
-team modify spectator prefix [{"text":"[","color":"gray","bold":true},{"text":"Spectator","color":"white","bold":false},{"text":"] ","color":"gray","bold":true}]
+team modify spectator displayName {"translate":"Spectator"}
+team modify spectator prefix [{"translate":"[","color":"gray","bold":true},{"translate":"Spectator","color":"white","bold":false},{"translate":"] ","color":"gray","bold":true}]
 
 team add waiting
-team modify waiting displayName {"text":"Waiting"}
-team modify waiting prefix [{"text":"[","color":"dark_gray","bold":true},{"text":"Waiting","color":"gray","bold":false},{"text":"] ","color":"dark_gray","bold":true}]
+team modify waiting displayName {"translate":"Waiting"}
+team modify waiting prefix [{"translate":"[","color":"dark_gray","bold":true},{"translate":"Waiting","color":"gray","bold":false},{"translate":"] ","color":"dark_gray","bold":true}]
 scoreboard objectives add resetting dummy
 scoreboard objectives add adv_run dummy
 gamerule reducedDebugInfo true
@@ -314,7 +314,7 @@ team modify yellow color yellow
 scoreboard objectives add pregame dummy
 
 kill @e[type=area_effect_cloud,tag=start_button_text]
-summon area_effect_cloud 34 71 -40 {Duration:1000000,Tags:["start_button_text"],CustomNameVisible:1,CustomName:'[{"text":"- ","color":"gray"},{"text":"🗡","color":"#9c9558","bold":true},{"text":" Start ","color":"gold"},{"text":"🗡","color":"#9c9558","bold":true},{"text":" -","color":"gray"}]'}
+summon area_effect_cloud 34 71 -40 {Duration:1000000,Tags:["start_button_text"],CustomNameVisible:1,CustomName:'[{"translate":"- ","color":"gray"},{"translate":"🗡","color":"#9c9558","bold":true},{"translate":" Start ","color":"gold"},{"translate":"🗡","color":"#9c9558","bold":true},{"translate":" -","color":"gray"}]'}
 
 scoreboard objectives add drop_ready_book minecraft.dropped:minecraft.carrot_on_a_stick
 

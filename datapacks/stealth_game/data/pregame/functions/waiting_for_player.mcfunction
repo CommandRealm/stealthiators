@@ -1,2 +1,2 @@
-title @a[scores={ready=1}] title {"text":" "}
-title @a[scores={ready=1}] subtitle {"text":"Waiting for another player . . . ","color":"gray"}
+title @a[scores={ready=1}] title {"translate":" "}
+title @a[scores={ready=1}] subtitle {"translate":"Waiting for another player . . . ","color":"gray"}

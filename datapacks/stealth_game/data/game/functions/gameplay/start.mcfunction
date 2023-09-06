@@ -10,9 +10,9 @@ effect give @a[tag=playing] regeneration 100000 255 true
 effect give @a[team=sneaker] invisibility 10000 255 true
 effect give @a[team=gladiator] resistance 10000 2 true
 gamemode adventure @a[tag=playing]
-execute if score $round game matches 1 run title @a[tag=playing] subtitle [{"text":""}]
-execute if score $round game matches 1 run title @a[tag=playing] title [{"text":""}]
-execute if score $round game matches 1 if score $number mode matches 1 run title @a[tag=playing] title [{"text":"Round ","color":"#b4ae8f","bold":true},{"text":"1","color":"#d1c48a","bold":true}]
+execute if score $round game matches 1 run title @a[tag=playing] subtitle [{"translate":""}]
+execute if score $round game matches 1 run title @a[tag=playing] title [{"translate":""}]
+execute if score $round game matches 1 if score $number mode matches 1 run title @a[tag=playing] title [{"translate":"Round ","color":"#b4ae8f","bold":true},{"translate":"1","color":"#d1c48a","bold":true}]
 clear @a[tag=playing]
 kill @e[type=trident,x=1000,y=66,z=0,distance=..500]
 kill @e[type=snowball]
