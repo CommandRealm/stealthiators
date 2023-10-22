@@ -1,6 +1,6 @@
 execute if score $time cooldown matches -1 unless entity @a[team=sneaker,tag=playing] unless entity @a[tag=playing,team=won] unless entity @a[tag=waiting] unless entity @a[tag=playing,team=dead] unless entity @a[tag=infected_gladiator,tag=playing] unless entity @a[tag=admin] run function end:insufficient_players
 execute as @a[team=sneaker] at @s unless entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:iron_boots"}]}] run function game:gameplay/get_boots
-execute as @a[team=gladiator] at @s unless entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:carrot_on_a_stick"}]}] unless data entity @s ActiveEffects[{Id:14}] run function game:gameplay/get_helmet
+execute as @a[team=gladiator] at @s unless entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:carrot_on_a_stick"}]}] unless data entity @s active_effects[{id:"minecraft:invisibility"}] run function game:gameplay/get_helmet
 
 execute as @a[team=sneaker,scores={damage_taken=15..}] at @s run function game:gameplay/out
 execute if entity @a[scores={r_class=1},tag=playing,team=sneaker] run function game:class/brawler/main

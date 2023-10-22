@@ -5,5 +5,5 @@ execute unless entity @s[scores={g_class=5}] run tellraw @s [{"text":"Info: ","c
 scoreboard players set @s sel_g_class 5
 scoreboard players set @s g_class 5
 item replace entity @s weapon.mainhand with air
-clear @s carrot_on_a_stick{Enchantments:[{id:"x",lvl:1}]}
+clear @s carrot_on_a_stick{Enchantments:[{}]}
 playsound minecraft:entity.cow.step master @s ~ ~ ~ 1000 2
