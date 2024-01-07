@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     "minecraft:air",
-    "minecraft:grass",
+    "minecraft:short_grass",
     "minecraft:tall_grass",
     "minecraft:stone_button",
     "minecraft:stone_pressure_plate",
