@@ -10,3 +10,4 @@ execute if score $rand random matches 6 run clone 958 111 12 955 148 16 ~ ~ ~
 execute if score $rand random matches 7 run clone 958 111 17 955 148 21 ~ ~ ~
 execute if score $rand random matches 8 run clone 958 111 22 955 148 26 ~ ~ ~
 execute if score $rand random matches 9 run clone 958 111 27 955 148 31 ~ ~ ~
+return 1

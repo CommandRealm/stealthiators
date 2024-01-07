@@ -5,22 +5,22 @@ scoreboard players operation $g_left gladiators = $number gladiators
 execute if score $number gladiators matches 0 run function game:gameplay/auto_gladiators
 execute if score $number mode matches 0 run function game:gameplay/select_gladiators
 execute if score $number mode matches 1 run function game:gameplay/rotation/select_gladiator
-execute unless entity @a[team=gladiator,tag=playing] run team join sneaker @r[tag=playing]
-effect give @a[tag=playing] regeneration 100000 255 true
-effect give @a[team=sneaker] invisibility 10000 255 true
-effect give @a[team=gladiator] resistance 10000 2 true
+execute unless entity @a[tag=playing,team=gladiator] run team join sneaker @r[tag=playing]
+effect give @a[tag=playing] minecraft:regeneration 100000 255 true
+effect give @a[team=sneaker] minecraft:invisibility 10000 255 true
+effect give @a[team=gladiator] minecraft:resistance 10000 2 true
 gamemode adventure @a[tag=playing]
 execute if score $round game matches 1 run title @a[tag=playing] subtitle [{"text":""}]
 execute if score $round game matches 1 run title @a[tag=playing] title [{"text":""}]
 execute if score $round game matches 1 if score $number mode matches 1 run title @a[tag=playing] title [{"text":"Round ","color":"#b4ae8f","bold":true},{"text":"1","color":"#d1c48a","bold":true}]
 clear @a[tag=playing]
-kill @e[type=trident,x=1000,y=66,z=0,distance=..500]
-kill @e[type=snowball]
+kill @e[type=minecraft:trident,x=1000,y=66,z=0,distance=..500]
+kill @e[type=minecraft:snowball]
 title @a[tag=playing] times 5 60 5
-tp @a[team=sneaker,distance=1..] 1021 152 -35 0 0
-tp @a[team=gladiator,distance=1..] 1021 151 75 180 0
-effect clear @a[tag=playing] blindness
-effect clear @a[tag=playing] levitation
+tp @a[distance=1..,team=sneaker] 1021 152 -35 0 0
+tp @a[distance=1..,team=gladiator] 1021 151 75 180 0
+effect clear @a[tag=playing] minecraft:blindness
+effect clear @a[tag=playing] minecraft:levitation
 scoreboard objectives remove damage_taken
 scoreboard objectives add damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives remove damage_dealt
@@ -37,26 +37,26 @@ scoreboard players reset @a blind_cooldown
 scoreboard players reset @a locator
 scoreboard players reset @a display_cooldown
 scoreboard players set $time time_till_end -1
-fill 1019 151 -22 1023 157 -22 minecraft:iron_bars replace air
+fill 1019 151 -22 1023 157 -22 minecraft:iron_bars replace minecraft:air
 team modify sneaker seeFriendlyInvisibles false
 team modify gladiator seeFriendlyInvisibles false
 forceload remove 2340 127 1980 -21
 forceload add 1070 341 920 100
 forceload add 1070 99 920 -91
-kill @e[type=item,nbt={Item:{id:"minecraft:trident"}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:snowball"}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:snow"}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:item_frame"}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:painting"}}]
-kill @e[type=arrow]
+kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:trident"}}]
+kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:snowball"}}]
+kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:snow"}}]
+kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:item_frame"}}]
+kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:painting"}}]
+kill @e[type=minecraft:arrow]
 scoreboard objectives remove runner_id
 scoreboard objectives add runner_id dummy
 tag @a remove used_revive
 tag @a remove using_revive
 scoreboard players set $id runner_id 0
-execute as @a[tag=playing,team=sneaker,sort=random] at @s run function game:gameplay/generate_id
+execute as @a[tag=playing,sort=random,team=sneaker] at @s run function game:gameplay/generate_id
 
-effect give @a[team=gladiator] invisibility 100 255 true
+effect give @a[team=gladiator] minecraft:invisibility 100 255 true
 function game:gameplay/start_round
 
 scoreboard players set @a warp_cooldown 0
@@ -137,3 +137,5 @@ tag @a remove revived_by_47
 tag @a remove revived_by_48
 tag @a remove revived_by_49
 tag @a remove revived_by_50
+
+return 1

@@ -5,3 +5,5 @@ execute if entity @s[tag=!trident_summoned_yellow,tag=trident_summoned_orange] r
 execute if entity @s[tag=!trident_summoned_orange,tag=trident_summoned_red] run function game:tridents/rainbow/summon_orange
 execute if entity @s[tag=!trident_summoned_red,tag=!trident_summoned_recently] run function game:tridents/rainbow/summon_red
 tag @s remove trident_summoned_recently
+
+return 1

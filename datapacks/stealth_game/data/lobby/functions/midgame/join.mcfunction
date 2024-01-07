@@ -13,3 +13,4 @@ scoreboard players add @s points 0
 tag @s add playing
 advancement grant @a[tag=playing] only minecraft:custom/play_game
 bossbar set minecraft:lobby players @a[tag=!playing]
+return 1

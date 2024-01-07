@@ -1,4 +1,5 @@
-clear @s carrot_on_a_stick{CustomModelData:8}
-kill @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:8}}}]
-execute unless entity @s[scores={r_class=3}] run item replace entity @s hotbar.2 with carrot_on_a_stick{CustomModelData:8,display:{Name:'[{"text":"Click to select ","color":"dark_gray","italic":false},{"text":"Warper","color":"gray","bold":true}]',Lore:['[{"text":"The Warper can teleport back to their position five seconds ago.","color":"gray","italic":false}]']},HideFlags:63,Unbreakable:1b}
-execute if entity @s[scores={r_class=3}] run item replace entity @s hotbar.2 with carrot_on_a_stick{Enchantments:[{}],CustomModelData:8,display:{Name:'[{"text":"You have selected ","color":"dark_gray","italic":false},{"text":"Warper","color":"gray","bold":true}]',Lore:['[{"text":"The Warper can teleport back to their position five seconds ago.","color":"gray","italic":false}]']},HideFlags:63,Unbreakable:1b}
+clear @s minecraft:carrot_on_a_stick{CustomModelData:8}
+kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:8}}}]
+execute unless entity @s[scores={r_class=3}] run item replace entity @s hotbar.2 with minecraft:carrot_on_a_stick{CustomModelData:8,display:{Name:'[{"text":"Click to select ","color":"dark_gray","italic":false},{"text":"Warper","color":"gray","bold":true}]',Lore:['[{"text":"The Warper can teleport back to their position five seconds ago.","color":"gray","italic":false}]']},HideFlags:63,Unbreakable:1b}
+execute if entity @s[scores={r_class=3}] run item replace entity @s hotbar.2 with minecraft:carrot_on_a_stick{Enchantments:[{id:"minecraft:x",lvl:1s}],CustomModelData:8,display:{Name:'[{"text":"You have selected ","color":"dark_gray","italic":false},{"text":"Warper","color":"gray","bold":true}]',Lore:['[{"text":"The Warper can teleport back to their position five seconds ago.","color":"gray","italic":false}]']},HideFlags:63,Unbreakable:1b}
+return 1

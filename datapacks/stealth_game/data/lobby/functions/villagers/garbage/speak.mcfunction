@@ -4,3 +4,4 @@ execute if entity @s[tag=said_greeting] run function lobby:villagers/garbage/ran
 execute if entity @s[tag=saying_greet] run function lobby:villagers/garbage/greeting
 tag @s remove saying_greet
 execute positioned ^ ^ ^3 run tag @a[distance=..3] add talked_to_7
+return 1

@@ -112,61 +112,61 @@ execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider
 execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_50"]}}}] run kill @e[tag=tp_riding_50]
 
 
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_0"]}}}] run tag @e[tag=rider_0,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_1"]}}}] run tag @e[tag=rider_1,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_2"]}}}] run tag @e[tag=rider_2,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_3"]}}}] run tag @e[tag=rider_3,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_4"]}}}] run tag @e[tag=rider_4,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_5"]}}}] run tag @e[tag=rider_5,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_6"]}}}] run tag @e[tag=rider_6,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_7"]}}}] run tag @e[tag=rider_7,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_8"]}}}] run tag @e[tag=rider_8,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_9"]}}}] run tag @e[tag=rider_9,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_10"]}}}] run tag @e[tag=rider_10,type=horse] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_0"]}}}] run tag @e[type=minecraft:horse,tag=rider_0] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_1"]}}}] run tag @e[type=minecraft:horse,tag=rider_1] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_2"]}}}] run tag @e[type=minecraft:horse,tag=rider_2] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_3"]}}}] run tag @e[type=minecraft:horse,tag=rider_3] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_4"]}}}] run tag @e[type=minecraft:horse,tag=rider_4] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_5"]}}}] run tag @e[type=minecraft:horse,tag=rider_5] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_6"]}}}] run tag @e[type=minecraft:horse,tag=rider_6] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_7"]}}}] run tag @e[type=minecraft:horse,tag=rider_7] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_8"]}}}] run tag @e[type=minecraft:horse,tag=rider_8] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_9"]}}}] run tag @e[type=minecraft:horse,tag=rider_9] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_10"]}}}] run tag @e[type=minecraft:horse,tag=rider_10] add kill_mount
 
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_11"]}}}] run tag @e[tag=rider_11,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_12"]}}}] run tag @e[tag=rider_12,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_13"]}}}] run tag @e[tag=rider_13,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_14"]}}}] run tag @e[tag=rider_14,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_15"]}}}] run tag @e[tag=rider_15,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_16"]}}}] run tag @e[tag=rider_16,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_17"]}}}] run tag @e[tag=rider_17,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_18"]}}}] run tag @e[tag=rider_18,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_19"]}}}] run tag @e[tag=rider_19,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_20"]}}}] run tag @e[tag=rider_20,type=horse] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_11"]}}}] run tag @e[type=minecraft:horse,tag=rider_11] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_12"]}}}] run tag @e[type=minecraft:horse,tag=rider_12] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_13"]}}}] run tag @e[type=minecraft:horse,tag=rider_13] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_14"]}}}] run tag @e[type=minecraft:horse,tag=rider_14] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_15"]}}}] run tag @e[type=minecraft:horse,tag=rider_15] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_16"]}}}] run tag @e[type=minecraft:horse,tag=rider_16] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_17"]}}}] run tag @e[type=minecraft:horse,tag=rider_17] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_18"]}}}] run tag @e[type=minecraft:horse,tag=rider_18] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_19"]}}}] run tag @e[type=minecraft:horse,tag=rider_19] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_20"]}}}] run tag @e[type=minecraft:horse,tag=rider_20] add kill_mount
 
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_21"]}}}] run tag @e[tag=rider_21,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_22"]}}}] run tag @e[tag=rider_22,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_23"]}}}] run tag @e[tag=rider_23,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_24"]}}}] run tag @e[tag=rider_24,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_25"]}}}] run tag @e[tag=rider_25,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_26"]}}}] run tag @e[tag=rider_26,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_27"]}}}] run tag @e[tag=rider_27,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_28"]}}}] run tag @e[tag=rider_28,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_29"]}}}] run tag @e[tag=rider_29,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_30"]}}}] run tag @e[tag=rider_30,type=horse] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_21"]}}}] run tag @e[type=minecraft:horse,tag=rider_21] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_22"]}}}] run tag @e[type=minecraft:horse,tag=rider_22] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_23"]}}}] run tag @e[type=minecraft:horse,tag=rider_23] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_24"]}}}] run tag @e[type=minecraft:horse,tag=rider_24] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_25"]}}}] run tag @e[type=minecraft:horse,tag=rider_25] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_26"]}}}] run tag @e[type=minecraft:horse,tag=rider_26] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_27"]}}}] run tag @e[type=minecraft:horse,tag=rider_27] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_28"]}}}] run tag @e[type=minecraft:horse,tag=rider_28] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_29"]}}}] run tag @e[type=minecraft:horse,tag=rider_29] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_30"]}}}] run tag @e[type=minecraft:horse,tag=rider_30] add kill_mount
 
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_31"]}}}] run tag @e[tag=rider_31,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_32"]}}}] run tag @e[tag=rider_32,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_33"]}}}] run tag @e[tag=rider_33,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_34"]}}}] run tag @e[tag=rider_34,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_35"]}}}] run tag @e[tag=rider_35,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_36"]}}}] run tag @e[tag=rider_36,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_37"]}}}] run tag @e[tag=rider_37,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_38"]}}}] run tag @e[tag=rider_38,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_39"]}}}] run tag @e[tag=rider_39,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_40"]}}}] run tag @e[tag=rider_40,type=horse] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_31"]}}}] run tag @e[type=minecraft:horse,tag=rider_31] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_32"]}}}] run tag @e[type=minecraft:horse,tag=rider_32] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_33"]}}}] run tag @e[type=minecraft:horse,tag=rider_33] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_34"]}}}] run tag @e[type=minecraft:horse,tag=rider_34] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_35"]}}}] run tag @e[type=minecraft:horse,tag=rider_35] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_36"]}}}] run tag @e[type=minecraft:horse,tag=rider_36] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_37"]}}}] run tag @e[type=minecraft:horse,tag=rider_37] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_38"]}}}] run tag @e[type=minecraft:horse,tag=rider_38] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_39"]}}}] run tag @e[type=minecraft:horse,tag=rider_39] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_40"]}}}] run tag @e[type=minecraft:horse,tag=rider_40] add kill_mount
 
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_41"]}}}] run tag @e[tag=rider_41,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_42"]}}}] run tag @e[tag=rider_42,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_43"]}}}] run tag @e[tag=rider_43,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_44"]}}}] run tag @e[tag=rider_44,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_45"]}}}] run tag @e[tag=rider_45,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_46"]}}}] run tag @e[tag=rider_46,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_47"]}}}] run tag @e[tag=rider_47,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_48"]}}}] run tag @e[tag=rider_48,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_49"]}}}] run tag @e[tag=rider_49,type=horse] add kill_mount
-execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_50"]}}}] run tag @e[tag=rider_50,type=horse] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_41"]}}}] run tag @e[type=minecraft:horse,tag=rider_41] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_42"]}}}] run tag @e[type=minecraft:horse,tag=rider_42] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_43"]}}}] run tag @e[type=minecraft:horse,tag=rider_43] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_44"]}}}] run tag @e[type=minecraft:horse,tag=rider_44] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_45"]}}}] run tag @e[type=minecraft:horse,tag=rider_45] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_46"]}}}] run tag @e[type=minecraft:horse,tag=rider_46] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_47"]}}}] run tag @e[type=minecraft:horse,tag=rider_47] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_48"]}}}] run tag @e[type=minecraft:horse,tag=rider_48] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_49"]}}}] run tag @e[type=minecraft:horse,tag=rider_49] add kill_mount
+execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_50"]}}}] run tag @e[type=minecraft:horse,tag=rider_50] add kill_mount
 
 
 tp @e[tag=rider_0,tag=kill_mount] 0 0 0
@@ -230,58 +230,59 @@ tp @e[tag=rider_49,tag=kill_mount] 0 0 0
 tp @e[tag=rider_50,tag=kill_mount] 0 0 0
 
 
-kill @e[tag=rider_0,type=horse]
-kill @e[tag=rider_1,type=horse]
-kill @e[tag=rider_2,type=horse]
-kill @e[tag=rider_3,type=horse]
-kill @e[tag=rider_4,type=horse]
-kill @e[tag=rider_5,type=horse]
-kill @e[tag=rider_6,type=horse]
-kill @e[tag=rider_7,type=horse]
-kill @e[tag=rider_8,type=horse]
-kill @e[tag=rider_9,type=horse]
-kill @e[tag=rider_10,type=horse]
+kill @e[type=minecraft:horse,tag=rider_0]
+kill @e[type=minecraft:horse,tag=rider_1]
+kill @e[type=minecraft:horse,tag=rider_2]
+kill @e[type=minecraft:horse,tag=rider_3]
+kill @e[type=minecraft:horse,tag=rider_4]
+kill @e[type=minecraft:horse,tag=rider_5]
+kill @e[type=minecraft:horse,tag=rider_6]
+kill @e[type=minecraft:horse,tag=rider_7]
+kill @e[type=minecraft:horse,tag=rider_8]
+kill @e[type=minecraft:horse,tag=rider_9]
+kill @e[type=minecraft:horse,tag=rider_10]
 
-kill @e[tag=rider_11,type=horse]
-kill @e[tag=rider_12,type=horse]
-kill @e[tag=rider_13,type=horse]
-kill @e[tag=rider_14,type=horse]
-kill @e[tag=rider_15,type=horse]
-kill @e[tag=rider_16,type=horse]
-kill @e[tag=rider_17,type=horse]
-kill @e[tag=rider_18,type=horse]
-kill @e[tag=rider_19,type=horse]
-kill @e[tag=rider_20,type=horse]
+kill @e[type=minecraft:horse,tag=rider_11]
+kill @e[type=minecraft:horse,tag=rider_12]
+kill @e[type=minecraft:horse,tag=rider_13]
+kill @e[type=minecraft:horse,tag=rider_14]
+kill @e[type=minecraft:horse,tag=rider_15]
+kill @e[type=minecraft:horse,tag=rider_16]
+kill @e[type=minecraft:horse,tag=rider_17]
+kill @e[type=minecraft:horse,tag=rider_18]
+kill @e[type=minecraft:horse,tag=rider_19]
+kill @e[type=minecraft:horse,tag=rider_20]
 
-kill @e[tag=rider_21,type=horse]
-kill @e[tag=rider_22,type=horse]
-kill @e[tag=rider_23,type=horse]
-kill @e[tag=rider_24,type=horse]
-kill @e[tag=rider_25,type=horse]
-kill @e[tag=rider_26,type=horse]
-kill @e[tag=rider_27,type=horse]
-kill @e[tag=rider_28,type=horse]
-kill @e[tag=rider_29,type=horse]
-kill @e[tag=rider_30,type=horse]
+kill @e[type=minecraft:horse,tag=rider_21]
+kill @e[type=minecraft:horse,tag=rider_22]
+kill @e[type=minecraft:horse,tag=rider_23]
+kill @e[type=minecraft:horse,tag=rider_24]
+kill @e[type=minecraft:horse,tag=rider_25]
+kill @e[type=minecraft:horse,tag=rider_26]
+kill @e[type=minecraft:horse,tag=rider_27]
+kill @e[type=minecraft:horse,tag=rider_28]
+kill @e[type=minecraft:horse,tag=rider_29]
+kill @e[type=minecraft:horse,tag=rider_30]
 
-kill @e[tag=rider_31,type=horse]
-kill @e[tag=rider_32,type=horse]
-kill @e[tag=rider_33,type=horse]
-kill @e[tag=rider_34,type=horse]
-kill @e[tag=rider_35,type=horse]
-kill @e[tag=rider_36,type=horse]
-kill @e[tag=rider_37,type=horse]
-kill @e[tag=rider_38,type=horse]
-kill @e[tag=rider_39,type=horse]
-kill @e[tag=rider_40,type=horse]
+kill @e[type=minecraft:horse,tag=rider_31]
+kill @e[type=minecraft:horse,tag=rider_32]
+kill @e[type=minecraft:horse,tag=rider_33]
+kill @e[type=minecraft:horse,tag=rider_34]
+kill @e[type=minecraft:horse,tag=rider_35]
+kill @e[type=minecraft:horse,tag=rider_36]
+kill @e[type=minecraft:horse,tag=rider_37]
+kill @e[type=minecraft:horse,tag=rider_38]
+kill @e[type=minecraft:horse,tag=rider_39]
+kill @e[type=minecraft:horse,tag=rider_40]
 
-kill @e[tag=rider_41,type=horse]
-kill @e[tag=rider_42,type=horse]
-kill @e[tag=rider_43,type=horse]
-kill @e[tag=rider_44,type=horse]
-kill @e[tag=rider_45,type=horse]
-kill @e[tag=rider_46,type=horse]
-kill @e[tag=rider_47,type=horse]
-kill @e[tag=rider_48,type=horse]
-kill @e[tag=rider_49,type=horse]
-kill @e[tag=rider_50,type=horse]
+kill @e[type=minecraft:horse,tag=rider_41]
+kill @e[type=minecraft:horse,tag=rider_42]
+kill @e[type=minecraft:horse,tag=rider_43]
+kill @e[type=minecraft:horse,tag=rider_44]
+kill @e[type=minecraft:horse,tag=rider_45]
+kill @e[type=minecraft:horse,tag=rider_46]
+kill @e[type=minecraft:horse,tag=rider_47]
+kill @e[type=minecraft:horse,tag=rider_48]
+kill @e[type=minecraft:horse,tag=rider_49]
+kill @e[type=minecraft:horse,tag=rider_50]
+return 1

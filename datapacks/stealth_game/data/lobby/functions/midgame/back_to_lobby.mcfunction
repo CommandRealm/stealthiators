@@ -4,3 +4,4 @@ gamemode adventure
 function general:rank
 tellraw @s {"text":"You are no longer spectating.","color":"gray"}
 execute at @s run playsound minecraft:block.anvil.place master @s ~ ~ ~ 0.25 0.65
+return 1

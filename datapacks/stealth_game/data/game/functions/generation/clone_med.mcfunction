@@ -431,29 +431,30 @@ execute positioned ~6 134 ~25 run function game:generation/random_west_wall
 ##
 execute if score $med_left generation matches 0 run clone 956 111 38 966 148 42 ~49 134 ~25
 execute if score $med_left generation matches 0 run clone 935 111 38 945 148 42 ~9 134 ~25
-execute if score $med_left generation matches 0 run fill ~48 171 ~24 ~48 171 ~29 cut_red_sandstone_slab[type=top]
-execute if score $med_left generation matches 0 run fill ~49 171 ~24 ~58 171 ~24 cut_red_sandstone_slab[type=top]
-execute if score $med_left generation matches 0 run fill ~11 171 ~24 ~19 171 ~24 cut_red_sandstone_slab[type=top]
-execute if score $med_left generation matches 0 run fill ~20 171 ~24 ~20 171 ~29 cut_red_sandstone_slab[type=top]
+execute if score $med_left generation matches 0 run fill ~48 171 ~24 ~48 171 ~29 minecraft:cut_red_sandstone_slab[type=top]
+execute if score $med_left generation matches 0 run fill ~49 171 ~24 ~58 171 ~24 minecraft:cut_red_sandstone_slab[type=top]
+execute if score $med_left generation matches 0 run fill ~11 171 ~24 ~19 171 ~24 minecraft:cut_red_sandstone_slab[type=top]
+execute if score $med_left generation matches 0 run fill ~20 171 ~24 ~20 171 ~29 minecraft:cut_red_sandstone_slab[type=top]
 
-execute if score $med_left generation matches 0 run fill ~ 171 ~26 ~18 171 ~29 smooth_sandstone replace #replaceable
-execute if score $med_left generation matches 0 run fill ~68 171 ~26 ~51 171 ~29 smooth_sandstone replace #replaceable
-
-
-fill ~10 171 ~ ~10 171 ~30 cut_red_sandstone_slab[type=top] replace air
-fill ~58 171 ~ ~58 171 ~30 cut_red_sandstone_slab[type=top] replace air
+execute if score $med_left generation matches 0 run fill ~ 171 ~26 ~18 171 ~29 minecraft:smooth_sandstone replace #minecraft:replaceable
+execute if score $med_left generation matches 0 run fill ~68 171 ~26 ~51 171 ~29 minecraft:smooth_sandstone replace #minecraft:replaceable
 
 
-execute if score $med_left generation matches 0 run fill ~48 172 ~24 ~48 200 ~29 barrier replace air
-execute if score $med_left generation matches 0 run fill ~49 172 ~24 ~58 200 ~24 barrier replace air
-execute if score $med_left generation matches 0 run fill ~11 172 ~24 ~19 200 ~24 barrier replace air
-execute if score $med_left generation matches 0 run fill ~20 172 ~24 ~20 200 ~29 barrier replace air
-fill ~10 172 ~ ~10 200 ~30 barrier replace air
-fill ~58 172 ~ ~58 200 ~30 barrier replace air
+fill ~10 171 ~ ~10 171 ~30 minecraft:cut_red_sandstone_slab[type=top] replace minecraft:air
+fill ~58 171 ~ ~58 171 ~30 minecraft:cut_red_sandstone_slab[type=top] replace minecraft:air
+
+
+execute if score $med_left generation matches 0 run fill ~48 172 ~24 ~48 200 ~29 minecraft:barrier replace minecraft:air
+execute if score $med_left generation matches 0 run fill ~49 172 ~24 ~58 200 ~24 minecraft:barrier replace minecraft:air
+execute if score $med_left generation matches 0 run fill ~11 172 ~24 ~19 200 ~24 minecraft:barrier replace minecraft:air
+execute if score $med_left generation matches 0 run fill ~20 172 ~24 ~20 200 ~29 minecraft:barrier replace minecraft:air
+fill ~10 172 ~ ~10 200 ~30 minecraft:barrier replace minecraft:air
+fill ~58 172 ~ ~58 200 ~30 minecraft:barrier replace minecraft:air
 
 execute unless entity @s[x=987,y=135,z=-12,distance=..2] at @s positioned ~10 150 ~-5 run function game:generation/random_med_basalt_area
 
 schedule function game:generation/check_med_segment 2t
 schedule function game:generation/check_med_segment 5t
-fill 987 171 ~ 992 171 ~29 smooth_sandstone replace air
-fill 1050 171 ~ 1055 171 ~29 smooth_sandstone replace air
+fill 987 171 ~ 992 171 ~29 minecraft:smooth_sandstone replace minecraft:air
+fill 1050 171 ~ 1055 171 ~29 minecraft:smooth_sandstone replace minecraft:air
+return 1

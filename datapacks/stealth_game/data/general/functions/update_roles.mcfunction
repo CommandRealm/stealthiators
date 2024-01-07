@@ -186,3 +186,4 @@ tag Icy_Craby add has_cr
 
 # art
 tag EdLePug add has_art
+return 1

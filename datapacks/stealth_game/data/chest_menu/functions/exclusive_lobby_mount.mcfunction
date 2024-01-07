@@ -5,3 +5,4 @@ clear @s #minecraft:spawn_eggs
 
 tag @s remove change_exclusive
 function chest_menu:start_advancement_unlocks
+return 1

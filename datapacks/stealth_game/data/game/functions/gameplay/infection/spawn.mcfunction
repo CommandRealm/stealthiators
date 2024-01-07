@@ -7,12 +7,13 @@ clear @s
 effect clear @s
 scoreboard players set @s g_class 0
 tag @s add infected_gladiator
-give @s trident{display:{Name:'{"text":"Trident","color":"#9c9558","italic":false}'},Unbreakable:1b,Enchantments:[{id:"minecraft:loyalty",lvl:4}],HideFlags:63}
+give @s minecraft:trident{display:{Name:'{"text":"Trident","color":"#9c9558","italic":false}'},Unbreakable:1b,Enchantments:[{id:"minecraft:loyalty",lvl:4s}],HideFlags:63}
 scoreboard players set @s dash_cooldown 1
 tp @s 1021 151 -15 180 0
 scoreboard players set $backdoor band_number 0
 function game:gameplay/infection/respawn_tp
-execute if score $tp_left band_number matches 0 if score $check_band band_number matches ..0 run tellraw @s [{"text":"Spawned on band ","color":"gold"},{"text":"#","color":"yelow","bold":true},{"score":{"objective":"band_number","name":"$correct_band"}}]
+execute if score $tp_left band_number matches 0 if score $check_band band_number matches ..0 run tellraw @s [{"text":"Spawned on band ","color":"gold"},{"text":"#","color":"white","bold":true},{"score":{"objective":"band_number","name":"$correct_band"}}]
 execute if score $check_band band_number matches 1.. run tellraw @s [{"text":"Spawned in final hallway.","color":"gold"}]
 playsound minecraft:custom.teleport master @s ~ ~ ~ 100000 1.5
 execute as @a[tag=playing] run playsound minecraft:entity.zoglin.attack master @s ~ ~ ~ 10000000000 0
+return 1

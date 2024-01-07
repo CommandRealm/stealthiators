@@ -1,26 +1,26 @@
-execute if entity @s[scores={lobby_mount=0}] run summon horse ~ ~ ~ {Invulnerable:1b,Tame:1b,SaddleItem:{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:1,display:{Name:'{"text":" "}'}}},Tags:["need_verification"],Invulnerable:1b,Attributes:[{Name:"generic.movement_speed",Base:0.125}],Silent:1b}
-execute if entity @s[scores={lobby_mount=0}] run summon area_effect_cloud ~ ~ ~ {Duration:10000,Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,CustomName:'[{"text":" "}]'}
-execute if entity @s[scores={lobby_mount=1..}] run summon horse ~ ~ ~ {Tame:1b,SaddleItem:{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:1,display:{Name:'{"text":" "}'}}},Tags:["need_verification"],active_effects:[{id:"minecraft:invisibility",duration:1000000,show_particles:false,amplifier:0}],Invulnerable:1b,Attributes:[{Name:"generic.movement_speed",Base:0.125}],Silent:1b,CustomName:'[{"text":" "}]'}
-execute if entity @s[scores={lobby_mount=1}] run summon donkey ~ ~ ~ {Passengers:[{id:"minecraft:area_effect_cloud",Duration:10000000}],Tame:1b,SaddleItem:{id:"minecraft:saddle",Count:1b},Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,PersistenceRequired:1b}
-execute if entity @s[scores={lobby_mount=2}] run summon cow ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,PersistenceRequired:1b}
-execute if entity @s[scores={lobby_mount=3}] run summon mooshroom ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,PersistenceRequired:1b}
-execute if entity @s[scores={lobby_mount=4}] run summon slime ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,Size:2,NoAI:1b,PersistenceRequired:1b}
-execute if entity @s[scores={lobby_mount=5}] run summon chicken ~ ~ ~ {IsChickenJockey:1b,Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,Passengers:[{id:"minecraft:zombie",IsBaby:1b,Invulnerable:1b,NoAI:1b,Tags:["no_fire","0"]}],PersistenceRequired:1b}
-execute if entity @s[scores={lobby_mount=6}] run summon spider ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,Passengers:[{id:"minecraft:cave_spider",PersistenceRequired:1b,Invulnerable:1b,NoAI:1b,Tags:["0"],Passengers:[{id:"minecraft:cave_spider",PersistenceRequired:1b,Invulnerable:1b,NoAI:1b,Tags:["0"]}]}],PersistenceRequired:1b}
-execute if entity @s[scores={lobby_mount=7}] run summon polar_bear ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,PersistenceRequired:1b}
-execute if entity @s[scores={lobby_mount=8}] run summon skeleton_horse ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,Passengers:[{id:"minecraft:area_effect_cloud",Duration:10000000}],Tame:1b,SaddleItem:{id:"minecraft:saddle",Count:1b},PersistenceRequired:1b}
-execute if entity @s[scores={lobby_mount=9}] run summon bee ~ ~ ~ {Tags:["need_tp_verification","rideable_mob","flying_mount"],Invulnerable:1b,PersistenceRequired:1b}
-execute if entity @s[scores={lobby_mount=10}] run summon parrot ~ ~ ~ {Tags:["need_tp_verification","rideable_mob","flying_mount"],Invulnerable:1b,PersistenceRequired:1b}
-execute if entity @s[scores={lobby_mount=11}] run summon vex ~ ~ ~ {Tags:["need_tp_verification","rideable_mob","flying_mount"],Invulnerable:1b,PersistenceRequired:1b}
-execute if entity @s[scores={lobby_mount=12}] run summon panda ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,PersistenceRequired:1b}
-execute if entity @s[scores={lobby_mount=13}] run summon hoglin ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,PersistenceRequired:1b,IsImmuneToZombification:1b,NoAI:1b}
-execute if entity @s[scores={lobby_mount=14}] run summon sheep ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,PersistenceRequired:1b,CustomName:'[{"text":"jeb_"}]'}
-execute if entity @s[scores={lobby_mount=15}] run summon phantom ~ ~ ~ {Size:3,Tags:["need_tp_verification","rideable_mob","flying_mount","no_fire"],Invulnerable:1b,PersistenceRequired:1b,NoAI:1b}
-execute if entity @s[scores={lobby_mount=16}] run summon turtle ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,Passengers:[{id:"minecraft:turtle",PersistenceRequired:1b,Invulnerable:1b,NoAI:1b,Tags:["0"],Passengers:[{id:"minecraft:turtle",PersistenceRequired:1b,Invulnerable:1b,NoAI:1b,Tags:["0"]}]}],PersistenceRequired:1b}
-execute if entity @s[scores={lobby_mount=17}] run tag @e[tag=need_verification,type=horse] add cloud_mount
-execute if entity @s[scores={lobby_mount=18}] run tag @e[tag=need_verification,type=horse] add dirt_block
+execute if entity @s[scores={lobby_mount=0}] run summon minecraft:horse ~ ~ ~ {Invulnerable:1b,Tame:1b,SaddleItem:{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:1,display:{Name:'{"text":" "}'}}},Tags:["need_verification"],Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.125d}],Silent:1b}
+execute if entity @s[scores={lobby_mount=0}] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:10000,Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,CustomName:'[{"text":" "}]'}
+execute if entity @s[scores={lobby_mount=1..}] run summon minecraft:horse ~ ~ ~ {Tame:1b,SaddleItem:{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:1,display:{Name:'{"text":" "}'}}},Tags:["need_verification"],Invulnerable:1b,Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.125d}],Silent:1b,CustomName:'[{"text":" "}]',active_effects:[{id:"minecraft:invisibility",duration:1000000,show_particles:0b,amplifier:0b}]}
+execute if entity @s[scores={lobby_mount=1}] run summon minecraft:donkey ~ ~ ~ {Passengers:[{id:"minecraft:area_effect_cloud",Duration:10000000}],Tame:1b,SaddleItem:{id:"minecraft:saddle",Count:1b},Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,PersistenceRequired:1b}
+execute if entity @s[scores={lobby_mount=2}] run summon minecraft:cow ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,PersistenceRequired:1b}
+execute if entity @s[scores={lobby_mount=3}] run summon minecraft:mooshroom ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,PersistenceRequired:1b}
+execute if entity @s[scores={lobby_mount=4}] run summon minecraft:slime ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,Size:2,NoAI:1b,PersistenceRequired:1b}
+execute if entity @s[scores={lobby_mount=5}] run summon minecraft:chicken ~ ~ ~ {IsChickenJockey:1b,Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,Passengers:[{id:"minecraft:zombie",IsBaby:1b,Invulnerable:1b,NoAI:1b,Tags:["no_fire","0"]}],PersistenceRequired:1b}
+execute if entity @s[scores={lobby_mount=6}] run summon minecraft:spider ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,Passengers:[{id:"minecraft:cave_spider",PersistenceRequired:1b,Invulnerable:1b,NoAI:1b,Tags:["0"],Passengers:[{id:"minecraft:cave_spider",PersistenceRequired:1b,Invulnerable:1b,NoAI:1b,Tags:["0"]}]}],PersistenceRequired:1b}
+execute if entity @s[scores={lobby_mount=7}] run summon minecraft:polar_bear ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,PersistenceRequired:1b}
+execute if entity @s[scores={lobby_mount=8}] run summon minecraft:skeleton_horse ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,Passengers:[{id:"minecraft:area_effect_cloud",Duration:10000000}],Tame:1b,SaddleItem:{id:"minecraft:saddle",Count:1b},PersistenceRequired:1b}
+execute if entity @s[scores={lobby_mount=9}] run summon minecraft:bee ~ ~ ~ {Tags:["need_tp_verification","rideable_mob","flying_mount"],Invulnerable:1b,PersistenceRequired:1b}
+execute if entity @s[scores={lobby_mount=10}] run summon minecraft:parrot ~ ~ ~ {Tags:["need_tp_verification","rideable_mob","flying_mount"],Invulnerable:1b,PersistenceRequired:1b}
+execute if entity @s[scores={lobby_mount=11}] run summon minecraft:vex ~ ~ ~ {Tags:["need_tp_verification","rideable_mob","flying_mount"],Invulnerable:1b,PersistenceRequired:1b}
+execute if entity @s[scores={lobby_mount=12}] run summon minecraft:panda ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,PersistenceRequired:1b}
+execute if entity @s[scores={lobby_mount=13}] run summon minecraft:hoglin ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,PersistenceRequired:1b,IsImmuneToZombification:1b,NoAI:1b}
+execute if entity @s[scores={lobby_mount=14}] run summon minecraft:sheep ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,PersistenceRequired:1b,CustomName:'[{"text":"jeb_"}]'}
+execute if entity @s[scores={lobby_mount=15}] run summon minecraft:phantom ~ ~ ~ {Size:3,Tags:["need_tp_verification","rideable_mob","flying_mount","no_fire"],Invulnerable:1b,PersistenceRequired:1b,NoAI:1b}
+execute if entity @s[scores={lobby_mount=16}] run summon minecraft:turtle ~ ~ ~ {Tags:["need_tp_verification","rideable_mob"],Invulnerable:1b,Passengers:[{id:"minecraft:turtle",PersistenceRequired:1b,Invulnerable:1b,NoAI:1b,Tags:["0"],Passengers:[{id:"minecraft:turtle",PersistenceRequired:1b,Invulnerable:1b,NoAI:1b,Tags:["0"]}]}],PersistenceRequired:1b}
+execute if entity @s[scores={lobby_mount=17}] run tag @e[type=minecraft:horse,tag=need_verification] add cloud_mount
+execute if entity @s[scores={lobby_mount=18}] run tag @e[type=minecraft:horse,tag=need_verification] add dirt_block
 
-team join no_collision @e[tag=need_verification,type=horse]
+team join no_collision @e[type=minecraft:horse,tag=need_verification]
 team join no_collision @e[tag=need_tp_verification]
 tag @s remove rider_10
 tag @s remove rider_9
@@ -249,3 +249,4 @@ execute if entity @s[tag=rider_41] run tag @e[tag=need_tp_verification,sort=near
 execute if entity @s[tag=rider_50] run tag @e[tag=need_tp_verification,sort=nearest,limit=1] add tp_riding_50
 tag @e[tag=need_tp_verification] remove need_tp_verification
 tag @s add has_mob
+return 1

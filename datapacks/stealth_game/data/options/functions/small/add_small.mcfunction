@@ -1,12 +1,13 @@
-setblock 34 67 -55 air
+setblock 34 67 -55 minecraft:air
 playsound minecraft:ui.button.click master @s
 
 
 
-setblock 34 67 -55 oak_wall_sign[facing=south]{front_text:{messages:['{"text":"Small width","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/execute if score $game state matches 1.. run function options:error"}}', '{"text":"segments:","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/execute if score $auto generation matches 1 run function options:invalid_generation"}}', '{"score":{"objective":"custom_gen","name":"$small"},"color":"gray"}', '{"text":"<<<         >>>","color":"#91b0be","bold":true,"clickEvent":{"action":"run_command","value":"/execute if score $auto generation matches 0 as @s at @s anchored eyes if score $game state matches 0 run function options:small/click_small"}}'], has_glowing_text: false, color: "black"}}
+setblock 34 67 -55 minecraft:oak_wall_sign[facing=south]{front_text:{messages:['{"text":"Small width","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/execute if score $game state matches 1.. run function options:error"}}','{"text":"segments:","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/execute if score $auto generation matches 1 run function options:invalid_generation"}}','{"score":{"objective":"custom_gen","name":"$small"},"color":"gray"}','{"text":"<<<         >>>","color":"#91b0be","bold":true,"clickEvent":{"action":"run_command","value":"/execute if score $auto generation matches 0 at @s anchored eyes if score $game state matches 0 run function options:small/click_small"}}'],has_glowing_text:0b,color:"black"}}
 
 
 particle minecraft:cloud 34 68.5 -56 0 0 0 0.05 10
 
 kill @e[tag=display_small]
-summon armor_stand 34 66.625 -56 {DisabledSlots:2039583,Tags:["display_small","model"],Small:0b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:quartz_bricks",Count:1b}]}
+summon minecraft:armor_stand 34 66.625 -56 {DisabledSlots:2039583,Tags:["display_small","model"],Small:0b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:quartz_bricks",Count:1b}]}
+return 1

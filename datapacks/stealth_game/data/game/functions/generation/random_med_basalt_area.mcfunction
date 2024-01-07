@@ -1,6 +1,6 @@
 scoreboard players set $mod random 16
 function random:random
-execute if score $rand random matches 0 run clone 997 88 -22 1045 95 -18 ~ ~ ~ 
+execute if score $rand random matches 0 run clone 997 88 -22 1045 95 -18 ~ ~ ~
 execute if score $rand random matches 1 run clone 997 88 -28 1045 95 -24 ~ ~ ~
 execute if score $rand random matches 2 run clone 997 88 -34 1045 95 -30 ~ ~ ~
 execute if score $rand random matches 3 run clone 997 88 -40 1045 95 -36 ~ ~ ~
@@ -17,3 +17,4 @@ execute if score $rand random matches 12 run clone 997 88 -4 1045 95 0 ~ ~ ~
 execute if score $rand random matches 13 run clone 997 88 2 1045 95 6 ~ ~ ~
 execute if score $rand random matches 14 run clone 997 88 8 1045 95 12 ~ ~ ~
 execute if score $rand random matches 15 run clone 997 88 14 1045 95 18 ~ ~ ~
+return 1

@@ -4,4 +4,5 @@ scoreboard players reset @s shoot_bow
 scoreboard players set @s foreseer_cool 240
 
 # in case they have two arrows
-clear @s spectral_arrow
+clear @s minecraft:spectral_arrow
+return 1

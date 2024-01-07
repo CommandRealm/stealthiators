@@ -15,3 +15,4 @@ execute if entity @s[scores={select_class=11}] run function lobby:class_selectio
 execute if entity @s[scores={select_class=12}] run function lobby:class_selection/r_6
 execute if entity @s[scores={select_class=13}] run function lobby:class_selection/g_5
 execute if entity @s[scores={select_class=14}] run function lobby:class_selection/g_6
+return 1

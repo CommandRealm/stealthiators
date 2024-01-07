@@ -12,3 +12,4 @@ tag @a remove winner
 execute as @a at @s run playsound minecraft:entity.wither.death master @s ~ ~ ~ 1000000 0.75
 tag @a[tag=playing] add potential_cosmetic
 function end:players
+return 1

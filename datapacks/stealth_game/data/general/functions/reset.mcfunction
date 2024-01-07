@@ -79,3 +79,4 @@ scoreboard players set @s adv_run 0
 tag @s remove prefix
 tag @a remove potential_unlock
 tag @a remove potential_cosmetic
+return 1

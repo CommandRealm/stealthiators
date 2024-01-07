@@ -7,3 +7,4 @@ execute if score $time game matches 580 run function game:animation/1
 execute if score $time game matches 600 run function game:animation/go
 execute if score $time game matches 601.. run function game:animation/opening_gate
 execute if score $time game matches 601.. run function game:animation/phantom
+return 1

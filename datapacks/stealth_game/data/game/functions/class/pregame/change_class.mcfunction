@@ -15,3 +15,4 @@ execute if entity @s[team=gladiator,nbt={SelectedItemSlot:5}] run function game:
 execute if entity @s[team=gladiator,nbt={SelectedItemSlot:6}] run function game:class/pregame/select_random_gladiator
 
 scoreboard players reset @s right_click
+return 1

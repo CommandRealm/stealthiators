@@ -1,6 +1,6 @@
 team join gold
 execute if score $time game_timer matches ..1200 if score $time time_till_end matches -1 run advancement grant @s only minecraft:custom/step_on_finish_line_late
-summon firework_rocket ~ ~5 ~ {FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:1b,Explosions:[{Type:0b,Colors:[I; 14602026]}]}}},LifeTime:24}
+summon minecraft:firework_rocket ~ ~5 ~ {FireworksItem:{id:"minecraft:firework_rocket",tag:{Fireworks:{Flight:1b,Explosions:[{Type:0b,Colors:[I;14602026]}]}},Count:1b},LifeTime:24}
 team join won @s
 clear @s
 gamemode spectator @s
@@ -84,3 +84,5 @@ execute if score $number mode matches 1 if entity @a[tag=playing,team=gladiator]
 
 scoreboard players add @a[tag=temp_tag] points 2
 tag @a[tag=temp_tag] remove temp_tag
+
+return 1

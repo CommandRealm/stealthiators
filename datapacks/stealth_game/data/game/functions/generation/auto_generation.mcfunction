@@ -26,3 +26,5 @@ execute if score $players number matches 10 run scoreboard players set $small ge
 execute if score $players number matches 11 run scoreboard players set $small generation 1
 
 
+
+return 1

@@ -56,3 +56,4 @@ execute if entity @s[tag=tp_riding_50] run tag @a remove rider_50
 
 tp @s 0 0 0
 kill @s
+return 1

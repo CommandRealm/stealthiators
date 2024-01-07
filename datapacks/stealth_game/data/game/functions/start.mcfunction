@@ -2,65 +2,65 @@ scoreboard players set $time startup_timer -1
 tag @a[scores={ready=1..}] add playing
 title @a[tag=!playing] title {"text":" "}
 title @a[tag=!playing] subtitle {"text":" "}
-execute if entity @a[tag=playing,tag=rider_0] as @e[type=horse,tag=rider_0] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_1] as @e[type=horse,tag=rider_1] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_2] as @e[type=horse,tag=rider_2] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_3] as @e[type=horse,tag=rider_3] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_4] as @e[type=horse,tag=rider_4] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_5] as @e[type=horse,tag=rider_5] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_6] as @e[type=horse,tag=rider_6] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_7] as @e[type=horse,tag=rider_7] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_8] as @e[type=horse,tag=rider_8] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_9] as @e[type=horse,tag=rider_9] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_10] as @e[type=horse,tag=rider_10] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_0] as @e[type=minecraft:horse,tag=rider_0] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_1] as @e[type=minecraft:horse,tag=rider_1] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_2] as @e[type=minecraft:horse,tag=rider_2] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_3] as @e[type=minecraft:horse,tag=rider_3] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_4] as @e[type=minecraft:horse,tag=rider_4] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_5] as @e[type=minecraft:horse,tag=rider_5] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_6] as @e[type=minecraft:horse,tag=rider_6] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_7] as @e[type=minecraft:horse,tag=rider_7] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_8] as @e[type=minecraft:horse,tag=rider_8] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_9] as @e[type=minecraft:horse,tag=rider_9] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_10] as @e[type=minecraft:horse,tag=rider_10] at @s run function lobby:remove_mob
 
-execute if entity @a[tag=playing,tag=rider_11] as @e[type=horse,tag=rider_11] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_12] as @e[type=horse,tag=rider_12] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_13] as @e[type=horse,tag=rider_13] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_14] as @e[type=horse,tag=rider_14] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_15] as @e[type=horse,tag=rider_15] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_16] as @e[type=horse,tag=rider_16] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_17] as @e[type=horse,tag=rider_17] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_18] as @e[type=horse,tag=rider_18] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_19] as @e[type=horse,tag=rider_19] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_20] as @e[type=horse,tag=rider_20] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_11] as @e[type=minecraft:horse,tag=rider_11] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_12] as @e[type=minecraft:horse,tag=rider_12] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_13] as @e[type=minecraft:horse,tag=rider_13] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_14] as @e[type=minecraft:horse,tag=rider_14] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_15] as @e[type=minecraft:horse,tag=rider_15] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_16] as @e[type=minecraft:horse,tag=rider_16] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_17] as @e[type=minecraft:horse,tag=rider_17] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_18] as @e[type=minecraft:horse,tag=rider_18] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_19] as @e[type=minecraft:horse,tag=rider_19] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_20] as @e[type=minecraft:horse,tag=rider_20] at @s run function lobby:remove_mob
 
-execute if entity @a[tag=playing,tag=rider_21] as @e[type=horse,tag=rider_21] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_22] as @e[type=horse,tag=rider_22] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_23] as @e[type=horse,tag=rider_23] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_24] as @e[type=horse,tag=rider_24] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_25] as @e[type=horse,tag=rider_25] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_26] as @e[type=horse,tag=rider_26] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_27] as @e[type=horse,tag=rider_27] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_28] as @e[type=horse,tag=rider_28] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_29] as @e[type=horse,tag=rider_29] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_30] as @e[type=horse,tag=rider_30] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_21] as @e[type=minecraft:horse,tag=rider_21] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_22] as @e[type=minecraft:horse,tag=rider_22] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_23] as @e[type=minecraft:horse,tag=rider_23] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_24] as @e[type=minecraft:horse,tag=rider_24] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_25] as @e[type=minecraft:horse,tag=rider_25] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_26] as @e[type=minecraft:horse,tag=rider_26] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_27] as @e[type=minecraft:horse,tag=rider_27] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_28] as @e[type=minecraft:horse,tag=rider_28] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_29] as @e[type=minecraft:horse,tag=rider_29] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_30] as @e[type=minecraft:horse,tag=rider_30] at @s run function lobby:remove_mob
 
 
-execute if entity @a[tag=playing,tag=rider_31] as @e[type=horse,tag=rider_31] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_32] as @e[type=horse,tag=rider_32] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_33] as @e[type=horse,tag=rider_33] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_34] as @e[type=horse,tag=rider_34] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_35] as @e[type=horse,tag=rider_35] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_36] as @e[type=horse,tag=rider_36] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_37] as @e[type=horse,tag=rider_37] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_38] as @e[type=horse,tag=rider_38] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_39] as @e[type=horse,tag=rider_39] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_40] as @e[type=horse,tag=rider_40] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_31] as @e[type=minecraft:horse,tag=rider_31] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_32] as @e[type=minecraft:horse,tag=rider_32] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_33] as @e[type=minecraft:horse,tag=rider_33] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_34] as @e[type=minecraft:horse,tag=rider_34] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_35] as @e[type=minecraft:horse,tag=rider_35] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_36] as @e[type=minecraft:horse,tag=rider_36] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_37] as @e[type=minecraft:horse,tag=rider_37] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_38] as @e[type=minecraft:horse,tag=rider_38] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_39] as @e[type=minecraft:horse,tag=rider_39] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_40] as @e[type=minecraft:horse,tag=rider_40] at @s run function lobby:remove_mob
 
-execute if entity @a[tag=playing,tag=rider_41] as @e[type=horse,tag=rider_41] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_42] as @e[type=horse,tag=rider_42] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_43] as @e[type=horse,tag=rider_43] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_44] as @e[type=horse,tag=rider_44] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_45] as @e[type=horse,tag=rider_45] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_46] as @e[type=horse,tag=rider_46] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_47] as @e[type=horse,tag=rider_47] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_48] as @e[type=horse,tag=rider_48] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_49] as @e[type=horse,tag=rider_49] at @s run function lobby:remove_mob
-execute if entity @a[tag=playing,tag=rider_50] as @e[type=horse,tag=rider_50] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_41] as @e[type=minecraft:horse,tag=rider_41] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_42] as @e[type=minecraft:horse,tag=rider_42] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_43] as @e[type=minecraft:horse,tag=rider_43] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_44] as @e[type=minecraft:horse,tag=rider_44] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_45] as @e[type=minecraft:horse,tag=rider_45] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_46] as @e[type=minecraft:horse,tag=rider_46] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_47] as @e[type=minecraft:horse,tag=rider_47] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_48] as @e[type=minecraft:horse,tag=rider_48] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_49] as @e[type=minecraft:horse,tag=rider_49] at @s run function lobby:remove_mob
+execute if entity @a[tag=playing,tag=rider_50] as @e[type=minecraft:horse,tag=rider_50] at @s run function lobby:remove_mob
 
 # button
-setblock 35 70 -40 air
+setblock 35 70 -40 minecraft:air
 
 
 tag @a[tag=playing] remove has_mob
@@ -123,16 +123,16 @@ tag @a[tag=playing] remove rider_50
 gamemode spectator @a[tag=playing]
 tp @a[tag=playing] 1007 0 132
 clear @a[tag=playing]
-clear @a carrot_on_a_stick{CustomModelData:2}
+clear @a minecraft:carrot_on_a_stick{CustomModelData:2}
 effect clear @a[tag=playing]
 scoreboard players set $game state 1
 scoreboard players set $time game -20
 title @a[tag=playing] title [{"text":" "}]
 title @a[tag=playing] subtitle {"text":"Generation in progress . . .","color":"red","italic":true}
 title @a times 0 500 5
-effect give @a[tag=playing] blindness 100 255 true
-effect give @a[tag=playing] levitation 100 255 true
-item replace entity @a[tag=playing] armor.head with carved_pumpkin{HideFlags:63,Enchantments:[{id:"binding_curse",lvl:1}],display:{Name:'[{"text":"CR Logo","color":"dark_aqua","bold":false,"italic":false}]'},CustomModelData:1}
+effect give @a[tag=playing] minecraft:blindness 100 255 true
+effect give @a[tag=playing] minecraft:levitation 100 255 true
+item replace entity @a[tag=playing] armor.head with minecraft:carved_pumpkin{HideFlags:63,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],display:{Name:'[{"text":"CR Logo","color":"dark_aqua","bold":false,"italic":false}]'},CustomModelData:1}
 scoreboard objectives remove playing
 function game:gameplay/start_game
 execute if score $number mode matches 1 run function game:gameplay/rotation/start_game
@@ -148,6 +148,7 @@ execute if score $auto generation matches 1 run function game:generation/auto_ge
 scoreboard objectives add back_to_lobby trigger
 advancement grant @a[tag=playing] only minecraft:custom/play_game
 
-data modify entity @e[type=area_effect_cloud,tag=start_button_text,limit=1] CustomNameVisible set value 0b
+data modify entity @e[type=minecraft:area_effect_cloud,tag=start_button_text,limit=1] CustomNameVisible set value 0b
 
 execute store result score $players game if entity @a[tag=playing]
+return 1

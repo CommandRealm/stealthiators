@@ -15,3 +15,5 @@ summon minecraft:witch -21 75 6 {Invulnerable:1b,Rotation:[-90.0f,0.0f],Tags:["m
 summon minecraft:villager 56 68 -54.0 {Invulnerable:1b,Rotation:[-90.0f,0.0f],Tags:["market_villager","mining_market"],Offers:{},VillagerData:{type:"minecraft:snow",level:100,profession:"armorer"},NoAI:1b,Silent:1b}
 
 
+
+return 1

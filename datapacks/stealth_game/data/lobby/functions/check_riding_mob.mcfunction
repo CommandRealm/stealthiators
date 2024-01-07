@@ -54,3 +54,4 @@ execute if entity @s[tag=rider_47] unless entity @s[nbt={RootVehicle:{Entity:{id
 execute if entity @s[tag=rider_48] unless entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_48"]}}}] run tp @s ~ ~ ~
 execute if entity @s[tag=rider_49] unless entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_49"]}}}] run tp @s ~ ~ ~
 execute if entity @s[tag=rider_50] unless entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:horse",Tags:["rider_50"]}}}] run tp @s ~ ~ ~
+return 1

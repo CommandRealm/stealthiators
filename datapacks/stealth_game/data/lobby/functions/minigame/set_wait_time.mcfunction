@@ -2,4 +2,5 @@ execute if score $hit lobby_minigame matches 0 run playsound minecraft:block.not
 execute if score $hit lobby_minigame matches 0 unless score $score lobby_minigame matches 0 run scoreboard players add $miss lobby_minigame 1
 execute if score $miss lobby_minigame matches 3.. run function lobby:minigame/end
 scoreboard players set $wait_time lobby_minigame 40
-tag @e[tag=minigame_target,type=area_effect_cloud] remove active_target
+tag @e[type=minecraft:area_effect_cloud,tag=minigame_target] remove active_target
+return 1

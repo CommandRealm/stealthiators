@@ -2,7 +2,7 @@
 
 ##Resetting the button and trapdor
 
-setblock 35 70 -40 air destroy
+setblock 35 70 -40 minecraft:air destroy
 setblock 34 69 -40 minecraft:iron_trapdoor[facing=south,half=top,open=false,powered=false,waterlogged=false]
 setblock 34 70 -39 minecraft:iron_trapdoor[facing=south,half=top,open=true,powered=false,waterlogged=false]
 setblock 34 71 -40 minecraft:iron_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]
@@ -17,3 +17,4 @@ tag @a remove temporary_tag
 
 ##Setting up button delay
 scoreboard players set $button pregame 10
+return 1

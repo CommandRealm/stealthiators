@@ -18,3 +18,4 @@ execute unless data entity @s EnderItems[{Slot:18b}] run function chest_menu:sta
 
 execute unless score @s screen matches 0 run function general:rank
 execute unless score @s screen matches 0 run function chest_menu:start_titles
+return 1

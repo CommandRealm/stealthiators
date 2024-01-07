@@ -1,7 +1,7 @@
 tag @a[team=spectator] add playing
 execute as @a[tag=potential_cosmetic] at @s run function cosmetic:potential_unlock
 tp @a[tag=playing] 42 69 -40 75 -30
-clear @a carrot_on_a_stick{CustomModelData:2}
+clear @a minecraft:carrot_on_a_stick{CustomModelData:2}
 scoreboard players set @a[tag=playing] ready 1
 scoreboard players set @a[team=spectator] ready 0
 scoreboard players reset @a[tag=playing] lobby_trident
@@ -30,5 +30,6 @@ scoreboard objectives setdisplay sidebar
 scoreboard players set $button pregame 5
 
 
-data modify entity @e[type=area_effect_cloud,tag=start_button_text,limit=1] CustomName set value '[{"text":"- ","color":"gray"},{"text":"🗡","color":"#9c9558","bold":true},{"text":" Start ","color":"gold"},{"text":"🗡","color":"#9c9558","bold":true},{"text":" -","color":"gray"}]'
-data modify entity @e[type=area_effect_cloud,tag=start_button_text,limit=1] CustomNameVisible set value 1b
+data modify entity @e[type=minecraft:area_effect_cloud,tag=start_button_text,limit=1] CustomName set value '[{"text":"- ","color":"gray"},{"text":"🗡","color":"#9c9558","bold":true},{"text":" Start ","color":"gold"},{"text":"🗡","color":"#9c9558","bold":true},{"text":" -","color":"gray"}]'
+data modify entity @e[type=minecraft:area_effect_cloud,tag=start_button_text,limit=1] CustomNameVisible set value 1b
+return 1

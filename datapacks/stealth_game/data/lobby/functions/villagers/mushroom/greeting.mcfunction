@@ -2,3 +2,4 @@ execute positioned ^ ^ ^3 run tellraw @a[distance=..3] [{"text":"<Mushroom Shopk
 playsound minecraft:mushroom.greeting voice @a ~ ~ ~ 1 1
 tag @s add said_greeting
 scoreboard players set @s speech_timer 250
+return 1

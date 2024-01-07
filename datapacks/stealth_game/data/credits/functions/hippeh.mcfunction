@@ -8,3 +8,5 @@ scoreboard players set @e[tag=hippeh,scores={HArm2=..-10}] HArmD2 1
 execute if entity @e[tag=hippeh,scores={HArmD2=1}] run function credits:addarm2
 execute if entity @e[tag=hippeh,scores={HArmD2=2}] run function credits:removearm2
 
+
+return 1

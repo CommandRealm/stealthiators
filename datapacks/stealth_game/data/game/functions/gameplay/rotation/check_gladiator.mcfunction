@@ -8,9 +8,10 @@ execute if entity @a[tag=playing,tag=!been_gladiator] run function game:generati
 clear @a[tag=playing]
 effect clear @a[tag=playing]
 gamemode adventure @a[tag=playing]
-kill @e[type=area_effect_cloud,tag=revive_spot]
-kill @e[type=area_effect_cloud,tag=trap]
-kill @e[type=area_effect_cloud,tag=trap_tp]
-kill @e[type=area_effect_cloud,tag=warp_spot]
+kill @e[type=minecraft:area_effect_cloud,tag=revive_spot]
+kill @e[type=minecraft:area_effect_cloud,tag=trap]
+kill @e[type=minecraft:area_effect_cloud,tag=trap_tp]
+kill @e[type=minecraft:area_effect_cloud,tag=warp_spot]
 bossbar remove game_timer
 bossbar remove time_till_end
+return 1

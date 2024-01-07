@@ -1,1 +1,41 @@
-{ "type":"minecraft:generic", "pools" : [ { "rolls":1, "entries":[ { "type": "minecraft:item", "functions":[ {"function":"minecraft:set_nbt","entity":"this","tag":"{HideFlags:63,clickable:1}"},{ "function": "minecraft:set_name", "entity": "this", "name": [{"text":"Training-Course Highscore: ","color":"aqua","italic":false},{"score":{"objective":"highscore","name":"@s"},"bold":true,"italic":false,"color":"dark_aqua"}] } ], "name": "minecraft:target" } ] } ] }
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "entity": "this",
+                            "tag": "{HideFlags:63,clickable:1}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "text": "Training-Course Highscore: ",
+                                    "color": "aqua",
+                                    "italic": false
+                                },
+                                {
+                                    "score": {
+                                        "objective": "highscore",
+                                        "name": "@s"
+                                    },
+                                    "bold": true,
+                                    "italic": false,
+                                    "color": "dark_aqua"
+                                }
+                            ]
+                        }
+                    ],
+                    "name": "minecraft:target"
+                }
+            ]
+        }
+    ]
+}

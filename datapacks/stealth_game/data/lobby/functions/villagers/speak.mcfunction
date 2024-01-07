@@ -12,3 +12,4 @@ execute if entity @s[tag=fabric_market] at @s run function lobby:villagers/fabri
 execute if entity @s[tag=potion_market] at @s run function lobby:villagers/potion/speak
 execute if entity @s[tag=mining_market] at @s run function lobby:villagers/mining/speak
 advancement grant @a[tag=talked_to_1,tag=talked_to_2,tag=talked_to_3,tag=talked_to_4,tag=talked_to_5,tag=talked_to_6,tag=talked_to_7,tag=talked_to_8,tag=talked_to_9,tag=talked_to_10,tag=talked_to_11,tag=talked_to_12,tag=talked_to_13] only minecraft:custom/talk_to_villagers
+return 1

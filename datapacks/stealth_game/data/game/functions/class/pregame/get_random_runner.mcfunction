@@ -1,4 +1,5 @@
-clear @s carrot_on_a_stick{CustomModelData:23}
-kill @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:23}}}]
-execute unless entity @s[scores={sel_r_class=7}] run item replace entity @s hotbar.6 with carrot_on_a_stick{CustomModelData:23,display:{Name:'[{"text":"Click to select ","color":"dark_gray","italic":false},{"text":"Random","color":"gray","bold":true}]',Lore:['[{"text":"You will be a random class every round.","color":"gray","italic":false}]']},HideFlags:63,Unbreakable:1b}
-execute if entity @s[scores={sel_r_class=7}] run item replace entity @s hotbar.6 with carrot_on_a_stick{Enchantments:[{}],CustomModelData:23,display:{Name:'[{"text":"You have selected ","color":"dark_gray","italic":false},{"text":"Random","color":"gray","bold":true}]',Lore:['[{"text":"You will be a random class every round.","color":"gray","italic":false}]']},HideFlags:63,Unbreakable:1b}
+clear @s minecraft:carrot_on_a_stick{CustomModelData:23}
+kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:23}}}]
+execute unless entity @s[scores={sel_r_class=7}] run item replace entity @s hotbar.6 with minecraft:carrot_on_a_stick{CustomModelData:23,display:{Name:'[{"text":"Click to select ","color":"dark_gray","italic":false},{"text":"Random","color":"gray","bold":true}]',Lore:['[{"text":"You will be a random class every round.","color":"gray","italic":false}]']},HideFlags:63,Unbreakable:1b}
+execute if entity @s[scores={sel_r_class=7}] run item replace entity @s hotbar.6 with minecraft:carrot_on_a_stick{Enchantments:[{id:"minecraft:x",lvl:1s}],CustomModelData:23,display:{Name:'[{"text":"You have selected ","color":"dark_gray","italic":false},{"text":"Random","color":"gray","bold":true}]',Lore:['[{"text":"You will be a random class every round.","color":"gray","italic":false}]']},HideFlags:63,Unbreakable:1b}
+return 1

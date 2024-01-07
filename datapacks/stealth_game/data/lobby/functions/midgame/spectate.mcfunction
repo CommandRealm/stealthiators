@@ -9,3 +9,4 @@ tp @s @p[tag=playing,team=sneaker]
 tp @s @p[tag=playing,team=gladiator]
 scoreboard players set @s back_to_lobby 0
 execute at @s run playsound minecraft:block.anvil.place master @s ~ ~ ~ 0.25 0.65
+return 1

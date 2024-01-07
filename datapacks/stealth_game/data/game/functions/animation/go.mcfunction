@@ -4,3 +4,4 @@ execute as @a[tag=playing] at @s run playsound minecraft:entity.arrow.hit master
 execute as @a[tag=playing] at @s run playsound minecraft:entity.arrow.hit master @s ~ ~ ~ 1000 1
 function game:gameplay/released
 execute if score $number mode matches 1 run function game:gameplay/rotation/released
+return 1

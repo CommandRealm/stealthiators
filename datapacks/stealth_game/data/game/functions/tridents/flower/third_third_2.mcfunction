@@ -5,3 +5,4 @@ execute if score $rand random matches 38 run summon minecraft:item ~ ~ ~ {Item:{
 execute if score $rand random matches 39 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:peony",Count:1b},Age:5975,PickupDelay:1000,Tags:["die"]}
 execute if score $rand random matches 40 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:tall_grass",Count:1b},Age:5975,PickupDelay:1000,Tags:["die"]}
 execute if score $rand random matches 41 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:large_fern",Count:1b},Age:5975,PickupDelay:1000,Tags:["die"]}
+return 1

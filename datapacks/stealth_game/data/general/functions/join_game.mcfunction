@@ -16,9 +16,9 @@ title @s times 60 20 20
 title @s title {"text":" "}
 title @s subtitle {"text":" "}
 scoreboard players set @s intro 0
-effect give @s blindness 6 255 true
-effect give @s slow_falling 6 255 true
-item replace entity @s armor.head with carved_pumpkin{HideFlags:63,Enchantments:[{id:"binding_curse",lvl:1}],display:{Name:'[{"text":"CR Logo","color":"dark_aqua","bold":false,"italic":false}]'},CustomModelData:1}
+effect give @s minecraft:blindness 6 255 true
+effect give @s minecraft:slow_falling 6 255 true
+item replace entity @s armor.head with minecraft:carved_pumpkin{HideFlags:63,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],display:{Name:'[{"text":"CR Logo","color":"dark_aqua","bold":false,"italic":false}]'},CustomModelData:1}
 execute as @a at @s unless entity @s[scores={new_player=1}] run playsound minecraft:block.note_block.cow_bell master @s ~ ~ ~ 1 0.6
 playsound minecraft:entity.wither.death master @s ~ ~ ~ 100 2
 scoreboard players set @s ready 1
@@ -101,3 +101,4 @@ scoreboard players add @s stat_r_win 0
 scoreboard players add @s stat_g_win 0
 scoreboard players add @s stat_bands 0
 scoreboard players add @s stat_punches 0
+return 1

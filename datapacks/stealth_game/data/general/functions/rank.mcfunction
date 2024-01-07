@@ -26,3 +26,4 @@ team join tournament @s[scores={prefix=98}]
 
 
 team join prefix @s[tag=prefix]
+return 1

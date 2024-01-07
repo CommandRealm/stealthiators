@@ -14,3 +14,4 @@ execute if score $number players_ready matches 2.. run title @a[scores={ready=0}
 execute if score $number players_ready matches 2.. run title @a[scores={ready=1}] subtitle [{"text":"till the game begins ","color":"gray"},{"text":"(","color":"dark_gray","bold":true},{"score":{"objective":"players_ready","name":"$number"},"color":"gray","bold":false},{"text":"/","color":"gray"},{"score":{"objective":"players_on","name":"$number"},"color":"gray"},{"text":")","color":"dark_gray","bold":true}]
 execute if score $time startup_timer matches 0 run function game:start
 execute as @a[scores={intro=0..}] at @s run function lobby:intro/end
+return 1

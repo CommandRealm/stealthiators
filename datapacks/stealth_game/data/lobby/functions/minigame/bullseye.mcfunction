@@ -16,3 +16,4 @@ execute if score $bullseye lobby_minigame matches 28 run playsound minecraft:blo
 execute if score $bullseye lobby_minigame matches 30 run playsound minecraft:block.note_block.bit record @a 57 73 7 1 1.334840
 execute if score $bullseye lobby_minigame matches 32 run playsound minecraft:block.note_block.bit record @a 57 73 7 1 1.414214
 execute if score $bullseye lobby_minigame matches 32 run scoreboard players reset $bullseye lobby_minigame
+return 1

@@ -12,8 +12,8 @@ scoreboard players enable @a[tag=!playing] select_class
 title @a[tag=playing] actionbar {"text":" "}
 bossbar set lobby players @a[tag=!playing]
 tag @a remove infected_gladiator
-fill 987 125 13 1055 125 107 diamond_block replace minecraft:stone
-fill 987 125 133 1055 125 317 diamond_block replace minecraft:stone
+fill 987 125 13 1055 125 107 minecraft:diamond_block replace minecraft:stone
+fill 987 125 133 1055 125 317 minecraft:diamond_block replace minecraft:stone
 
 
 scoreboard players reset @a specter_cooldown
@@ -26,7 +26,8 @@ scoreboard players reset @a jumper_jump
 
 advancement revoke @a only game:hit_fake_boots
 advancement revoke @a only game:arbalist_kill
-kill @e[type=stray,tag=fake_boots]
+kill @e[type=minecraft:stray,tag=fake_boots]
 
 
 scoreboard players set $player_finish game 0
+return 1

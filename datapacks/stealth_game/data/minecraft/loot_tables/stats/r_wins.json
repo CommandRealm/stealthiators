@@ -1,1 +1,41 @@
-{ "type":"minecraft:generic", "pools" : [ { "rolls":1, "entries":[ { "type": "minecraft:item", "functions":[ {"function":"minecraft:set_nbt","entity":"this","tag":"{HideFlags:63,clickable:1}"},{ "function": "minecraft:set_name", "entity": "this", "name": [{"text":"Runner wins: ","color":"gray","italic":false},{"score":{"objective":"stat_r_win","name":"@s"},"bold":true,"italic":false,"color":"dark_gray"}] } ], "name": "minecraft:iron_ingot" } ] } ] }
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "entity": "this",
+                            "tag": "{HideFlags:63,clickable:1}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "text": "Runner wins: ",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                {
+                                    "score": {
+                                        "objective": "stat_r_win",
+                                        "name": "@s"
+                                    },
+                                    "bold": true,
+                                    "italic": false,
+                                    "color": "dark_gray"
+                                }
+                            ]
+                        }
+                    ],
+                    "name": "minecraft:iron_ingot"
+                }
+            ]
+        }
+    ]
+}

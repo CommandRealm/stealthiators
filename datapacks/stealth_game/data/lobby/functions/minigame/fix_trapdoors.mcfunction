@@ -6,3 +6,4 @@ fill ~ ~-1 ~ ~ ~-1 ~ minecraft:spruce_trapdoor[facing=west,open=false,half=top] 
 fill ~ ~-1 ~ ~ ~-1 ~ minecraft:spruce_trapdoor[facing=east,open=false,half=top] replace minecraft:spruce_trapdoor[facing=east]
 fill ~ ~1 ~ ~ ~1 ~ minecraft:spruce_trapdoor[facing=west,open=false] replace minecraft:spruce_trapdoor[facing=west]
 fill ~ ~1 ~ ~ ~1 ~ minecraft:spruce_trapdoor[facing=east,open=false] replace minecraft:spruce_trapdoor[facing=east]
+return 1

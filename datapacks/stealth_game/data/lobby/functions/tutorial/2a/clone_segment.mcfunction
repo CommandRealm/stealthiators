@@ -9,3 +9,4 @@ execute if score $rand random matches 5 run clone 167 34 -108 163 38 -112 163 79
 execute if score $rand random matches 6 run clone 167 28 -108 163 32 -112 163 79 -112
 execute if score $rand random matches 7 run clone 167 23 -108 163 27 -112 163 79 -112
 scoreboard players set 2a tutorial 0
+return 1

@@ -18,3 +18,5 @@ execute if score $time lobby_minigame matches 26 run playsound minecraft:block.n
 execute if score $time lobby_minigame matches 30 run playsound minecraft:block.note_block.pling record @a 57 73 7 1 1.259921
 execute if score $time lobby_minigame matches 30 run playsound minecraft:block.note_block.chime record @a 57 73 7 1 1.259921
 
+
+return 1

@@ -5,3 +5,4 @@ tag @s remove trident_summoned_orange
 tag @s remove trident_summoned_yellow
 tag @s remove trident_summoned_green
 tag @s remove trident_summoned_blue
+return 1

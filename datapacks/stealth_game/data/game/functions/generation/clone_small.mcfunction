@@ -437,20 +437,21 @@ execute positioned ~16 134 ~25 run function game:generation/random_west_wall
 
 execute if score $small_left generation matches 0 run clone 927 111 56 959 150 61 ~18 150 ~30
 execute if score $small_left generation matches 0 run clone 936 112 62 950 120 106 ~27 151 ~36
-execute if score $small_left generation matches 0 run summon area_effect_cloud ~34 153 ~46 {Duration:10000000,Tags:["die","final_hallway"],Rotation:[180.0f,0.0f]}
-execute if score $small_left generation matches 0 run fill 987 171 ~30 1055 171 ~100 smooth_sandstone replace #minecraft:replaceable_part
-execute if score $small_left generation matches 0 run fill 987 171 ~101 1055 171 ~180 smooth_sandstone replace #minecraft:replaceable_part
+execute if score $small_left generation matches 0 run summon minecraft:area_effect_cloud ~34 153 ~46 {Duration:10000000,Tags:["die","final_hallway"],Rotation:[180.0f,0.0f]}
+execute if score $small_left generation matches 0 run fill 987 171 ~30 1055 171 ~100 minecraft:smooth_sandstone replace #minecraft:replaceable_part
+execute if score $small_left generation matches 0 run fill 987 171 ~101 1055 171 ~180 minecraft:smooth_sandstone replace #minecraft:replaceable_part
 
-fill ~20 171 ~ ~20 171 ~30 cut_red_sandstone_slab[type=top] replace air
-fill ~48 171 ~ ~48 171 ~30 cut_red_sandstone_slab[type=top] replace air
+fill ~20 171 ~ ~20 171 ~30 minecraft:cut_red_sandstone_slab[type=top] replace minecraft:air
+fill ~48 171 ~ ~48 171 ~30 minecraft:cut_red_sandstone_slab[type=top] replace minecraft:air
 
-fill ~20 172 ~ ~20 200 ~30 barrier replace air
-fill ~48 172 ~ ~48 200 ~30 barrier replace air
+fill ~20 172 ~ ~20 200 ~30 minecraft:barrier replace minecraft:air
+fill ~48 172 ~ ~48 200 ~30 minecraft:barrier replace minecraft:air
 
 execute unless entity @s[x=987,y=135,z=-12,distance=..2] at @s positioned ~20 150 ~-5 run function game:generation/random_small_basalt_area
 
 schedule function game:generation/check_small_segment 2t
 schedule function game:generation/check_small_segment 5t
 
-fill 987 171 ~ 1005 171 ~29 smooth_sandstone replace air
-fill 1040 171 ~ 1055 171 ~29 smooth_sandstone replace air
+fill 987 171 ~ 1005 171 ~29 minecraft:smooth_sandstone replace minecraft:air
+fill 1040 171 ~ 1055 171 ~29 minecraft:smooth_sandstone replace minecraft:air
+return 1

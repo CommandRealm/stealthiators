@@ -1,4 +1,4 @@
-kill @e[type=item,nbt={Item:{tag:{clickable:1}}}]
+kill @e[type=minecraft:item,nbt={Item:{tag:{clickable:1}}}]
 execute if entity @s[scores={screen=0}] run function chest_menu:start
 execute if entity @s[scores={screen=1}] run function chest_menu:start_cosmetics
 execute if entity @s[scores={screen=2}] run function chest_menu:start_mounts
@@ -10,3 +10,5 @@ execute if entity @s[scores={screen=7}] run function chest_menu:start_advancemen
 execute if entity @s[scores={screen=8}] run function chest_menu:start_tournaments
 execute if entity @s[scores={screen=99}] run function chest_menu:start_titles
 clear @s #minecraft:chest_menu
+
+return 1

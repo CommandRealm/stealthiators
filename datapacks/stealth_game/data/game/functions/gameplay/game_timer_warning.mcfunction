@@ -12,3 +12,4 @@ execute if score $minute bossbar_time matches 0 if score $second bossbar_time ma
 execute if score $minute bossbar_time matches 0 if score $second bossbar_time matches 1 as @a[tag=playing] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100000 0.25
 execute as @a[tag=playing] at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 0.25 0
 execute as @a[tag=playing] at @s run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 0.5 0.5
+return 1

@@ -10,3 +10,4 @@ scoreboard players set $time alternate_second 20
 execute if score $second bossbar_time matches 10.. run bossbar set minecraft:time_till_end name [{"text":"Time remaining: ","color":"gold"},{"score":{"objective":"bossbar_time","name":"$minute"},"color":"red"},{"text":":","color":"dark_red"},{"score":{"objective":"bossbar_time","name":"$second"},"color":"red"}]
 execute if score $second bossbar_time matches ..9 run bossbar set minecraft:time_till_end name [{"text":"Time remaining: ","color":"gold"},{"score":{"objective":"bossbar_time","name":"$minute"},"color":"red"},{"text":":","color":"dark_red"},{"text":"0","color":"red"},{"score":{"objective":"bossbar_time","name":"$second"},"color":"red"}]
 execute if score $time coolown matches -1 if score $minute bossbar_time matches 0 if score $second bossbar_time matches ..10 run function game:gameplay/end_timer_warning
+return 1

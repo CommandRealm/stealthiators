@@ -18,3 +18,4 @@ execute unless block ~ ~.15 ~ #minecraft:valid_summon unless block ~ ~1.15 ~ #mi
 
 
 scoreboard players set @s check_inventory 0
+return 1

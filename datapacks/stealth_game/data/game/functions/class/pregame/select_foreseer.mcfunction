@@ -4,6 +4,7 @@ execute unless entity @s[scores={g_class=6}] run tellraw @s [{"text":"You are ",
 execute unless entity @s[scores={g_class=6}] run tellraw @s [{"text":"Info: ","color":"gold"},{"text":"The Foreseer is equipped with a bow which highlights runners nearby grounded arrows.","italic":true,"color":"#ba666a"}]
 scoreboard players set @s sel_g_class 6
 scoreboard players set @s g_class 6
-item replace entity @s weapon.mainhand with air
-clear @s carrot_on_a_stick{Enchantments:[{}]}
+item replace entity @s weapon.mainhand with minecraft:air
+clear @s minecraft:carrot_on_a_stick{Enchantments:[{id:"minecraft:x",lvl:1s}]}
 playsound minecraft:entity.cow.step master @s ~ ~ ~ 1000 2
+return 1

@@ -1,5 +1,7 @@
-execute if score $time2 tp_nameplate matches 0 as @e[type=area_effect_cloud,tag=teleport_nameplate_2] at @s run data merge entity @s {CustomName:'[{"text":"⚡ - LOBBY - ⚡","color":"#e3d666"}]'}
-execute if score $time2 tp_nameplate matches 1 as @e[type=area_effect_cloud,tag=teleport_nameplate_2] at @s run data merge entity @s {CustomName:'[{"text":"⚡","color":"#d28e2c"},{"text":" - LOBBY - ⚡","color":"#e3d666"}]'}
-execute if score $time2 tp_nameplate matches 2 as @e[type=area_effect_cloud,tag=teleport_nameplate_2] at @s run data merge entity @s {CustomName:'[{"text":"⚡","color":"#e3d666"},{"text":" -","color":"#d28e2c"},{"text":" LOBBY - ⚡","color":"#e3d666"}]'}
-execute if score $time2 tp_nameplate matches 3 as @e[type=area_effect_cloud,tag=teleport_nameplate_2] at @s run data merge entity @s {CustomName:'[{"text":"⚡ -","color":"#e3d666"},{"text":" L","color":"#d28e2c"},{"text":"OBBY - ⚡","color":"#e3d666"}]'}
-execute if score $time2 tp_nameplate matches 4 as @e[type=area_effect_cloud,tag=teleport_nameplate_2] at @s run data merge entity @s {CustomName:'[{"text":"⚡ - L","color":"#e3d666"},{"text":"O","color":"#d28e2c"},{"text":"BBY - ⚡","color":"#e3d666"}]'}
+execute if score $time2 tp_nameplate matches 0 as @e[type=minecraft:area_effect_cloud,tag=teleport_nameplate_2] at @s run data merge entity @s {CustomName:'[{"text":"⚡ - LOBBY - ⚡","color":"#e3d666"}]'}
+execute if score $time2 tp_nameplate matches 1 as @e[type=minecraft:area_effect_cloud,tag=teleport_nameplate_2] at @s run data merge entity @s {CustomName:'[{"text":"⚡","color":"#d28e2c"},{"text":" - LOBBY - ⚡","color":"#e3d666"}]'}
+execute if score $time2 tp_nameplate matches 2 as @e[type=minecraft:area_effect_cloud,tag=teleport_nameplate_2] at @s run data merge entity @s {CustomName:'[{"text":"⚡","color":"#e3d666"},{"text":" -","color":"#d28e2c"},{"text":" LOBBY - ⚡","color":"#e3d666"}]'}
+execute if score $time2 tp_nameplate matches 3 as @e[type=minecraft:area_effect_cloud,tag=teleport_nameplate_2] at @s run data merge entity @s {CustomName:'[{"text":"⚡ -","color":"#e3d666"},{"text":" L","color":"#d28e2c"},{"text":"OBBY - ⚡","color":"#e3d666"}]'}
+execute if score $time2 tp_nameplate matches 4 as @e[type=minecraft:area_effect_cloud,tag=teleport_nameplate_2] at @s run data merge entity @s {CustomName:'[{"text":"⚡ - L","color":"#e3d666"},{"text":"O","color":"#d28e2c"},{"text":"BBY - ⚡","color":"#e3d666"}]'}
+
+return 1

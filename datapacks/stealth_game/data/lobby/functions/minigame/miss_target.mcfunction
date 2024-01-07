@@ -5,3 +5,4 @@ execute if score $circle_time lobby_minigame matches ..60 run scoreboard players
 execute if score $miss lobby_minigame matches 3.. run function lobby:minigame/end
 tag @s add in_block
 playsound minecraft:block.note_block.didgeridoo record @a 57 73 7 1 0.65
+return 1

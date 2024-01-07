@@ -6,4 +6,5 @@ execute as @a[scores={ready=1}] at @s run playsound minecraft:entity.iron_golem.
 scoreboard objectives add playing dummy {"text":"- Playing -","color":"gray"}
 scoreboard objectives setdisplay sidebar playing
 
-data modify entity @e[type=area_effect_cloud,tag=start_button_text,limit=1] CustomName set value '[{"text":"- ","color":"gray"},{"text":"🗡","color":"#9c9558","bold":true},{"text":" Cancel ","color":"red"},{"text":"🗡","color":"#9c9558","bold":true},{"text":" -","color":"gray"}]'
+data modify entity @e[type=minecraft:area_effect_cloud,tag=start_button_text,limit=1] CustomName set value '[{"text":"- ","color":"gray"},{"text":"🗡","color":"#9c9558","bold":true},{"text":" Cancel ","color":"red"},{"text":"🗡","color":"#9c9558","bold":true},{"text":" -","color":"gray"}]'
+return 1

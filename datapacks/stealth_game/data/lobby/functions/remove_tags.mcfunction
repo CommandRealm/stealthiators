@@ -55,3 +55,4 @@ tag @s remove rider_49
 tag @s remove rider_50
 
 tag @s remove has_mob
+return 1

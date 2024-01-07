@@ -1,2 +1,3 @@
 kill @e[tag=die]
-kill @e[type=item,nbt={Item:{id:"minecraft:painting"}}]
+kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:painting"}}]
+return 1
