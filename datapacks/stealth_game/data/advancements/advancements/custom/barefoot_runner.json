@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:iron_boots"},"title":{"text":"Barefoot Runner","color":"#eac1dd","bold":true},"show_toast":true,"announce_to_chat":false,"description":{"text":"Attempt to remove your boots.","color":"#cd008c","bold":false}},"parent": "advancements:custom/live_near_gladiator","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:bone"},"title":{"text":"Gotchya!","color":"#ac004d","bold":true},"show_toast":true,"announce_to_chat":false,"description":{"text":"Punch a runner.","color":"#760035","bold":false}},"parent": "advancements:custom/root","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

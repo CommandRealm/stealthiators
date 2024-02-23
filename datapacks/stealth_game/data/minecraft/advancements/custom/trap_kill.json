@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:snow","nbt":"{CustomModelData:1}"},"title":{"text":"Wrong Step","color":"dark_red","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Punch a runner who recently stepped on a trap.","color":"#784446","bold":false}},"parent":"custom/kill_after_backdoor","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

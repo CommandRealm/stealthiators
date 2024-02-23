@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:melon"},"title":{"text":"Melon Connoisseur","color":"#5dc149","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Reach the top of the melon market stall.","color":"#a1c149","bold":false}},"parent":"custom/hundred_points","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

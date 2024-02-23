@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:trident"},"title":{"text":"Exclusive Trident Effect","color":"gold","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Complete this row of advancements to unlock.","color":"#d2a800","bold":false}},"parent":"custom/kill_on_finish_line","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

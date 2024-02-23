@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:iron_bars"},"title":{"text":"Confined","color":"#00169c","bold":true},"show_toast":true,"announce_to_chat":false,"description":{"text":"Step on a trap.","color":"#000d5b","bold":false}},"parent": "advancements:custom/step_on_finish_line_late","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:saddle"},"title":{"text":"Exclusive Lobby Mount","color":"green","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Complete this row of advancements to unlock.","color":"dark_green","bold":false}},"parent":"custom/win_on_rotation","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

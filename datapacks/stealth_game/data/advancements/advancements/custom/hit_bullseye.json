@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:trident"},"title":{"text":"I hit that?","color":"#ea4832","bold":true},"show_toast":true,"announce_to_chat":false,"description":{"text":"Hit a bullseye in the gladiator training-course.","color":"dark_red","bold":false}},"parent": "advancements:custom/melon_market","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

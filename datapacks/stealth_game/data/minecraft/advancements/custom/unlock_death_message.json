@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:bone"},"title":{"text":"Exclusive Death Message","color":"red","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Complete this row of advancements to unlock.","color":"dark_red","bold":false}},"parent":"custom/run_300_blocks","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

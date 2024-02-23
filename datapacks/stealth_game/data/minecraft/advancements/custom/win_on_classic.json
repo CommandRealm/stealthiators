@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:white_glazed_terracotta"},"title":{"text":"Classic Victory","color":"white","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Win a game of \"Classic\" mode.","color":"gray","bold":false}},"parent":"custom/win_as_gladiator","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

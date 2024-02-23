@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:lodestone"},"title":{"text":"Queue the Music","color":"aqua","bold":true},"show_toast":true,"announce_to_chat":false,"description":{"text":"Step on the finish line as a runner.","color":"dark_aqua","bold":false}},"parent": "advancements:custom/root","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:carrot_on_a_stick","nbt":"{CustomModelData:5}"},"title":{"text":"Retreat!","color":"#8c7c7d","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Use the backdoor item.","color":"#5a4e4f","bold":false}},"parent":"custom/dash_kill","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

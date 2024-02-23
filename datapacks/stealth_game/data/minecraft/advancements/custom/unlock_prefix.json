@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:name_tag"},"title":{"text":"Exclusive Prefix","color":"dark_gray","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Complete this row of advancements to unlock.","color":"gray","bold":false}},"parent":"custom/talk_to_villagers","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

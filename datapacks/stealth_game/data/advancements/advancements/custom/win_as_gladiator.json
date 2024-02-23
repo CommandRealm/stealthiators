@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:carrot_on_a_stick","nbt":"{CustomModelData:4}"},"title":{"text":"Watchful","color":"dark_gray","bold":true},"show_toast":true,"announce_to_chat":false,"description":{"text":"Win a round as a gladiator.","color":"gray","bold":false}},"parent": "advancements:custom/win_as_runner","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}
