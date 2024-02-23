@@ -22,7 +22,7 @@ scoreboard objectives add select_class trigger
 scoreboard players enable @a select_class
 bossbar set lobby players @a[tag=!playing]
 scoreboard objectives remove back_to_lobby
-advancement grant @a[advancements={custom/play_game=true,custom/win_as_runner=true,custom/win_as_gladiator=true,custom/win_on_classic=true,custom/win_on_rotation=true,custom/unlock_lobby_mount=false}] only minecraft:custom/unlock_lobby_mount
+advancement grant @a[advancements={advancements:custom/play_game=true,advancements:custom/win_as_runner=true,advancements:custom/win_as_gladiator=true,advancements:custom/win_on_classic=true,advancements:custom/win_on_rotation=true,advancements:custom/unlock_lobby_mount=false}] only advancements:custom/unlock_lobby_mount
 tag @a remove potential_cosmetic
 tag @a remove potential_unlock
 scoreboard objectives setdisplay sidebar

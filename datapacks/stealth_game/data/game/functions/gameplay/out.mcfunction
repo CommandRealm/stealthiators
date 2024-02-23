@@ -154,18 +154,18 @@ playsound minecraft:entity.wither_skeleton.death master @a ~ ~ ~ 100000 2
 playsound minecraft:custom.out master @a[team=gladiator] ~ ~ ~ 100000 0
 scoreboard players add @a[tag=playing,tag=!infected_gladiator,team=gladiator] points 2
 scoreboard players add @p[tag=playing,scores={damage_dealt=1..},team=gladiator] stat_punches 1
-advancement grant @a[tag=playing,scores={damage_dealt=1..},team=gladiator] only minecraft:custom/punch_runner
-advancement grant @a[tag=playing,scores={damage_dealt=1..,adv_backdoor=1..},team=gladiator] only minecraft:custom/kill_after_backdoor
-execute if entity @s[tag=playing,scores={adv_kill_trap=1..}] run advancement grant @p[tag=playing,scores={damage_dealt=1..},team=gladiator] only minecraft:custom/trap_kill
-execute at @e[type=minecraft:area_effect_cloud,tag=final_hallway] positioned ~-14 ~-50 ~-27 at @s[dx=27,dy=150,dz=9] run advancement grant @p[tag=playing,scores={damage_dealt=1..},team=gladiator] only minecraft:custom/kill_on_finish_line
-advancement grant @a[tag=playing,scores={damage_dealt=1..},team=gladiator,nbt={active_effects:[{id:"minecraft:speed"}]}] only minecraft:custom/dash_kill
+advancement grant @a[tag=playing,scores={damage_dealt=1..},team=gladiator] only advancements:custom/punch_runner
+advancement grant @a[tag=playing,scores={damage_dealt=1..,adv_backdoor=1..},team=gladiator] only advancements:custom/kill_after_backdoor
+execute if entity @s[tag=playing,scores={adv_kill_trap=1..}] run advancement grant @p[tag=playing,scores={damage_dealt=1..},team=gladiator] only advancements:custom/trap_kill
+execute at @e[type=minecraft:area_effect_cloud,tag=final_hallway] positioned ~-14 ~-50 ~-27 at @s[dx=27,dy=150,dz=9] run advancement grant @p[tag=playing,scores={damage_dealt=1..},team=gladiator] only advancements:custom/kill_on_finish_line
+advancement grant @a[tag=playing,scores={damage_dealt=1..},team=gladiator,nbt={active_effects:[{id:"minecraft:speed"}]}] only advancements:custom/dash_kill
 scoreboard players reset @p[tag=playing,scores={damage_dealt=1..},team=gladiator] damage_dealt
-advancement grant @a[tag=playing,team=gladiator,advancements={custom/punch_runner=true,custom/dash_kill=true,custom/use_backdoor=true,custom/kill_after_backdoor=true,custom/trap_kill=true,custom/kill_on_finish_line=true,custom/unlock_trident_effect=false}] only minecraft:custom/unlock_trident_effect
+advancement grant @a[tag=playing,team=gladiator,advancements={advancements:custom/punch_runner=true,advancements:custom/dash_kill=true,advancements:custom/use_backdoor=true,advancements:custom/kill_after_backdoor=true,advancements:custom/trap_kill=true,advancements:custom/kill_on_finish_line=true,advancements:custom/unlock_trident_effect=false}] only advancements:custom/unlock_trident_effect
 gamemode spectator @s
 clear @s
 scoreboard players set @s infect_timer 0
 title @s times 0 20 5
 scoreboard players operation @s adv_run += @s adv_blocks_run
-advancement grant @s[scores={adv_run=30000..}] only minecraft:custom/run_300_blocks
+advancement grant @s[scores={adv_run=30000..}] only advancements:custom/run_300_blocks
 
 return 1

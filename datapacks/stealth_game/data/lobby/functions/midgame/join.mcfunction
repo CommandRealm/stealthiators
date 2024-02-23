@@ -11,6 +11,6 @@ execute at @s run playsound minecraft:block.anvil.place master @s ~ ~ ~ 0.25 0.6
 # tag @s remove been_gladiator
 scoreboard players add @s points 0
 tag @s add playing
-advancement grant @a[tag=playing] only minecraft:custom/play_game
+advancement grant @a[tag=playing] only advancements:custom/play_game
 bossbar set minecraft:lobby players @a[tag=!playing]
 return 1

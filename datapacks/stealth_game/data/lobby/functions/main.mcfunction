@@ -53,10 +53,10 @@ execute if entity @e[type=minecraft:item,nbt={Item:{tag:{clickable:1}}}] as @a[x
 execute as @a[x=0,y=66,z=0,distance=..500,nbt={EnderItems:[{tag:{clickable:0}}]}] at @s run function chest_menu:reset_screen
 setblock 18 68 -50 minecraft:turtle_egg[eggs=4]
 execute if score $game state matches 1 run function lobby:midgame/main
-advancement grant @a[gamemode=adventure,x=37,y=71,z=-34,dx=9,dy=5,dz=6,advancements={custom/melon_market=false},nbt={OnGround:1b}] only minecraft:custom/melon_market
-advancement grant @a[gamemode=adventure,x=74,y=73,z=-40,dx=10,dy=20,dz=10,advancements={custom/find_cr=false},nbt={OnGround:1b}] only minecraft:custom/find_cr
-advancement grant @a[x=0,y=66,z=0,distance=..500,advancements={custom/complete_tutorial=true,custom/hundred_points=true,custom/melon_market=true,custom/hit_bullseye=true,custom/find_cr=true,custom/check_out_socials=true,custom/talk_to_villagers=true,custom/unlock_prefix=false}] only minecraft:custom/unlock_prefix
-execute if entity @a[tag=!playing,advancements={completionist/completionist=true}] run function completionist:completionist_helix
+advancement grant @a[gamemode=adventure,x=37,y=71,z=-34,dx=9,dy=5,dz=6,advancements={advancements:custom/melon_market=false},nbt={OnGround:1b}] only advancements:custom/melon_market
+advancement grant @a[gamemode=adventure,x=74,y=73,z=-40,dx=10,dy=20,dz=10,advancements={advancements:custom/find_cr=false},nbt={OnGround:1b}] only advancements:custom/find_cr
+advancement grant @a[x=0,y=66,z=0,distance=..500,advancements={advancements:custom/complete_tutorial=true,advancements:custom/hundred_points=true,advancements:custom/melon_market=true,advancements:custom/hit_bullseye=true,advancements:custom/find_cr=true,advancements:custom/check_out_socials=true,advancements:custom/talk_to_villagers=true,advancements:custom/unlock_prefix=false}] only advancements:custom/unlock_prefix
+execute if entity @a[tag=!playing,advancements={advancements:completionist/completionist=true}] run function completionist:completionist_helix
 
 scoreboard players reset @s drop_ready_book
 particle minecraft:firework 32 74 -31 0 0 0 0.05 1

@@ -1,5 +1,5 @@
 team join gold
-execute if score $time game_timer matches ..1200 if score $time time_till_end matches -1 run advancement grant @s only minecraft:custom/step_on_finish_line_late
+execute if score $time game_timer matches ..1200 if score $time time_till_end matches -1 run advancement grant @s only advancements:custom/step_on_finish_line_late
 summon minecraft:firework_rocket ~ ~5 ~ {FireworksItem:{id:"minecraft:firework_rocket",tag:{Fireworks:{Flight:1b,Explosions:[{Type:0b,Colors:[I;14602026]}]}},Count:1b},LifeTime:24}
 team join won @s
 clear @s
@@ -16,9 +16,9 @@ execute store result bossbar minecraft:time_till_end value run scoreboard player
 scoreboard players add @s points 5
 execute if score $player_finish game matches 0 run scoreboard players add @s points 1
 scoreboard players set $player_finish game 1
-advancement grant @s only minecraft:custom/step_on_finish_line
+advancement grant @s only advancements:custom/step_on_finish_line
 scoreboard players operation @s adv_run += @s adv_blocks_run
-advancement grant @s[scores={adv_run=30000..}] only minecraft:custom/run_300_blocks
+advancement grant @s[scores={adv_run=30000..}] only advancements:custom/run_300_blocks
 
 # if we were revived
 execute if entity @s[tag=revived_by_1] run tag @a[tag=playing,scores={runner_id=1}] add temp_tag

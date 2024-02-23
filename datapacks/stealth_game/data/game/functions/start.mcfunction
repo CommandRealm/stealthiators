@@ -146,7 +146,7 @@ execute as @a[tag=playing] at @s run scoreboard players add $players number 1
 execute if score $auto generation matches 0 run function game:generation/custom_generation
 execute if score $auto generation matches 1 run function game:generation/auto_generation
 scoreboard objectives add back_to_lobby trigger
-advancement grant @a[tag=playing] only minecraft:custom/play_game
+advancement grant @a[tag=playing] only advancements:custom/play_game
 
 data modify entity @e[type=minecraft:area_effect_cloud,tag=start_button_text,limit=1] CustomNameVisible set value 0b
 

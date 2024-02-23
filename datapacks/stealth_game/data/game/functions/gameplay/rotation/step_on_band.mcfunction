@@ -56,5 +56,5 @@ execute if entity @s[scores={runner_id=48}] run tag @e[type=minecraft:area_effec
 execute if entity @s[scores={runner_id=49}] run tag @e[type=minecraft:area_effect_cloud,tag=mark_band,sort=nearest,limit=1] add gave_runner_49_points
 execute if entity @s[scores={runner_id=50}] run tag @e[type=minecraft:area_effect_cloud,tag=mark_band,sort=nearest,limit=1] add gave_runner_50_points
 
-advancement grant @s[scores={stat_bands=20..}] only minecraft:custom/step_on_20_bands
+advancement grant @s[scores={stat_bands=20..}] only advancements:custom/step_on_20_bands
 return 1

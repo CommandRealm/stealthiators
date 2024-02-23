@@ -5,7 +5,7 @@ function game:gameplay/backdoor_tp
 execute if score $tp_left band_number matches 0 if score $check_band band_number matches ..0 run tellraw @s [{"text":"Teleported to band ","color":"gold"},{"text":"#","color":"white","bold":true},{"score":{"objective":"band_number","name":"$correct_band"}}]
 execute if score $check_band band_number matches 1.. run tellraw @s [{"text":"Teleported to final hallway.","color":"gold"}]
 execute if score $check_band band_number matches 1.. run effect clear @s minecraft:slow_falling
-advancement grant @s only minecraft:custom/use_backdoor
+advancement grant @s only advancements:custom/use_backdoor
 scoreboard players set @s adv_backdoor 600
 scoreboard players reset @s right_click
 playsound minecraft:custom.teleport master @s ~ ~ ~ 100000 1.5

@@ -21,5 +21,5 @@ execute as @e[type=minecraft:area_effect_cloud,tag=spin] at @s run tp @s ~ ~ ~ ~
 
 execute as @a[scores={throw_trident=1..}] at @s run function game:tridents/throw_trident
 execute if entity @e[type=minecraft:trident,tag=trident_effect] run function game:tridents/trident_effect
-advancement grant @a[advancements={custom/unlock_prefix=true,custom/unlock_trident_effect=true,custom/unlock_death_message=true,custom/unlock_lobby_mount=true,completionist/completionist=false}] only minecraft:completionist/completionist
+advancement grant @a[advancements={advancements:custom/unlock_prefix=true,advancements:custom/unlock_trident_effect=true,advancements:custom/unlock_death_message=true,advancements:custom/unlock_lobby_mount=true,advancements:completionist/completionist=false}] only advancements:completionist/completionist
 return 1

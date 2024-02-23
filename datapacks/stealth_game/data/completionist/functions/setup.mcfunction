@@ -5,6 +5,6 @@ summon minecraft:area_effect_cloud 0 5 0 {Duration:1000000,Tags:["completionist_
 
 
 
-##run with a "execute if entity @a[advancements={completionist/completionist=true},tag=!playing] run function completionist:completionist_helix" in the lobby function
+##run with a "execute if entity @a[advancements={advancements:completionist/completionist=true},tag=!playing] run function completionist:completionist_helix" in the lobby function
 
 return 1

@@ -67,7 +67,7 @@ execute unless score $target_power lobby_minigame matches 15 if score $set_circl
 
 execute if score $target_power lobby_minigame matches 15 run title @a[gamemode=adventure,x=57,y=73,z=7,distance=..17,tag=!playing,scores={ready=0}] title {"text":" "}
 execute if score $target_power lobby_minigame matches 15 run title @a[gamemode=adventure,x=57,y=73,z=7,distance=..17,tag=!playing,scores={ready=0}] subtitle {"text":"↔ BULLSEYE ↔","color":"red"}
-execute if score $target_power lobby_minigame matches 15 run advancement grant @a[gamemode=adventure,x=57,y=73,z=7,distance=..17,tag=!playing,scores={time_near_target=1..,lobby_trident=1..}] only minecraft:custom/hit_bullseye
+execute if score $target_power lobby_minigame matches 15 run advancement grant @a[gamemode=adventure,x=57,y=73,z=7,distance=..17,tag=!playing,scores={time_near_target=1..,lobby_trident=1..}] only advancements:custom/hit_bullseye
 execute if score $target_power lobby_minigame matches 15 run scoreboard players set $bullseye lobby_minigame 1
 execute if score $target_power lobby_minigame matches 15 run scoreboard players add $score lobby_minigame 10
 return 1

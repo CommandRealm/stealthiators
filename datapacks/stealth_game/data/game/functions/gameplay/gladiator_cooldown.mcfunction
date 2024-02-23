@@ -11,7 +11,7 @@ bossbar set minecraft:game_timer players
 scoreboard players set $time game_timer 1000000
 title @a[tag=playing] subtitle [{"text":" "}]
 scoreboard players add @a[tag=playing,team=gladiator] stat_g_win 1
-advancement grant @a[tag=playing,scores={stat_g_win=1..}] only minecraft:custom/win_as_gladiator
+advancement grant @a[tag=playing,scores={stat_g_win=1..}] only advancements:custom/win_as_gladiator
 execute as @a[tag=playing] at @s run scoreboard players operation @s stat_win = @s stat_r_win
 execute as @a[tag=playing] at @s run scoreboard players operation @s stat_win += @s stat_g_win
 

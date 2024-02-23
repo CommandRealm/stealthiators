@@ -4,7 +4,7 @@ execute as @a[team=won] at @s run scoreboard players add $winners calculate 1
 team join gold @a[team=won]
 execute if score $winners calculate matches 2.. run tellraw @a [{"text":"Runners win!\n","color":"dark_gray"},{"text":"The winners were: ","color":"gray"},{"selector":"@a[team=gold]"}]
 execute if score $winners calculate matches ..1 run tellraw @a [{"text":"Runners win!\n","color":"dark_gray"},{"text":"The winner was: ","color":"gray"},{"selector":"@a[team=gold]"}]
-advancement grant @a[tag=playing,team=gold] only minecraft:custom/win_on_classic
+advancement grant @a[tag=playing,team=gold] only advancements:custom/win_on_classic
 execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 2
 tag @a[tag=playing] add potential_cosmetic
 function end:players

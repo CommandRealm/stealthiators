@@ -49,11 +49,11 @@ effect clear @a[tag=playing] minecraft:wither
 
 
 
-scoreboard players remove @a[tag=playing,scores={adv_backdoor=1..},team=gladiator,advancements={custom/kill_after_backdoor=false}] adv_backdoor 1
+scoreboard players remove @a[tag=playing,scores={adv_backdoor=1..},team=gladiator,advancements={advancements:custom/kill_after_backdoor=false}] adv_backdoor 1
 scoreboard players remove @a[tag=playing,scores={adv_kill_trap=1..},team=sneaker] adv_kill_trap 1
-execute as @a[tag=playing,scores={adv_near_glad=0},advancements={custom/live_near_gladiator=false},team=sneaker] at @s if entity @a[distance=..5,team=gladiator] run scoreboard players set @s adv_near_glad 300
-execute if entity @a[tag=playing,scores={adv_near_glad=1..},team=sneaker,advancements={custom/live_near_gladiator=false}] run function game:advancements/near_glad
-advancement grant @a[tag=playing,team=sneaker,advancements={custom/step_on_finish_line=true,custom/step_on_finish_line_late=true,custom/live_near_gladiator=true,custom/step_on_trap=true,custom/step_on_20_bands=true,custom/run_300_blocks=true,custom/unlock_death_message=false}] only minecraft:custom/unlock_death_message
+execute as @a[tag=playing,scores={adv_near_glad=0},advancements={advancements:custom/live_near_gladiator=false},team=sneaker] at @s if entity @a[distance=..5,team=gladiator] run scoreboard players set @s adv_near_glad 300
+execute if entity @a[tag=playing,scores={adv_near_glad=1..},team=sneaker,advancements={advancements:custom/live_near_gladiator=false}] run function game:advancements/near_glad
+advancement grant @a[tag=playing,team=sneaker,advancements={advancements:custom/step_on_finish_line=true,advancements:custom/step_on_finish_line_late=true,advancements:custom/live_near_gladiator=true,advancements:custom/step_on_trap=true,advancements:custom/step_on_20_bands=true,advancements:custom/run_300_blocks=true,advancements:custom/unlock_death_message=false}] only advancements:custom/unlock_death_message
 
 execute if entity @a[gamemode=spectator] run function game:gameplay/spectators
 execute as @a[team=sneaker] at @s if block ~ 125 ~ minecraft:stone run function game:gameplay/rotation/check_band_points

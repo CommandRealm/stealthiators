@@ -117,15 +117,15 @@ execute if entity @s[tag=unlock_d_17,scores={screen=4}] unless entity @s[nbt={En
 execute if entity @s[scores={screen=4}] if score $change compare matches 0.. run function chest_menu:change_death_message
 
 
-execute if entity @s[scores={screen=7},advancements={custom/unlock_prefix=false}] unless entity @s[nbt={EnderItems:[{id:"minecraft:iron_bars",tag:{clickable:1,bar:1}}]}] run function chest_menu:start_advancement_unlocks
-execute if entity @s[scores={screen=7},advancements={custom/unlock_lobby_mount=false}] unless entity @s[nbt={EnderItems:[{id:"minecraft:iron_bars",tag:{clickable:1,bar:2}}]}] run function chest_menu:start_advancement_unlocks
-execute if entity @s[scores={screen=7},advancements={custom/unlock_trident_effect=false}] unless entity @s[nbt={EnderItems:[{id:"minecraft:iron_bars",tag:{clickable:1,bar:3}}]}] run function chest_menu:start_advancement_unlocks
-execute if entity @s[scores={screen=7},advancements={custom/unlock_death_message=false}] unless entity @s[nbt={EnderItems:[{id:"minecraft:iron_bars",tag:{clickable:1,bar:4}}]}] run function chest_menu:start_advancement_unlocks
+execute if entity @s[scores={screen=7},advancements={advancements:custom/unlock_prefix=false}] unless entity @s[nbt={EnderItems:[{id:"minecraft:iron_bars",tag:{clickable:1,bar:1}}]}] run function chest_menu:start_advancement_unlocks
+execute if entity @s[scores={screen=7},advancements={advancements:custom/unlock_lobby_mount=false}] unless entity @s[nbt={EnderItems:[{id:"minecraft:iron_bars",tag:{clickable:1,bar:2}}]}] run function chest_menu:start_advancement_unlocks
+execute if entity @s[scores={screen=7},advancements={advancements:custom/unlock_trident_effect=false}] unless entity @s[nbt={EnderItems:[{id:"minecraft:iron_bars",tag:{clickable:1,bar:3}}]}] run function chest_menu:start_advancement_unlocks
+execute if entity @s[scores={screen=7},advancements={advancements:custom/unlock_death_message=false}] unless entity @s[nbt={EnderItems:[{id:"minecraft:iron_bars",tag:{clickable:1,bar:4}}]}] run function chest_menu:start_advancement_unlocks
 
-execute if entity @s[scores={screen=7},advancements={custom/unlock_prefix=true}] unless entity @s[nbt={EnderItems:[{id:"minecraft:name_tag",tag:{clickable:1}}]}] run function chest_menu:exclusive_prefix
-execute if entity @s[scores={screen=7},advancements={custom/unlock_lobby_mount=true}] unless entity @s[nbt={EnderItems:[{id:"minecraft:saddle",tag:{clickable:1}}]}] run function chest_menu:exclusive_lobby_mount
-execute if entity @s[scores={screen=7},advancements={custom/unlock_trident_effect=true}] unless entity @s[nbt={EnderItems:[{id:"minecraft:trident",tag:{clickable:1}}]}] run function chest_menu:exclusive_trident_effect
-execute if entity @s[scores={screen=7},advancements={custom/unlock_death_message=true}] unless entity @s[nbt={EnderItems:[{id:"minecraft:bone",tag:{clickable:1}}]}] run function chest_menu:exclusive_death_message
+execute if entity @s[scores={screen=7},advancements={advancements:custom/unlock_prefix=true}] unless entity @s[nbt={EnderItems:[{id:"minecraft:name_tag",tag:{clickable:1}}]}] run function chest_menu:exclusive_prefix
+execute if entity @s[scores={screen=7},advancements={advancements:custom/unlock_lobby_mount=true}] unless entity @s[nbt={EnderItems:[{id:"minecraft:saddle",tag:{clickable:1}}]}] run function chest_menu:exclusive_lobby_mount
+execute if entity @s[scores={screen=7},advancements={advancements:custom/unlock_trident_effect=true}] unless entity @s[nbt={EnderItems:[{id:"minecraft:trident",tag:{clickable:1}}]}] run function chest_menu:exclusive_trident_effect
+execute if entity @s[scores={screen=7},advancements={advancements:custom/unlock_death_message=true}] unless entity @s[nbt={EnderItems:[{id:"minecraft:bone",tag:{clickable:1}}]}] run function chest_menu:exclusive_death_message
 
 execute if entity @s[scores={screen=8}] unless entity @s[nbt={EnderItems:[{id:"minecraft:barrier",tag:{clickable:1}}]}] run function chest_menu:start
 execute if entity @s[scores={screen=8}] if entity @s[nbt={EnderItems:[{id:"minecraft:barrier",tag:{clickable:1}}]}] run function chest_menu:start_tournaments

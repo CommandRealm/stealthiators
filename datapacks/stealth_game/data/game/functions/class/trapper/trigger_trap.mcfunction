@@ -6,5 +6,5 @@ playsound minecraft:block.note_block.bell master @a[tag=playing,team=gladiator] 
 particle minecraft:ash ~ ~1 ~ 0.5 0.5 0.5 0 100
 kill @e[type=minecraft:area_effect_cloud,distance=..2,tag=trap]
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["die","trap_tp"],Duration:100}
-advancement grant @s only minecraft:custom/step_on_trap
+advancement grant @s only advancements:custom/step_on_trap
 return 1
